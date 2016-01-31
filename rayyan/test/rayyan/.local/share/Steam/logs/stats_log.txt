@@ -1,0 +1,26 @@
+
+
+[2016-01-31 05:15:20] [AppID 214490] Schema not found on disk
+[2016-01-31 05:15:20] [AppID 214490] CAPIJobRequestUserStats - updated schema from server
+[2016-01-31 05:15:20] [AppID 200110] Schema not found on disk
+[2016-01-31 05:15:20] [AppID 200110] CAPIJobRequestUserStats - updated schema from server
+[2016-01-31 05:15:32] [AppID 730] Schema not found on disk
+[2016-01-31 05:15:33] [AppID 730] CAPIJobRequestUserStats - updated schema from server
+
+
+[2016-01-31 05:16:23] [AppID 214490] Loaded schema from disk.
+[2016-01-31 05:16:23] [AppID 214490] Loading stats from disk...
+[2016-01-31 05:16:23] [AppID 214490] Loading stats from disk...success
+[2016-01-31 05:16:23] [AppID 214490] CAPIJobRequestUserStats - no stats data in server response, we must be up to date
+[2016-01-31 05:16:34] [AppID 214490] CAPIJobRequestUserStats - no stats data in server response, we must be up to date
+[2016-01-31 05:16:41] [AppID 70] Schema not found on disk
+[2016-01-31 05:16:42] [AppID 70] CAPIJobRequestUserStats - received error 'Failure' (2) from server
+[2016-01-31 05:16:42] [AppID 212680] Schema not found on disk
+[2016-01-31 05:16:43] [AppID 212680] CAPIJobRequestUserStats - updated schema from server
+[2016-01-31 05:16:43] [AppID 212680] CAPIJobRequestUserStats - no stats data in server response, we must be up to date
+[2016-01-31 05:16:43] [AppID 220200] Schema not found on disk
+[2016-01-31 05:16:43] [AppID 220200] CAPIJobRequestUserStats - received error 'Failure' (2) from server
+[2016-01-31 05:16:49] [AppID 730] Loaded schema from disk.
+[2016-01-31 05:16:49] [AppID 730] Loading stats from disk...
+[2016-01-31 05:16:49] [AppID 730] Loading stats from disk...success
+[2016-01-31 05:16:50] [AppID 730] CAPIJobRequestUserStats - no stats data in server response, we must be up to date

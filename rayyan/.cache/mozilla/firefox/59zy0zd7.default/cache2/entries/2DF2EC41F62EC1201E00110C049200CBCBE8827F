@@ -1,0 +1,56 @@
+try{window.parent._dv_win['dvCallback_1454215533023515']($dv,window,'fbbde07f272744de8a92d3f3cf75e1d2','tps10203.doubleverify.com');}catch(e){try{var image=window.document.createElement('img');image.src=window.location.protocol+'//tps30.doubleverify.com/visit.jpg?ctx=818052&cmp=1619415&dvtagver=6.1.src&dvp_cbError='+encodeURIComponent(e.message)}catch(e){}}$dv.pubSub.subscribe('ImpressionServed', $uid, 'RTN_LatencyTemp', function () {try {var beforeVisitCall = '';var templateStartTime = parent.getCurrentTime();var dv_win = parent.window._dv_win;if (dv_win && dv_win.t2tTimestampData) {if (dv_win.t2tTimestampData.length >= 2) {beforeVisitCall = dv_win.t2tTimestampData[1].beforeVisitCall;}}var latency = 0;if (beforeVisitCall != '' && templateStartTime != '') {latency = templateStartTime - beforeVisitCall;}if(latency > 1000 && latency < 90000) {$dv.registerEventCall($uid, { dvp_ltncy: latency });}} catch (e) {};});$dv.pubSub.subscribe('ImpressionServed', $uid, 'CFBC', function(){var rurl = '[DV_PROTOCOL]//tps10203.doubleverify.com/event.gif?impid=fbbde07f272744de8a92d3f3cf75e1d2&rtcid={rtcid}&ifbc={ifbc}';var cfbcUrl = '[DV_PROTOCOL]//ul1.dvtps.com/cfbc.htm?ifba=0&rurl=';try{rurl = $dv.resolveMacros(rurl, $dv.tags[$uid]);cfbcUrl = $dv.resolveMacros(cfbcUrl, $dv.tags[$uid]);cfbcUrl += encodeURIComponent(rurl);var cfbcIframe = document.createElement('iframe');cfbcIframe.width = 0; cfbcIframe.height=0; cfbcIframe.style.display = 'none';cfbcIframe.src = cfbcUrl;document.body.insertBefore(cfbcIframe, document.body.firstChild);} catch(cfbcEx){try{var url = window.location.protocol + '//tps30.doubleverify.com/visit.jpg?ctx=818052&cmp=1619415&dvtagver=6.1.src&jsver=0&dvp_cfbcTag=1&dvp_jsErrMsg=' + encodeURIComponent(cfbcEx);(new Image()).src = url;} catch(innerex){}}});$dv.pubSub.subscribe('ImpressionServed', $uid, 'RTN_CollectDvtpSrcPerformanceData', function(){ try {var dvTagCreated = '';var dvTagCreatedSetInCallBack = '';var beforeVisitCall = '';var callTPSFromIframe = window.callTPSFromIframe;var beginVisitCallbackTS = '';var templateStartTime = parent.getCurrentTime();var dv_win = parent.window._dv_win;if(dv_win && dv_win.t2tTimestampData) {if (dv_win.t2tTimestampData.length >= 1) {dvTagCreated = dv_win.t2tTimestampData[0].dvTagCreated;}if (dv_win.t2tTimestampData.length >= 2) {beforeVisitCall = dv_win.t2tTimestampData[1].beforeVisitCall;}}if ($dv.tags[$uid]) {dvTagCreatedSetInCallBack = $dv.tags[$uid].t2tIframeCreationTime;beginVisitCallbackTS = $dv.tags[$uid].beginVisitCallbackTS;}var message = $dv.tags[$uid].dv_protocol + '//' + $dv.tags[$uid].ServerPublicDns + '/event.gif?impid=' + $uid;message += '&dvp_dvTagCreated='+dvTagCreated+'&dvp_dvTagCreatedSetInCallBack='+dvTagCreatedSetInCallBack+'&dvp_callTPSFromIframe='+callTPSFromIframe+'&dvp_beforeVisitCall='+beforeVisitCall+'&dvp_beginVisitCallbackTS='+beginVisitCallbackTS+'&dvp_templateStartTime='+templateStartTime+'&dvp_tpsProcessingTime=+0';var image = window.document.createElement('img');image.src = message;} catch(e) {};});    	$dv.pubSub.subscribe ('ImpressionServed', $uid, 'SendAdEntitiesForBSBAConsolidation', function() {
+            'use strict';
+            var stringifyFunc = null;
+			if(window.JSON){
+				stringifyFunc = window.JSON.stringify;
+			} else {
+				if(window.parent && window.parent.JSON){
+					stringifyFunc = window.parent.JSON.stringify;
+				}
+			}
+			if(!stringifyFunc){
+				return;
+			}
+            var targetWin;
+            var tag = $dv.tags[$uid];
+            var bsmsg = {
+                action : 'notifyBrandShieldAdEntityInformation',
+                bsAdEntityInformation : {
+                    comparisonItems : [{name : 'cmp', value : 2350289},{name : 'plmt', value : 2350290}], verboseReporting : false  }
+            };
+            var bsstring = stringifyFunc(bsmsg);
+
+            var findAndSend = function(){
+                if(!targetWin) {
+                    if (tag) {
+                        targetWin = tag.t2tIframeWindow;
+                        if (!targetWin) {
+                            var t2tIframeId = tag.t2tIframeId;
+                            //get t2t window and post the AdEntities to it.
+                            if (t2tIframeId) {
+                                var iFrame = window.parent.getElementById(t2tIframeId);
+                                if (iFrame) {
+                                    targetWin = iFrame.contentWindow;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                if(targetWin){
+                    targetWin.postMessage(bsstring, '*');
+                }
+            };
+
+            findAndSend();
+            setTimeout(findAndSend, 100);
+            setTimeout(findAndSend, 500);
+        });$dv.pubSub.subscribe('ImpressionServed', $uid, 'HdnAd', function () {	var vaVersion = '484';	var haJSVer = '6';	var brid = 2;	var numOfConsecutiveIterations = 2;		function loadAvs(){			function isAvsScriptLoaded(){			var scripts = document.getElementsByTagName("script");			for (var i = 0; i < scripts.length; i++) {				var script = scripts[i];				if (script.src.indexOf('cdn.doubleverify.com/avs') > -1) {					return true;				}				return false;			}		};		if(typeof window.IVCallback === "undefined" && !isAvsScriptLoaded()){						window.IVCallback = function(ViewAssureBootstrapper) {				if (ViewAssureBootstrapper && typeof (ViewAssureBootstrapper) === 'function') {					ViewAssureBootstrapper({													"isReportingDisabled": true,						"isRTNsDisabled" : true					});				} 			};						document.write('<scr' + 'ipt type="text/javascript" src="' + $dv.tags[$uid].dv_protocol + '//cdn.doubleverify.com/avs' + vaVersion + '.js"></script>');					}		};			function loadHa(){		window.HaSettingsObj = {			"brid":brid, 			"numOfConsecutiveIterations":numOfConsecutiveIterations		};				document.write('<scr' + 'ipt type="text/javascript" src="' + $dv.tags[$uid].dv_protocol  + '//cdn.doubleverify.com/ha' + haJSVer + '.js"></script>');	};		loadAvs();		loadHa();});var impId = 'fbbde07f272744de8a92d3f3cf75e1d2';var dvObj = $dv;var rtnName = dvObj==window.$dv ? 'ImpressionServed' : 'BeforeDecisionRender';dvObj.pubSub.subscribe(rtnName, impId, 'HE_RTN', function () { try {var lbl='';var f=dvObj==window.$dv,g=f?parent:window,h=dvObj.tags[impId].protocol+'/'+'/'+(dvObj.tags[impId].ServerPublicDns||dvObj.tags[impId].serverPublicDns)+'/'+(f?'event':'bsevent')+'.gif?impid='+impId,i=0,j=[];function k(a,c){function b(){if(!n[c]&&(rhe(c),n[c]=!0,a))for(var d=0;d<e.length;d++)a.removeEventListener?a.removeEventListener(e[d],b):a.detachEvent?a.detachEvent('on'+e[d],b):a['on'+e[d]]=void 0}var e='click input change focus keyup textInput keypress paste'.split(' '),n=[];n[c]=!1;if(a)for(var d=0;d<e.length;d++)a.addEventListener?a.addEventListener(e[d],b,!0):a.attachEvent?a.attachEvent('on'+e[d],b):a['on'+e[d]]=b}window.rhe=function(a){var c='';'number'===typeof a&&void 0==j[a]&&(j[a]=!0,i+=a,c='&'+lbl+'heas='+i);dvObj.domUtilities.addImage(h+'&'+lbl+'hea=1'+c,dvObj.tags[impId].tagElement.parentNode)};g.rhe=rhe;function l(a,c){var b=document.createElement(a);b.id=(c||a)+'-'+impId;b.style.visibility='hidden';b.style.position='absolute';return b}function m(a){var c=o;Object.defineProperty(c,a,{get:function(){return this.getAttribute(a)},set:function(b){this.setAttribute(a,b);'createEvent'in document?(b=document.createEvent('HTMLEvents'),b.initEvent('change',!1,!0),c.dispatchEvent(b)):(b=document.createEventObject(),c.fireEvent('onchange',b))}})}var p=l('form');p.submit=function(){window.rhe(1)};var o=l('input','txt');o.name=o.id;o.type='text';m('value');m('textContent');var q=l('input','btn');q.name=q.id;q.type='button';var r=l('input','sbmt');r.name=r.id;r.type='submit';r.click=function(){window.rhe(2)};var s=l('a');s.href='javascript:window.rhe(16);';g.document.body.insertBefore(p,null);g.document.body.insertBefore(s,null);p.insertBefore(o,null);p.insertBefore(q,null);p.insertBefore(r,null);k(o,8);k(q,4);k(r,2);k(p,1);} catch (e) {}; });$dv.tags[$uid].set({"billable":{adArea: 100, duration: 100}});$dv.tags[$uid].set({is_projected_viewability: 0, projected_view_rate: '', projected_error_rate: ''});$dv.CommonData.deviceType = 1;function IVCallback(ViewAssureBootstrapper) {if(ViewAssureBootstrapper && typeof(ViewAssureBootstrapper)==='function'){ViewAssureBootstrapper({"protocol":"http://","serverSettings":{"protocol":"http://","templateVersion":"9","TKH":"7800555030300594880"}});}else{new dv_InViewService({"protocol":"http://"}).inViewManager();}};document.write('<scr' + 'ipt src="http://cdn.doubleverify.com/avs5631.js" type="text/javascript"></scr' + 'ipt>');try{$dv.pubSub.publish('ImpressionServed', $uid);}catch(e){}¾!Y16Í      V­‘mV­‘m<¢ô      :http://tps30.doubleverify.com/visit.js?ctx=1043655&cmp=2350289&ipos=&sid=dataxu&plc=2350289&adid=&crt=&btreg=&btadsrv=&adsrv=89&advid=2026610&num=&pid=&crtname=&unit=&chnl=&uid=1454215533022298&scusrid=&tagtype=&sr=&dt=&isdvvid=&turl=http%3A%2F%2Fwww.wikihow.com%2FKnow-if-a-Girl-Likes-You&dvtagver=6.1.src&srcurlD=2&curl=&qpgid=&ssl=0&refD=3&htmlmsging=1&aadid=1f26a7e98e9afefd05c0c1a471ce165cf83bed91&DVPX_EXCHID=OPENX&DVPX_PUBID=T1g1MzcxOTA1MTk&DVPX_SITEID=&DVPX_ADVID=0DGkbYitfJ&DVPX_CAMPAIGNID=0CwlFCTHg6&DVPX_FLIGHTID=MEZwc1l6MXliMA&DVPX_DXUID=9bNC2gNr1ApGzh5&aUrlD=4&jsver=69&eparams=DC4FC%3Dl9EEATbpTauTauFD%5C25D%5D%40A6%3FI%5D%3F6ETauHTau%60%5D_Tau27CTbu2F%3A5Tbsdbga%60cb%60cTae43Tbs%60cdca%60ddahhgfTaeFC%3DTbs9EEATadbpTadauTadauHHH%5DH%3A%3C%3A9%40H%5D4%40%3ETadauz%3F%40H%5C%3A7%5C2%5Cv%3AC%3D%5C%7B%3A%3C6D%5C*%40FTae4%5DH%3A5E9TbseefTae4%5D96%3A89ETbshgTae4%5DE280%3A5Tbsa%60_gbTae4%5DE28%3D%3A%3F%3C0%3A5Tbsbg_c%60Tae4%5DD42%3D6Tbs%60%5D_h%60cdcbTae4%5DFC%3DTbs9EEATadbpTadauTadauHHH%5DH%3A%3C%3A9%40H%5D4%40%3ETadauz%3F%40H%5C%3A7%5C2%5Cv%3AC%3D%5C%7B%3A%3C6D%5C*%40FTae4%5DA2C2%3EDTbsTae4%5D%3A%3EAC6DD%3A%40%3F0EJA6TbsaeTae4%5DA%3D246%3E6%3FE0%3A5Tbs25_%5Degdeedafbh_g__fdU2%26C%3Dl23%40FETbp3%3D2%3F%3C&brid=2&brver=44&bridua=2&tstype=128&jsCallback=dvCallback_1454215533023515 necko:classified 1 request-method GET response-head HTTP/1.1 200 OK
+Cache-Control: max-age=0
+Pragma: no-cache
+Content-Type: text/javascript; charset=utf-8
+Expires: 1/30/2016 4:45:33 AM
+Server: Microsoft-IIS/8.0
+X-Powered-By: ASP.NET
+Date: Sun, 31 Jan 2016 04:45:32 GMT
+ uncompressed-len 0   "K

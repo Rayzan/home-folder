@@ -1,0 +1,9 @@
+[0131/051325:ERROR:main_delegate.cc(777)] Could not load cef_extensions.pak
+[0131/051325:ERROR:browser_main_loop.cc(203)] Running without the SUID sandbox! See https://code.google.com/p/chromium/wiki/LinuxSUIDSandboxDevelopment for more information on developing with the sandbox on.
+[0131/051325:ERROR:main_delegate.cc(777)] Could not load cef_extensions.pak
+[0131/051423:ERROR:main_delegate.cc(777)] Could not load cef_extensions.pak
+[0131/051423:ERROR:browser_main_loop.cc(203)] Running without the SUID sandbox! See https://code.google.com/p/chromium/wiki/LinuxSUIDSandboxDevelopment for more information on developing with the sandbox on.
+[0131/051423:ERROR:main_delegate.cc(777)] Could not load cef_extensions.pak
+[0131/051619:ERROR:main_delegate.cc(777)] Could not load cef_extensions.pak
+[0131/051619:ERROR:browser_main_loop.cc(203)] Running without the SUID sandbox! See https://code.google.com/p/chromium/wiki/LinuxSUIDSandboxDevelopment for more information on developing with the sandbox on.
+[0131/051619:ERROR:main_delegate.cc(777)] Could not load cef_extensions.pak

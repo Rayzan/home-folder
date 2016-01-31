@@ -1,0 +1,11 @@
+drwxr-xr-x root/root         0 2014-07-01 12:25 ./
+drwxr-xr-x root/root         0 2014-07-01 12:25 ./usr/
+drwxr-xr-x root/root         0 2014-07-01 12:25 ./usr/lib/
+drwxr-xr-x root/root         0 2014-07-01 12:25 ./usr/lib/x86_64-linux-gnu/
+-rw-r--r-- root/root    303464 2014-07-01 12:25 ./usr/lib/x86_64-linux-gnu/liblcms2.so.2.0.2
+drwxr-xr-x root/root         0 2014-07-01 12:25 ./usr/share/
+drwxr-xr-x root/root         0 2014-07-01 12:25 ./usr/share/doc/
+drwxr-xr-x root/root         0 2014-07-01 12:25 ./usr/share/doc/liblcms2-2/
+-rw-r--r-- root/root      2084 2011-01-25 14:42 ./usr/share/doc/liblcms2-2/copyright
+-rw-r--r-- root/root       980 2014-07-01 12:24 ./usr/share/doc/liblcms2-2/changelog.Debian.amd64.gz
+lrwxrwxrwx root/root         0 2014-07-01 12:25 ./usr/lib/x86_64-linux-gnu/liblcms2.so.2 -> liblcms2.so.2.0.2

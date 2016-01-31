@@ -1,0 +1,22 @@
+drwxr-xr-x root/root         0 2014-07-01 12:30 ./
+drwxr-xr-x root/root         0 2014-07-01 12:29 ./usr/
+drwxr-xr-x root/root         0 2014-07-01 12:29 ./usr/lib/
+drwxr-xr-x root/root         0 2014-07-01 12:30 ./usr/lib/x86_64-linux-gnu/
+-rw-r--r-- root/root     31272 2014-07-01 12:29 ./usr/lib/x86_64-linux-gnu/libmenu.so.5.9
+-rw-r--r-- root/root     60920 2014-07-01 12:29 ./usr/lib/x86_64-linux-gnu/libform.so.5.9
+-rw-r--r-- root/root     14200 2014-07-01 12:29 ./usr/lib/x86_64-linux-gnu/libpanel.so.5.9
+drwxr-xr-x root/root         0 2014-07-01 12:29 ./usr/share/
+drwxr-xr-x root/root         0 2014-07-01 12:29 ./usr/share/doc/
+drwxr-xr-x root/root         0 2014-07-01 12:30 ./usr/share/doc/libncurses5/
+-rw-r--r-- root/root      2371 2010-01-08 21:34 ./usr/share/doc/libncurses5/FAQ
+-rw-r--r-- root/root       530 2010-01-08 21:34 ./usr/share/doc/libncurses5/TODO.Debian
+-rw-r--r-- root/root    160818 2011-04-05 11:31 ./usr/share/doc/libncurses5/changelog.gz
+-rw-r--r-- root/root      6366 2011-10-31 16:13 ./usr/share/doc/libncurses5/copyright
+-rw-r--r-- root/root     18176 2014-07-01 12:15 ./usr/share/doc/libncurses5/changelog.Debian.amd64.gz
+drwxr-xr-x root/root         0 2014-07-01 12:29 ./lib/
+drwxr-xr-x root/root         0 2014-07-01 12:30 ./lib/x86_64-linux-gnu/
+-rw-r--r-- root/root    133816 2014-07-01 12:29 ./lib/x86_64-linux-gnu/libncurses.so.5.9
+lrwxrwxrwx root/root         0 2014-07-01 12:30 ./usr/lib/x86_64-linux-gnu/libpanel.so.5 -> libpanel.so.5.9
+lrwxrwxrwx root/root         0 2014-07-01 12:30 ./usr/lib/x86_64-linux-gnu/libform.so.5 -> libform.so.5.9
+lrwxrwxrwx root/root         0 2014-07-01 12:30 ./usr/lib/x86_64-linux-gnu/libmenu.so.5 -> libmenu.so.5.9
+lrwxrwxrwx root/root         0 2014-07-01 12:30 ./lib/x86_64-linux-gnu/libncurses.so.5 -> libncurses.so.5.9

@@ -1,0 +1,36 @@
+
+
+[2016-01-31 05:15:03] ProductInfoChanges: change number 0->1717800, apps: 0/0, packages: 0/0
+[2016-01-31 05:15:04] UpdatesJob: requesting 1 apps, 75 packages (meta data, 0 prev attempts)
+[2016-01-31 05:15:04] UpdatesJob: requesting 1 apps, 75 packages (full data, 0 prev attempts)
+[2016-01-31 05:15:04] UpdatesJob: finished OK, nAppsUpdated 1 (0 KB), nPackagesUpdated 75 (30 KB)
+[2016-01-31 05:15:04] UpdatesJob: requesting 493 apps, 0 packages (meta data, 0 prev attempts)
+[2016-01-31 05:15:05] UpdatesJob: requested 50 access tokens, 48 received, 2 denied
+[2016-01-31 05:15:05] UpdatesJob: updated SHAs with 48 new access tokens
+[2016-01-31 05:15:12] UpdatesJob: downloaded 263 apps via HTTP, 1363 KB (433 KB compressed)
+[2016-01-31 05:15:12] UpdatesJob: requesting 230 apps, 0 packages (full data, 0 prev attempts)
+[2016-01-31 05:15:12] UpdatesJob: finished OK, nAppsUpdated 493 (1502 KB), nPackagesUpdated 0 (0 KB)
+[2016-01-31 05:15:19] UpdatesJob: requesting 184 apps, 0 packages (meta data, 0 prev attempts)
+[2016-01-31 05:15:19] UpdatesJob: requested 48 access tokens, 0 received, 48 denied
+[2016-01-31 05:15:19] UpdatesJob: downloaded 2 apps via HTTP, 7 KB (2 KB compressed)
+[2016-01-31 05:15:19] UpdatesJob: requesting 498 apps, 0 packages (full data, 0 prev attempts)
+[2016-01-31 05:15:20] UpdatesJob: finished OK, nAppsUpdated 498 (262 KB), nPackagesUpdated 0 (0 KB)
+[2016-01-31 05:15:20] UpdatesJob: requesting 162 apps, 0 packages (meta data, 0 prev attempts)
+[2016-01-31 05:15:20] UpdatesJob: requested 94 access tokens, 0 received, 94 denied
+[2016-01-31 05:15:21] UpdatesJob: downloaded 2 apps via HTTP, 2 KB (1 KB compressed)
+[2016-01-31 05:15:21] UpdatesJob: requesting 75 apps, 0 packages (full data, 0 prev attempts)
+[2016-01-31 05:15:21] UpdatesJob: finished OK, nAppsUpdated 77 (44 KB), nPackagesUpdated 0 (0 KB)
+[2016-01-31 05:15:36] Starting async write /home/rayyan/.local/share/Steam/appcache/appinfo.vdf (1384557 bytes)
+
+
+[2016-01-31 05:16:21] ProductInfoChanges: change number 1717800->1717800, apps: 0/0, packages: 0/0
+[2016-01-31 05:16:21] UpdatesJob: requesting 144 apps, 0 packages (meta data, 0 prev attempts)
+[2016-01-31 05:16:22] UpdatesJob: requested 144 access tokens, 0 received, 144 denied
+[2016-01-31 05:16:22] UpdatesJob: finished OK, nAppsUpdated 0 (0 KB), nPackagesUpdated 0 (0 KB)
+[2016-01-31 05:16:22] UpdatesJob: requesting 2 apps, 0 packages (meta data, 0 prev attempts)
+[2016-01-31 05:16:22] UpdatesJob: finished OK, nAppsUpdated 0 (0 KB), nPackagesUpdated 0 (0 KB)
+[2016-01-31 05:16:37] UpdatesJob: requesting 1 apps, 0 packages (meta data, 0 prev attempts)
+[2016-01-31 05:16:37] UpdatesJob: downloaded 1 apps via HTTP, 4 KB (1 KB compressed)
+[2016-01-31 05:16:37] UpdatesJob: finished OK, nAppsUpdated 1 (4 KB), nPackagesUpdated 0 (0 KB)
+[2016-01-31 05:16:52] Starting async write /home/rayyan/.local/share/Steam/appcache/appinfo.vdf (1387574 bytes)
+[2016-01-31 05:31:21] ProductInfoChanges: change number 1717800->1717801, apps: 0/1, packages: 0/0

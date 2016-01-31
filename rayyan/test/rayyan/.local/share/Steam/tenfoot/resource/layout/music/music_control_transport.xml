@@ -1,0 +1,118 @@
+<root>
+	<styles>
+		<include src="file://{resources}/styles/steamstyles.css" />
+		<include src="file://{resources}/styles/music/music.css" />
+		<include src="file://{resources}/styles/music/music_control_transport.css" />
+		<include src="file://{resources}/styles/music/music_control_overlay.css" />
+	</styles>
+	
+
+	<MusicControlTransport>
+		<DropDown id="RemotePlayerDropDown" />
+
+		<Panel class="QueueControlButtons" id="TransportControls" childfocusonhover="true" >
+			<Button id="QueueRepeat" class="ControlBarButton" tabindex="auto" selectionpos="auto"  
+					onmoveup="ControlButtonMoveUp();"
+					onmovedown="SetInputFocus( SeekControl );"
+					oncontextmenu="MusicControlMore();"
+					onfocus="ControlButtonGotFocus();"
+					onactivate="MusicToggleRepeat();">
+				<Image id="QueueRepeatImage" src="file://{images}/music/icon_queue_repeat.png" />
+			</Button>
+			<Button id="QueueShuffle" class="ControlBarButton" tabindex="auto" selectionpos="auto" 
+					onmoveup="ControlButtonMoveUp();"	
+					onmovedown="SetInputFocus( SeekControl );"
+					oncontextmenu="MusicControlMore();"
+					onfocus="ControlButtonGotFocus();"
+					onactivate="MusicToggleShuffle();">
+				<Image src="file://{images}/music/icon_queue_shuffle.png" />
+			</Button>
+			<Button id="QueuePrevious" class="ControlBarButton" tabindex="auto" selectionpos="auto"
+					onmoveup="ControlButtonMoveUp();"
+					onmovedown="SetInputFocus( SeekControl );"
+					oncontextmenu="MusicControlMore();"
+					onfocus="ControlButtonGotFocus();"
+					onactivate="MusicQueuePrevious();">
+				<Image src="file://{images}/music/icon_queue_previous.png" />
+			</Button>
+			<Button id="QueueNext" class="ControlBarButton" tabindex="auto" selectionpos="auto"
+					onmoveup="ControlButtonMoveUp();"
+					onmovedown="SetInputFocus( SeekControl );"
+					oncontextmenu="MusicControlMore();"
+					onfocus="ControlButtonGotFocus();"
+					onactivate="MusicQueueNext();">
+				<Image src="file://{images}/music/icon_queue_next.png" />
+			</Button>
+				
+			<Button id="PlayPause" class="PlayPauseControlBarButton" tabindex="auto" selectionpos="auto" 
+					onmoveup="ControlButtonMoveUp();"
+					onmovedown="SetInputFocus( SeekControl );"
+					oncontextmenu="MusicControlMore();"
+					onfocus="ControlButtonGotFocus();"
+					onactivate="MusicTogglePlayPause();">
+				<Image id="TogglePlayPauseImage" src="file://{images}/music/icon_queue_play.png" />
+			</Button>
+						
+			<VUMeter writable="true" tabindex="auto" selectionpos="auto" 
+					selectionposboundary="horizontal"
+					onmouseactivate="VUMeterOnMouseActivate();"
+					onmoveup="ControlButtonMoveUp();"
+					onmovedown="SetInputFocus( SeekControl );"
+					oncontextmenu="MusicControlMore();"
+					onfocus="ControlButtonGotFocus();"						
+					id="Volume" class="VoiceBarContainer" numbars="10" 
+					barpaneladdclass="VoiceBar" 
+					barpanelactiveclass="VoiceBarActive" />
+						
+			<Button id="BrowseMusicControlButton" class="ControlBarButton" tabindex="auto" selectionpos="auto"
+					onmoveup="ControlButtonMoveUp();"
+					onmovedown="SetInputFocus( SeekControl );"
+					oncontextmenu="MusicControlMore();"
+					onfocus="ControlButtonGotFocus();"
+					onactivate="MusicBrowseMusic();">
+				<Image src="file://{images}/music/icon_browse.png" />
+			</Button>
+
+			<SeekBar id="SeekControl" tabindex="auto" selectionpos="auto" 
+					 writable="true"
+					 onmoveup="SetInputFocus( PlayPause );"
+					 onmouseactivate="VUMeterOnMouseActivate();"
+					 onfocus="ControlButtonGotFocus();" />
+				
+		</Panel>
+
+		<Panel id="EntriesContainer" childfocusonhover="false">
+			<Panel id="NoMusicQueueEntriesContainer" >			
+				<Button id="BrowseMusic" class="SystemButton PanelVisible Button" tabindex="auto" selectionpos="auto"
+						onmoveup="SetInputFocus( SeekControl )"
+						oncontextmenu="MusicControlMore();"
+						onfocus="ControlButtonGotFocus()"
+						onactivate="MusicBrowseMusic();">
+					<Label text="#Music_Transport_Browse_Music" />
+				</Button>
+				<Button id="BrowseQueueButton" class="SystemButton PanelVisible Button" tabindex="auto" selectionpos="auto"
+						onfocus="ControlButtonGotFocus()"
+						oncontextmenu="MusicControlMore();"
+						onactivate="BrowseQueue();">
+					<Label text="#Music_Transport_View_Queue" />
+				</Button>
+			</Panel>	
+			
+			<Panel id="MusicQueueEntriesContainer" childfocusonhover="false">
+				<Panel id="MusicQueueEntriesList" onmoveup="SetInputFocus( SeekControl )" overscroll-y="100" >
+				</Panel>
+			</Panel>
+			
+			<Panel id="RemotePlayerEntriesContainer" childfocusonhover="false">
+				<Panel id="TrackContainer" >
+					<Label class="TrackCompositeTitle" id="RemotePlayerTrackCompositeTitle" text="Remote Player"/>
+					<Label class="TrackTime" id="RemotePlayerTrackTime" text="0:00:00"/>
+				</Panel>
+			</Panel>
+			
+			<Label id="MusicQueueInfoLabel" text="#Music_Transport_X_Of_Y" />	
+		</Panel>
+			
+	</MusicControlTransport>
+
+</root>

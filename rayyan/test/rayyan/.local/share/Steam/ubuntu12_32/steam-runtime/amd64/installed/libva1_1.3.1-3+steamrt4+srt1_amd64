@@ -1,0 +1,14 @@
+drwxr-xr-x root/root         0 2014-08-20 15:12 ./
+drwxr-xr-x root/root         0 2014-08-20 15:12 ./usr/
+drwxr-xr-x root/root         0 2014-08-20 15:12 ./usr/lib/
+drwxr-xr-x root/root         0 2014-08-20 15:12 ./usr/lib/x86_64-linux-gnu/
+-rw-r--r-- root/root     84256 2014-08-20 15:12 ./usr/lib/x86_64-linux-gnu/libva.so.1.3501.0
+drwxr-xr-x root/root         0 2014-08-20 15:12 ./usr/lib/x86_64-linux-gnu/dri/
+-rw-r--r-- root/root     18400 2014-08-20 15:12 ./usr/lib/x86_64-linux-gnu/dri/dummy_drv_video.so
+drwxr-xr-x root/root         0 2014-08-20 15:12 ./usr/share/
+drwxr-xr-x root/root         0 2014-08-20 15:12 ./usr/share/doc/
+drwxr-xr-x root/root         0 2014-08-20 15:12 ./usr/share/doc/libva1/
+-rw-r--r-- root/root      1457 2014-05-08 21:31 ./usr/share/doc/libva1/changelog.gz
+-rw-r--r-- root/root      7101 2014-04-06 07:21 ./usr/share/doc/libva1/copyright
+-rw-r--r-- root/root      3720 2014-08-20 15:11 ./usr/share/doc/libva1/changelog.Debian.amd64.gz
+lrwxrwxrwx root/root         0 2014-08-20 15:12 ./usr/lib/x86_64-linux-gnu/libva.so.1 -> libva.so.1.3501.0

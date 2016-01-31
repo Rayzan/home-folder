@@ -1,0 +1,21 @@
+drwxr-xr-x root/root         0 2014-07-01 12:16 ./
+drwxr-xr-x root/root         0 2014-07-01 12:16 ./usr/
+drwxr-xr-x root/root         0 2014-07-01 12:16 ./usr/lib/
+drwxr-xr-x root/root         0 2014-07-01 12:16 ./usr/lib/x86_64-linux-gnu/
+-rw-r--r-- root/root    239776 2014-07-01 12:16 ./usr/lib/x86_64-linux-gnu/libgdk_pixbuf-2.0.so.0.2600.1
+drwxr-xr-x root/root         0 2014-07-01 12:16 ./usr/lib/x86_64-linux-gnu/gdk-pixbuf-2.0/
+drwxr-xr-x root/root         0 2014-07-01 12:16 ./usr/lib/x86_64-linux-gnu/gdk-pixbuf-2.0/2.10.0/
+drwxr-xr-x root/root         0 2014-07-01 12:16 ./usr/lib/x86_64-linux-gnu/gdk-pixbuf-2.0/2.10.0/loaders/
+-rw-r--r-- root/root     18736 2014-07-01 12:16 ./usr/lib/x86_64-linux-gnu/gdk-pixbuf-2.0/2.10.0/loaders/libpixbufloader-ani.so
+-rw-r--r-- root/root     27056 2014-07-01 12:16 ./usr/lib/x86_64-linux-gnu/gdk-pixbuf-2.0/2.10.0/loaders/libpixbufloader-gif.so
+-rwxr-xr-x root/root     10488 2014-07-01 12:16 ./usr/lib/x86_64-linux-gnu/gdk-pixbuf-2.0/gdk-pixbuf-query-loaders
+-rw-r--r-- root/root     67992 2014-07-01 12:16 ./usr/lib/x86_64-linux-gnu/libgdk_pixbuf_xlib-2.0.so.0.2600.1
+drwxr-xr-x root/root         0 2014-07-01 12:16 ./usr/share/
+drwxr-xr-x root/root         0 2014-07-01 12:16 ./usr/share/doc/
+drwxr-xr-x root/root         0 2014-07-01 12:16 ./usr/share/doc/libgdk-pixbuf2.0-0/
+-rw-r--r-- root/root      2163 2012-04-14 11:28 ./usr/share/doc/libgdk-pixbuf2.0-0/NEWS.gz
+-rw-r--r-- root/root      8267 2011-07-15 16:17 ./usr/share/doc/libgdk-pixbuf2.0-0/copyright
+-rw-r--r-- root/root      1535 2011-08-15 18:45 ./usr/share/doc/libgdk-pixbuf2.0-0/AUTHORS
+-rw-r--r-- root/root      3204 2014-07-01 12:16 ./usr/share/doc/libgdk-pixbuf2.0-0/changelog.Debian.amd64.gz
+lrwxrwxrwx root/root         0 2014-07-01 12:16 ./usr/lib/x86_64-linux-gnu/libgdk_pixbuf_xlib-2.0.so.0 -> libgdk_pixbuf_xlib-2.0.so.0.2600.1
+lrwxrwxrwx root/root         0 2014-07-01 12:16 ./usr/lib/x86_64-linux-gnu/libgdk_pixbuf-2.0.so.0 -> libgdk_pixbuf-2.0.so.0.2600.1

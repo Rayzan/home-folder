@@ -1,0 +1,88 @@
+
+
+[2016-01-31 05:13:26] Loaded 0 apps from install folder "/home/rayyan/.local/share/Steam/steamapps\appmanifest_*.acf".
+
+
+[2016-01-31 05:14:23] Loaded 0 apps from install folder "/home/rayyan/.local/share/Steam/steamapps\appmanifest_*.acf".
+
+
+[2016-01-31 05:16:19] Loaded 0 apps from install folder "/home/rayyan/.local/share/Steam/steamapps\appmanifest_*.acf".
+[2016-01-31 05:16:37] Invalid manifest for depotID 280744, branch "public", skipping depot
+[2016-01-31 05:16:37] Invalid manifest for depotID 280744, branch "public", skipping depot
+[2016-01-31 05:16:37] Invalid manifest for depotID 280744, branch "public", skipping depot
+[2016-01-31 05:16:37] Invalid manifest for depotID 280744, branch "public", skipping depot
+[2016-01-31 05:16:37] Invalid manifest for depotID 280744, branch "public", skipping depot
+[2016-01-31 05:17:03] Loaded 0 apps from install folder "/home/rayyan/.local/share/Steam/steamapps\appmanifest_*.acf".
+[2016-01-31 05:17:03] Loaded 0 apps from install folder "/home/rayyan/Games HDD/SteamLibrary/steamapps\appmanifest_*.acf".
+[2016-01-31 05:17:04] AppID 730 state changed : Update Required,
+[2016-01-31 05:17:04] Scheduler update appID 730: Priority First, legacy=no, restore="", timeSinceLastPlayed=51431, appDisableSecondsRemaining=0
+[2016-01-31 05:17:04] AppID 730 state changed : Update Required,Update Running,
+[2016-01-31 05:17:04] AppID 730 update changed : Running,
+[2016-01-31 05:17:04] AppID 730 update changed : Running,Reconfiguring,
+[2016-01-31 05:17:05] Download system icon for AppID 730 to /home/rayyan/.local/share/Steam/steam/games/ff52d4cc462d49c0297b9bc0558b4ef4c3bdd9ae.zip
+[2016-01-31 05:17:05] Got 20 download sources via "/serverlist/85/20/" from 162.254.196.20:80
+[2016-01-31 05:17:05] Created download interface of type 'CS' (1) to host valve410.cs.steampowered.com (valve410.cs.steampowered.com)
+[2016-01-31 05:17:05] Created download interface of type 'CS' (1) to host valve409.cs.steampowered.com (valve409.cs.steampowered.com)
+[2016-01-31 05:17:05] Created download interface of type 'CS' (1) to host valve404.cs.steampowered.com (valve404.cs.steampowered.com)
+[2016-01-31 05:17:05] HTTP (CS,410) - valve410.cs.steampowered.com (valve410.cs.steampowered.com): OpenConnection - Success!
+[2016-01-31 05:17:05] HTTP (CS,409) - valve409.cs.steampowered.com (valve409.cs.steampowered.com): OpenConnection - Success!
+[2016-01-31 05:17:05] HTTP (CS,410) - valve410.cs.steampowered.com (valve410.cs.steampowered.com): AuthenticateDepotID (731) - Success!
+[2016-01-31 05:17:05] HTTP (CS,404) - valve404.cs.steampowered.com (valve404.cs.steampowered.com): OpenConnection - Success!
+[2016-01-31 05:17:05] HTTP (CS,409) - valve409.cs.steampowered.com (valve409.cs.steampowered.com): AuthenticateDepotID (734) - Success!
+[2016-01-31 05:17:05] HTTP (CS,409) - valve409.cs.steampowered.com (valve409.cs.steampowered.com): /depot/734/manifest/6654372795804762939/5 - received 200 (OK) HTTP response
+[2016-01-31 05:17:05] HTTP (CS,410) - valve410.cs.steampowered.com (valve410.cs.steampowered.com): /depot/731/manifest/6814278826127526905/5 - received 200 (OK) HTTP response
+[2016-01-31 05:17:05] AppID 730 update changed : Running,
+[2016-01-31 05:17:05] AppID 730 update changed : Running,Validating,
+[2016-01-31 05:17:05] AppID 730 update changed : Running,
+[2016-01-31 05:17:05] AppID 730 update changed : Running,Preallocating,
+[2016-01-31 05:17:06] AppID 730 update changed : Running,
+[2016-01-31 05:17:06] AppID 730 update started : download 0/5843103888, store 0/0, reuse 0/0, stage 0/11692544766
+[2016-01-31 05:17:06] AppID 730 state changed : Update Required,Update Running,Update Started,
+[2016-01-31 05:17:06] AppID 730 update changed : Running,Downloading,
+[2016-01-31 05:17:06] AppID 730 update changed : Running,Downloading,Staging,
+[2016-01-31 05:17:06] HTTP (CS,404) - valve404.cs.steampowered.com (valve404.cs.steampowered.com): AuthenticateDepotID (731) - Success!
+[2016-01-31 05:17:06] HTTP (CS,409) - valve409.cs.steampowered.com (valve409.cs.steampowered.com): AuthenticateDepotID (731) - Success!
+[2016-01-31 05:17:06] Scheduler update appID 730: Priority Last, legacy=no, restore="", timeSinceLastPlayed=51433, appDisableSecondsRemaining=0
+[2016-01-31 05:17:18] Increasing target number of download connections to 4 (rate was 0.000, now 61.071)
+[2016-01-31 05:17:18] Created download interface of type 'CS' (1) to host valve402.cs.steampowered.com (valve402.cs.steampowered.com)
+[2016-01-31 05:17:34] HTTP (CS,402) - valve402.cs.steampowered.com (valve402.cs.steampowered.com): OpenConnection - Success!
+[2016-01-31 05:17:35] HTTP (CS,402) - valve402.cs.steampowered.com (valve402.cs.steampowered.com): AuthenticateDepotID (731) - Success!
+[2016-01-31 05:18:03] Increasing target number of download connections to 5 (rate was 61.071, now 76.145)
+[2016-01-31 05:18:03] Created download interface of type 'CS' (1) to host valve411.cs.steampowered.com (valve411.cs.steampowered.com)
+[2016-01-31 05:18:04] HTTP (CS,411) - valve411.cs.steampowered.com (valve411.cs.steampowered.com): OpenConnection - Success!
+[2016-01-31 05:18:05] HTTP (CS,411) - valve411.cs.steampowered.com (valve411.cs.steampowered.com): AuthenticateDepotID (731) - Success!
+[2016-01-31 05:18:19] Current download rate: 45.430 Mbps
+[2016-01-31 05:19:20] Current download rate: 73.279 Mbps
+[2016-01-31 05:20:21] Current download rate: 67.009 Mbps
+[2016-01-31 05:21:21] Current download rate: 41.032 Mbps
+[2016-01-31 05:22:22] Current download rate: 42.553 Mbps
+[2016-01-31 05:23:23] Current download rate: 39.163 Mbps
+[2016-01-31 05:24:24] Current download rate: 64.676 Mbps
+[2016-01-31 05:25:24] Current download rate: 41.266 Mbps
+[2016-01-31 05:26:25] Current download rate: 58.427 Mbps
+[2016-01-31 05:27:26] Current download rate: 42.531 Mbps
+[2016-01-31 05:28:27] Current download rate: 51.946 Mbps
+[2016-01-31 05:29:27] Current download rate: 50.604 Mbps
+[2016-01-31 05:30:28] Current download rate: 58.416 Mbps
+[2016-01-31 05:31:29] Current download rate: 83.783 Mbps
+[2016-01-31 05:32:29] Current download rate: 38.430 Mbps
+[2016-01-31 05:33:30] Current download rate: 38.158 Mbps
+[2016-01-31 05:33:40] HTTP (CS,411) - valve411.cs.steampowered.com (valve411.cs.steampowered.com): AuthenticateDepotID (734) - Success!
+[2016-01-31 05:33:40] HTTP (CS,410) - valve410.cs.steampowered.com (valve410.cs.steampowered.com): AuthenticateDepotID (734) - Success!
+[2016-01-31 05:33:40] HTTP (CS,404) - valve404.cs.steampowered.com (valve404.cs.steampowered.com): AuthenticateDepotID (734) - Success!
+[2016-01-31 05:33:41] HTTP (CS,402) - valve402.cs.steampowered.com (valve402.cs.steampowered.com): AuthenticateDepotID (734) - Success!
+[2016-01-31 05:33:59] AppID 730 update changed : Running,
+[2016-01-31 05:33:59] AppID 730 update changed : Running,Committing,
+[2016-01-31 05:34:18] AppID 730 file commit : 2585 updated, 0 moved, 0 deleted
+[2016-01-31 05:34:18] AppID 730 state changed : Fully Installed,Update Running,
+[2016-01-31 05:34:18] Finished update AppID 730, mounted depots (BuildID 949992): 731 (6814278826127526905),734 (6654372795804762939),
+[2016-01-31 05:34:18] AppID 730 update changed : Running,
+[2016-01-31 05:34:18] AppID 730 update changed : None
+[2016-01-31 05:34:18] AppID 730 state changed : Fully Installed,
+[2016-01-31 05:34:18] AppID 730 scheduler finished : removed from schedule
+[2016-01-31 05:34:31] Current download rate: 0.000 Mbps
+[2016-01-31 05:34:54] HTTP (CS,402) - valve402.cs.steampowered.com (valve402.cs.steampowered.com): Closing connection
+[2016-01-31 05:34:54] HTTP (CS,404) - valve404.cs.steampowered.com (valve404.cs.steampowered.com): Closing connection
+[2016-01-31 05:34:54] HTTP (CS,409) - valve409.cs.steampowered.com (valve409.cs.steampowered.com): Closing connection
+[2016-01-31 05:34:55] HTTP (CS,410) - valve410.cs.steampowered.com (valve410.cs.steampowered.com): Closing connection
+[2016-01-31 05:34:55] HTTP (CS,411) - valve411.cs.steampowered.com (valve411.cs.steampowered.com): Closing connection

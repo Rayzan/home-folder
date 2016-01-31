@@ -1,0 +1,14 @@
+drwxr-xr-x root/root         0 2014-07-01 12:26 ./
+drwxr-xr-x root/root         0 2014-07-01 12:26 ./usr/
+drwxr-xr-x root/root         0 2014-07-01 12:26 ./usr/lib/
+drwxr-xr-x root/root         0 2014-07-01 12:26 ./usr/lib/i386-linux-gnu/
+-rw-r--r-- root/root     91544 2014-07-01 12:26 ./usr/lib/i386-linux-gnu/libspeex.so.1.5.0
+drwxr-xr-x root/root         0 2014-07-01 12:26 ./usr/lib/i386-linux-gnu/sse2/
+-rw-r--r-- root/root    128408 2014-07-01 12:26 ./usr/lib/i386-linux-gnu/sse2/libspeex.so.1.5.0
+drwxr-xr-x root/root         0 2014-07-01 12:26 ./usr/share/
+drwxr-xr-x root/root         0 2014-07-01 12:26 ./usr/share/doc/
+drwxr-xr-x root/root         0 2014-07-01 12:26 ./usr/share/doc/libspeex1/
+-rw-r--r-- root/root      2045 2014-07-01 12:25 ./usr/share/doc/libspeex1/copyright
+-rw-r--r-- root/root      4512 2014-07-01 12:25 ./usr/share/doc/libspeex1/changelog.Debian.i386.gz
+lrwxrwxrwx root/root         0 2014-07-01 12:26 ./usr/lib/i386-linux-gnu/sse2/libspeex.so.1 -> libspeex.so.1.5.0
+lrwxrwxrwx root/root         0 2014-07-01 12:26 ./usr/lib/i386-linux-gnu/libspeex.so.1 -> libspeex.so.1.5.0

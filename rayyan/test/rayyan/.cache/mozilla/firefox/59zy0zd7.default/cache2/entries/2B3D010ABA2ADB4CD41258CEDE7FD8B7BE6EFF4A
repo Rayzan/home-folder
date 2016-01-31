@@ -1,0 +1,976 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset='utf-8'>
+  <meta content='IE=edge,chrome=1' http-equiv='X-UA-Compatible'>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"20c4a8c482","applicationID":"454369","transactionName":"dl5cQkcLXF9XRBoBW1YeX1db","queueTime":4,"applicationTime":186,"ttGuid":"","agentToken":null,"agent":""}</script>
+<script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o||e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({QJf3ax:[function(t,e){function n(){}function r(t){function e(t){return t&&t instanceof n?t:t?a(t,i,o):o()}function c(n,r,o){t&&t(n,r,o);for(var i=e(o),a=f(n),c=a.length,u=0;c>u;u++)a[u].apply(i,r);return i}function u(t,e){p[t]=f(t).concat(e)}function f(t){return p[t]||[]}function s(){return r(c)}var p={};return{on:u,emit:c,create:s,listeners:f,context:e,_events:p}}function o(){return new n}var i="nr@context",a=t("gos");e.exports=r()},{gos:"7eSDFh"}],ee:[function(t,e){e.exports=t("QJf3ax")},{}],3:[function(t,e){function n(t){return function(){r(t,[(new Date).getTime()].concat(i(arguments)))}}var r=t("handle"),o=t(1),i=t(2);"undefined"==typeof window.newrelic&&(newrelic=window.NREUM);var a=["setPageViewName","addPageAction","setCustomAttribute","finished","addToTrace","inlineHit","noticeError"];o(a,function(t,e){window.NREUM[e]=n("api-"+e)}),e.exports=window.NREUM},{1:12,2:13,handle:"D5DuLP"}],gos:[function(t,e){e.exports=t("7eSDFh")},{}],"7eSDFh":[function(t,e){function n(t,e,n){if(r.call(t,e))return t[e];var o=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:o,writable:!0,enumerable:!1}),o}catch(i){}return t[e]=o,o}var r=Object.prototype.hasOwnProperty;e.exports=n},{}],D5DuLP:[function(t,e){function n(t,e,n){return r.listeners(t).length?r.emit(t,e,n):void(r.q&&(r.q[t]||(r.q[t]=[]),r.q[t].push(e)))}var r=t("ee").create();e.exports=n,n.ee=r,r.q={}},{ee:"QJf3ax"}],handle:[function(t,e){e.exports=t("D5DuLP")},{}],XL7HBI:[function(t,e){function n(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:i(t,o,function(){return r++})}var r=1,o="nr@id",i=t("gos");e.exports=n},{gos:"7eSDFh"}],id:[function(t,e){e.exports=t("XL7HBI")},{}],G9z0Bl:[function(t,e){function n(){if(!v++){var t=l.info=NREUM.info,e=f.getElementsByTagName("script")[0];if(t&&t.licenseKey&&t.applicationID&&e){c(p,function(e,n){t[e]||(t[e]=n)});var n="https"===s.split(":")[0]||t.sslForHttp;l.proto=n?"https://":"http://",a("mark",["onload",i()]);var r=f.createElement("script");r.src=l.proto+t.agent,e.parentNode.insertBefore(r,e)}}}function r(){"complete"===f.readyState&&o()}function o(){a("mark",["domContent",i()])}function i(){return(new Date).getTime()}var a=t("handle"),c=t(1),u=window,f=u.document;t(2);var s=(""+location).split("?")[0],p={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-852.min.js"},d=window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent),l=e.exports={offset:i(),origin:s,features:{},xhrWrappable:d};f.addEventListener?(f.addEventListener("DOMContentLoaded",o,!1),u.addEventListener("load",n,!1)):(f.attachEvent("onreadystatechange",r),u.attachEvent("onload",n)),a("mark",["firstbyte",i()]);var v=0},{1:12,2:3,handle:"D5DuLP"}],loader:[function(t,e){e.exports=t("G9z0Bl")},{}],12:[function(t,e){function n(t,e){var n=[],o="",i=0;for(o in t)r.call(t,o)&&(n[i]=e(o,t[o]),i+=1);return n}var r=Object.prototype.hasOwnProperty;e.exports=n},{}],13:[function(t,e){function n(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(0>o?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=n},{}]},{},["G9z0Bl"]);</script>
+
+  <title>Git - git-add Documentation</title>
+
+  <link href='/favicon.ico' rel='shortcut icon' type='image/x-icon'>
+  <link rel="alternate" href="/blog.rss" type="application/rss+xml" title="Git - Blog">
+
+  <link rel="stylesheet" media="screen" href="/assets/git-scm-706d78913a27f9708554e141cf34aa5f.css" />
+  <script src="/assets/modernizr-468530f6d2e42076c8b246a9ad3d1367.js"></script>
+<script src="/assets/modernizr-tests-e07ad0fc2200f36dc0e46cb7a62d7d1b.js"></script>
+  <!--[if (gte IE 6)&(lte IE 8)]>
+  <script src="/javascripts/selectivizr-min.js"></script>
+  <![endif]-->
+
+  <script src="https://use.typekit.com/jsq2fql.js" type="text/javascript"></script>
+  <script>
+    //<![CDATA[
+      try{Typekit.load();}catch(e){}
+    //]]>
+  </script>
+
+</head>
+
+<body id="documentation">
+
+  <div id="banner">
+    Git is a member project of Software Freedom Conservancy, which
+    handles legal and financial needs for the project. Conservancy is
+    currently raising funds to continue their mission. Consider
+    <a href="https://sfconservancy.org/supporter/">becoming a supporter</a>!
+  </div>
+
+  <div class="inner">
+    <header>
+
+  <a href="/"><img src="/images/logo@2x.png" width="110" height="46" alt="Git" /></a>
+  <span id="tagline">
+    <em>--</em>fast-version-control
+  </span>
+
+  <form id="search" action="/search/results">
+    <input id="search-text" name="search" placeholder="Search entire site..." autocomplete="off" type="text" />
+  </form>
+  <div id="search-results"></div>
+
+</header>
+
+  </div> <!-- .inner -->
+
+    <div class="inner">
+      <div id="content-wrapper">
+        <aside class="sidebar">
+  <nav>
+    <ul>
+      <li>
+        <a href="/about">About</a>
+      </li>
+      <li>
+        <a class="active" href="/doc">Documentation</a>
+        <ul class="expanded">
+          <li>
+            <a href="/docs">Reference</a>
+          </li>
+          <li>
+            <a href="/book">Book</a>
+          </li>
+          <li>
+            <a href="/videos">Videos</a>
+          </li>
+          <li>
+            <a href="/doc/ext">External Links</a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="/blog">Blog</a>
+      </li>
+      <li>
+        <a href="/downloads">Downloads</a>
+        <ul class="">
+          <li>
+            <a href="/downloads/guis">GUI Clients</a>
+          </li>
+          <li>
+            <a href="/downloads/logos">Logos</a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="/community">Community</a>
+      </li>
+    </ul>
+  </nav>
+</aside>
+        <div id="content">
+          
+
+  <div id='reference-version'>
+    <a class="dropdown-trigger" id="reference-topics-trigger" data-panel-id="topics-dropdown" href="#">Topics â–¾</a>
+<div class='dropdown-panel right' id='topics-dropdown'>
+  <div class='three-column'>
+    <div class='column-left'>
+      <h3 class='setup'>Setup and Config</h3>
+<ul class='unstyled'>
+  <li><a href="/docs/git-config">config</a></li>
+  <li><a href="/docs/git-help">help</a></li>
+</ul>
+
+      <h3 class='projects'>Getting and Creating Projects</h3>
+<ul class='unstyled'>
+  <li><a href="/docs/git-init">init</a></li>
+  <li><a href="/docs/git-clone">clone</a></li>
+</ul>
+
+      <h3 class='snapshotting'>Basic Snapshotting</h3>
+<ul class='unstyled'>
+  <li><a href="/docs/git-add">add</a></li>
+  <li><a href="/docs/git-status">status</a></li>
+  <li><a href="/docs/git-diff">diff</a></li>
+  <li><a href="/docs/git-commit">commit</a></li>
+  <li><a href="/docs/git-reset">reset</a></li>
+  <li><a href="/docs/git-rm">rm</a></li>
+  <li><a href="/docs/git-mv">mv</a></li>
+</ul>
+
+      <h3 class='branching'>Branching and Merging</h3>
+<ul class='unstyled'>
+  <li><a href="/docs/git-branch">branch</a></li>
+  <li><a href="/docs/git-checkout">checkout</a></li>
+  <li><a href="/docs/git-merge">merge</a></li>
+  <li><a href="/docs/git-mergetool">mergetool</a></li>
+  <li><a href="/docs/git-log">log</a></li>
+  <li><a href="/docs/git-stash">stash</a></li>
+  <li><a href="/docs/git-tag">tag</a></li>
+</ul>
+
+      <h3 class='sharing'>Sharing and Updating Projects</h3>
+<ul class='unstyled'>
+  <li><a href="/docs/git-fetch">fetch</a></li>
+  <li><a href="/docs/git-pull">pull</a></li>
+  <li><a href="/docs/git-push">push</a></li>
+  <li><a href="/docs/git-remote">remote</a></li>
+  <li><a href="/docs/git-submodule">submodule</a></li>
+</ul>
+
+    </div>
+    <div class='column-middle'>
+      <h3 class='inspection'>Inspection and Comparison</h3>
+<ul class='unstyled'>
+  <li><a href="/docs/git-show">show</a></li>
+  <li><a href="/docs/git-log">log</a></li>
+  <li><a href="/docs/git-diff">diff</a></li>
+  <li><a href="/docs/git-shortlog">shortlog</a></li>
+  <li><a href="/docs/git-describe">describe</a></li>
+</ul>
+
+      <h3 class='patching'>Patching</h3>
+<ul class='unstyled'>
+  <li><a href="/docs/git-apply">apply</a></li>
+  <li><a href="/docs/git-cherry-pick">cherry-pick</a></li>
+  <li><a href="/docs/git-diff">diff</a></li>
+  <li><a href="/docs/git-rebase">rebase</a></li>
+  <li><a href="/docs/git-revert">revert</a></li>
+</ul>
+
+      <h3 class='debugging'>Debugging</h3>
+<ul class='unstyled'>
+  <li><a href="/docs/git-bisect">bisect</a></li>
+  <li><a href="/docs/git-blame">blame</a></li>
+  <li><a href="/docs/git-grep">grep</a></li>
+</ul>
+
+      <h3 class='email'>Email</h3>
+<ul class='unstyled'>
+  <li><a href="/docs/git-am">am</a></li>
+  <li><a href="/docs/git-apply">apply</a></li>
+  <li><a href="/docs/git-format-patch">format-patch</a></li>
+  <li><a href="/docs/git-send-email">send-email</a></li>
+  <li><a href="/docs/git-request-pull">request-pull</a></li>
+</ul>
+
+      <h3 class='external'>External Systems</h3>
+<ul class='unstyled'>
+  <li><a href="/docs/git-svn">svn</a></li>
+  <li><a href="/docs/git-fast-import">fast-import</a></li>
+</ul>
+
+    </div>
+    <div class='column-right'>
+      <h3 class='admin'>Administration</h3>
+<ul class='unstyled'>
+  <li><a href="/docs/git-clean">clean</a></li>
+  <li><a href="/docs/git-gc">gc</a></li>
+  <li><a href="/docs/git-fsck">fsck</a></li>
+  <li><a href="/docs/git-reflog">reflog</a></li>
+  <li><a href="/docs/git-filter-branch">filter-branch</a></li>
+  <li><a href="/docs/git-instaweb">instaweb</a></li>
+  <li><a href="/docs/git-archive">archive</a></li>
+  <li><a href="/docs/git-bundle">bundle</a></li>
+</ul>
+
+      <h3 class='server-admin'>Server Admin</h3>
+<ul class='unstyled'>
+  <li><a href="/docs/git-daemon">daemon</a></li>
+  <li><a href="/docs/git-update-server-info">update-server-info</a></li>
+</ul>
+
+      <h3 class='plumbing'>Plumbing Commands</h3>
+<ul class='unstyled'>
+  <li><a href="/docs/git-cat-file">cat-file</a></li>
+  <li><a href="/docs/git-commit-tree">commit-tree</a></li>
+  <li><a href="/docs/git-count-objects">count-objects</a></li>
+  <li><a href="/docs/git-diff-index">diff-index</a></li>
+  <li><a href="/docs/git-for-each-ref">for-each-ref</a></li>
+  <li><a href="/docs/git-hash-object">hash-object</a></li>
+  <li><a href="/docs/git-ls-files">ls-files</a></li>
+  <li><a href="/docs/git-merge-base">merge-base</a></li>
+  <li><a href="/docs/git-read-tree">read-tree</a></li>
+  <li><a href="/docs/git-rev-list">rev-list</a></li>
+  <li><a href="/docs/git-rev-parse">rev-parse</a></li>
+  <li><a href="/docs/git-show-ref">show-ref</a></li>
+  <li><a href="/docs/git-symbolic-ref">symbolic-ref</a></li>
+  <li><a href="/docs/git-update-index">update-index</a></li>
+  <li><a href="/docs/git-update-ref">update-ref</a></li>
+  <li><a href="/docs/git-verify-pack">verify-pack</a></li>
+  <li><a href="/docs/git-write-tree">write-tree</a></li>
+</ul>
+
+    </div>
+  </div>
+</div>
+
+    <a class="dropdown-trigger" id="reference-versions-trigger" data-panel-id="previous-versions-dropdown" href="#">Version 2.5.1 â–¾</a>
+<span class="light">git-add last updated in 2.5.1</span>
+<div class='dropdown-panel left' id='previous-versions-dropdown'>
+  <header>Changes in the <strong>git-add</strong> manual</header>
+  <ol class='reference-previous-versions'>
+        <li>
+        <a href="/docs/git-add/2.5.1"><span class="version">2.5.1</span>
+          <span class="diff">
+              <img src="/images/icons/grey-dot.png" />
+              <img src="/images/icons/grey-dot.png" />
+              <img src="/images/icons/grey-dot.png" />
+              <img src="/images/icons/grey-dot.png" />
+              <img src="/images/icons/grey-dot.png" />
+              <img src="/images/icons/grey-dot.png" />
+              <img src="/images/icons/grey-dot.png" />
+              <img src="/images/icons/grey-dot.png" />
+          </span>
+          <em class="date">08/28/15</em>
+        </a>
+        </li>
+        <li class="no-change"><span>2.4.4 &rarr; 2.5.0 no changes</span></li>
+        <li>
+        <a href="/docs/git-add/2.4.3"><span class="version">2.4.3</span>
+          <span class="diff">
+              <img src="/images/icons/green-dot.png" />
+              <img src="/images/icons/red-dot.png" />
+              <img src="/images/icons/red-dot.png" />
+              <img src="/images/icons/grey-dot.png" />
+              <img src="/images/icons/grey-dot.png" />
+              <img src="/images/icons/grey-dot.png" />
+              <img src="/images/icons/grey-dot.png" />
+              <img src="/images/icons/grey-dot.png" />
+          </span>
+          <em class="date">06/05/15</em>
+        </a>
+        </li>
+        <li class="no-change"><span>2.4.1 &rarr; 2.4.2 no changes</span></li>
+        <li>
+        <a href="/docs/git-add/2.4.0"><span class="version">2.4.0</span>
+          <span class="diff">
+              <img src="/images/icons/green-dot.png" />
+              <img src="/images/icons/red-dot.png" />
+              <img src="/images/icons/grey-dot.png" />
+              <img src="/images/icons/grey-dot.png" />
+              <img src="/images/icons/grey-dot.png" />
+              <img src="/images/icons/grey-dot.png" />
+              <img src="/images/icons/grey-dot.png" />
+              <img src="/images/icons/grey-dot.png" />
+          </span>
+          <em class="date">04/30/15</em>
+        </a>
+        </li>
+        <li class="no-change"><span>2.3.1 &rarr; 2.3.8 no changes</span></li>
+        <li>
+        <a href="/docs/git-add/2.3.0"><span class="version">2.3.0</span>
+          <span class="diff">
+              <img src="/images/icons/green-dot.png" />
+              <img src="/images/icons/red-dot.png" />
+              <img src="/images/icons/grey-dot.png" />
+              <img src="/images/icons/grey-dot.png" />
+              <img src="/images/icons/grey-dot.png" />
+              <img src="/images/icons/grey-dot.png" />
+              <img src="/images/icons/grey-dot.png" />
+              <img src="/images/icons/grey-dot.png" />
+          </span>
+          <em class="date">02/05/15</em>
+        </a>
+        </li>
+        <li class="no-change"><span>2.0.1 &rarr; 2.2.2 no changes</span></li>
+        <li>
+        <a href="/docs/git-add/2.0.0"><span class="version">2.0.0</span>
+          <span class="diff">
+              <img src="/images/icons/green-dot.png" />
+              <img src="/images/icons/red-dot.png" />
+              <img src="/images/icons/red-dot.png" />
+              <img src="/images/icons/red-dot.png" />
+              <img src="/images/icons/red-dot.png" />
+              <img src="/images/icons/red-dot.png" />
+              <img src="/images/icons/red-dot.png" />
+          </span>
+          <em class="date">05/28/14</em>
+        </a>
+        </li>
+        <li class="no-change"><span>1.9.3 &rarr; 1.9.5 no changes</span></li>
+        <li>
+        <a href="/docs/git-add/1.9.2"><span class="version">1.9.2</span>
+          <span class="diff">
+              <img src="/images/icons/green-dot.png" />
+              <img src="/images/icons/red-dot.png" />
+              <img src="/images/icons/grey-dot.png" />
+              <img src="/images/icons/grey-dot.png" />
+              <img src="/images/icons/grey-dot.png" />
+              <img src="/images/icons/grey-dot.png" />
+              <img src="/images/icons/grey-dot.png" />
+              <img src="/images/icons/grey-dot.png" />
+          </span>
+          <em class="date">04/09/14</em>
+        </a>
+        </li>
+        <li class="no-change"><span>1.8.3.1 &rarr; 1.9.1 no changes</span></li>
+        <li>
+        <a href="/docs/git-add/1.8.3"><span class="version">1.8.3</span>
+          <span class="diff">
+              <img src="/images/icons/green-dot.png" />
+              <img src="/images/icons/green-dot.png" />
+              <img src="/images/icons/green-dot.png" />
+              <img src="/images/icons/red-dot.png" />
+              <img src="/images/icons/red-dot.png" />
+              <img src="/images/icons/red-dot.png" />
+              <img src="/images/icons/grey-dot.png" />
+              <img src="/images/icons/grey-dot.png" />
+          </span>
+          <em class="date">05/24/13</em>
+        </a>
+        </li>
+        <li class="no-change"><span>1.8.2.1 &rarr; 1.8.2.3 no changes</span></li>
+        <li>
+        <a href="/docs/git-add/1.8.2"><span class="version">1.8.2</span>
+          <span class="diff">
+              <img src="/images/icons/green-dot.png" />
+              <img src="/images/icons/green-dot.png" />
+              <img src="/images/icons/green-dot.png" />
+              <img src="/images/icons/green-dot.png" />
+              <img src="/images/icons/green-dot.png" />
+              <img src="/images/icons/red-dot.png" />
+              <img src="/images/icons/red-dot.png" />
+          </span>
+          <em class="date">03/13/13</em>
+        </a>
+        </li>
+        <li class="no-change"><span>1.8.1.5 &rarr; 1.8.1.6 no changes</span></li>
+        <li>
+        <a href="/docs/git-add/1.8.1.4"><span class="version">1.8.1.4</span>
+          <span class="diff">
+              <img src="/images/icons/green-dot.png" />
+              <img src="/images/icons/red-dot.png" />
+              <img src="/images/icons/grey-dot.png" />
+              <img src="/images/icons/grey-dot.png" />
+              <img src="/images/icons/grey-dot.png" />
+              <img src="/images/icons/grey-dot.png" />
+              <img src="/images/icons/grey-dot.png" />
+              <img src="/images/icons/grey-dot.png" />
+          </span>
+          <em class="date">02/20/13</em>
+        </a>
+        </li>
+        <li class="no-change"><span>1.8.0 &rarr; 1.8.1.3 no changes</span></li>
+        <li>
+        <a href="/docs/git-add/1.7.12.4"><span class="version">1.7.12.4</span>
+          <span class="diff">
+              <img src="/images/icons/green-dot.png" />
+              <img src="/images/icons/red-dot.png" />
+              <img src="/images/icons/grey-dot.png" />
+              <img src="/images/icons/grey-dot.png" />
+              <img src="/images/icons/grey-dot.png" />
+              <img src="/images/icons/grey-dot.png" />
+              <img src="/images/icons/grey-dot.png" />
+              <img src="/images/icons/grey-dot.png" />
+          </span>
+          <em class="date">10/17/12</em>
+        </a>
+        </li>
+    <li>&nbsp;</li>
+    <!-- <li><a class="more" href="#">See more previous releases â†’</a></li> -->
+  </ol>
+  <footer>
+    <span class="light">Check your version of git by running<br></span>
+    <strong>$</strong>
+    <input type="text" class="copyable" value="git --version" />
+  </footer>
+</div>
+
+  </div>
+
+  <div id='main'>
+    <div class="sect1">
+  <h2 id="_name">NAME</h2>
+  
+    <div class="sectionbody"><div class="paragraph">
+<p>git-add - Add file contents to the index</p>
+</div></div>
+  
+</div>
+<div class="sect1">
+  <h2 id="_synopsis">SYNOPSIS</h2>
+  
+    <div class="sectionbody"><div class="verseblock">
+<pre class="content"><em>git add</em> [--verbose | -v] [--dry-run | -n] [--force | -f] [--interactive | -i] [--patch | -p]
+	  [--edit | -e] [--[no-]all | --[no-]ignore-removal | [--update | -u]]
+	  [--intent-to-add | -N] [--refresh] [--ignore-errors] [--ignore-missing]
+	  [--] [&lt;pathspec&gt;&#8230;&#8203;]</pre>
+</div></div>
+  
+</div>
+<div class="sect1">
+  <h2 id="_description">DESCRIPTION</h2>
+  
+    <div class="sectionbody"><div class="paragraph">
+<p>This command updates the index using the current content found in
+the working tree, to prepare the content staged for the next commit.
+It typically adds the current content of existing paths as a whole,
+but with some options it can also be used to add content with
+only part of the changes made to the working tree files applied, or
+remove paths that do not exist in the working tree anymore.</p>
+</div>
+<div class="paragraph">
+<p>The "index" holds a snapshot of the content of the working tree, and it
+is this snapshot that is taken as the contents of the next commit.  Thus
+after making any changes to the working directory, and before running
+the commit command, you must use the <code>add</code> command to add any new or
+modified files to the index.</p>
+</div>
+<div class="paragraph">
+<p>This command can be performed multiple times before a commit.  It only
+adds the content of the specified file(s) at the time the add command is
+run; if you want subsequent changes included in the next commit, then
+you must run <code>git add</code> again to add the new content to the index.</p>
+</div>
+<div class="paragraph">
+<p>The <code>git status</code> command can be used to obtain a summary of which
+files have changes that are staged for the next commit.</p>
+</div>
+<div class="paragraph">
+<p>The <code>git add</code> command will not add ignored files by default.  If any
+ignored files were explicitly specified on the command line, <code>git add</code>
+will fail with a list of ignored files.  Ignored files reached by
+directory recursion or filename globbing performed by Git (quote your
+globs before the shell) will be silently ignored.  The <em>git add</em> command can
+be used to add ignored files with the <code>-f</code> (force) option.</p>
+</div>
+<div class="paragraph">
+<p>Please see <a href='/docs/git-commit'>git-commit[1]</a> for alternative ways to add content to a
+commit.</p>
+</div></div>
+  
+</div>
+<div class="sect1">
+  <h2 id="_options">OPTIONS</h2>
+  
+    <div class="sectionbody"><div class="dlist">
+<dl>
+<dt class="hdlist1">&lt;pathspec&gt;&#8230;&#8203;</dt>
+<dd>
+<p>Files to add content from.  Fileglobs (e.g. <code>*.c</code>) can
+be given to add all matching files.  Also a
+leading directory name (e.g. <code>dir</code> to add <code>dir/file1</code>
+and <code>dir/file2</code>) can be given to update the index to
+match the current state of the directory as a whole (e.g.
+specifying <code>dir</code> will record not just a file <code>dir/file1</code>
+modified in the working tree, a file <code>dir/file2</code> added to
+the working tree, but also a file <code>dir/file3</code> removed from
+the working tree.  Note that older versions of Git used
+to ignore removed files; use <code>--no-all</code> option if you want
+to add modified or new files but ignore removed    ones.</p>
+</dd>
+<dt class="hdlist1">-n</dt>
+<dt class="hdlist1">--dry-run</dt>
+<dd>
+<p>Don&#8217;t actually add the file(s), just show if they exist and/or will
+be ignored.</p>
+</dd>
+<dt class="hdlist1">-v</dt>
+<dt class="hdlist1">--verbose</dt>
+<dd>
+<p>Be verbose.</p>
+</dd>
+<dt class="hdlist1">-f</dt>
+<dt class="hdlist1">--force</dt>
+<dd>
+<p>Allow adding otherwise ignored files.</p>
+</dd>
+<dt class="hdlist1">-i</dt>
+<dt class="hdlist1">--interactive</dt>
+<dd>
+<p>Add modified contents in the working tree interactively to
+the index. Optional path arguments may be supplied to limit
+operation to a subset of the working tree. See &#8220;Interactive
+mode&#8221; for details.</p>
+</dd>
+<dt class="hdlist1">-p</dt>
+<dt class="hdlist1">--patch</dt>
+<dd>
+<p>Interactively choose hunks of patch between the index and the
+work tree and add them to the index. This gives the user a chance
+to review the difference before adding modified contents to the
+index.</p>
+<div class="paragraph">
+<p>This effectively runs <code>add --interactive</code>, but bypasses the
+initial command menu and directly jumps to the <code>patch</code> subcommand.
+See &#8220;Interactive mode&#8221; for details.</p>
+</div>
+</dd>
+<dt class="hdlist1">-e</dt>
+<dt class="hdlist1">--edit</dt>
+<dd>
+<p>Open the diff vs. the index in an editor and let the user
+edit it.  After the editor was closed, adjust the hunk headers
+and apply the patch to the index.</p>
+<div class="paragraph">
+<p>The intent of this option is to pick and choose lines of the patch to
+apply, or even to modify the contents of lines to be staged. This can be
+quicker and more flexible than using the interactive hunk selector.
+However, it is easy to confuse oneself and create a patch that does not
+apply to the index. See EDITING PATCHES below.</p>
+</div>
+</dd>
+<dt class="hdlist1">-u</dt>
+<dt class="hdlist1">--update</dt>
+<dd>
+<p>Update the index just where it already has an entry matching
+&lt;pathspec&gt;.  This removes as well as modifies index entries to
+match the working tree, but adds no new files.</p>
+<div class="paragraph">
+<p>If no &lt;pathspec&gt; is given when <code>-u</code> option is used, all
+tracked files in the entire working tree are updated (old versions
+of Git used to limit the update to the current directory and its
+subdirectories).</p>
+</div>
+</dd>
+<dt class="hdlist1">-A</dt>
+<dt class="hdlist1">--all</dt>
+<dt class="hdlist1">--no-ignore-removal</dt>
+<dd>
+<p>Update the index not only where the working tree has a file
+matching &lt;pathspec&gt; but also where the index already has an
+entry.    This adds, modifies, and removes index entries to
+match the working tree.</p>
+<div class="paragraph">
+<p>If no &lt;pathspec&gt; is given when <code>-A</code> option is used, all
+files in the entire working tree are updated (old versions
+of Git used to limit the update to the current directory and its
+subdirectories).</p>
+</div>
+</dd>
+<dt class="hdlist1">--no-all</dt>
+<dt class="hdlist1">--ignore-removal</dt>
+<dd>
+<p>Update the index by adding new files that are unknown to the
+index and files modified in the working tree, but ignore
+files that have been removed from the working tree.  This
+option is a no-op when no &lt;pathspec&gt; is used.</p>
+<div class="paragraph">
+<p>This option is primarily to help users who are used to older
+versions of Git, whose "git add &lt;pathspec&gt;&#8230;&#8203;" was a synonym
+for "git add --no-all &lt;pathspec&gt;&#8230;&#8203;", i.e. ignored removed files.</p>
+</div>
+</dd>
+<dt class="hdlist1">-N</dt>
+<dt class="hdlist1">--intent-to-add</dt>
+<dd>
+<p>Record only the fact that the path will be added later. An entry
+for the path is placed in the index with no content. This is
+useful for, among other things, showing the unstaged content of
+such files with <code>git diff</code> and committing them with <code>git commit
+-a</code>.</p>
+</dd>
+<dt class="hdlist1">--refresh</dt>
+<dd>
+<p>Don&#8217;t add the file(s), but only refresh their stat()
+information in the index.</p>
+</dd>
+<dt class="hdlist1">--ignore-errors</dt>
+<dd>
+<p>If some files could not be added because of errors indexing
+them, do not abort the operation, but continue adding the
+others. The command shall still exit with non-zero status.
+The configuration variable <code>add.ignoreErrors</code> can be set to
+true to make this the default behaviour.</p>
+</dd>
+<dt class="hdlist1">--ignore-missing</dt>
+<dd>
+<p>This option can only be used together with --dry-run. By using
+this option the user can check if any of the given files would
+be ignored, no matter if they are already present in the work
+tree or not.</p>
+</dd>
+<dt class="hdlist1">--</dt>
+<dd>
+<p>This option can be used to separate command-line options from
+the list of files, (useful when filenames might be mistaken
+for command-line options).</p>
+</dd>
+</dl>
+</div></div>
+  
+</div>
+<div class="sect1">
+  <h2 id="_configuration">Configuration</h2>
+  
+    <div class="sectionbody"><div class="paragraph">
+<p>The optional configuration variable <code>core.excludesFile</code> indicates a path to a
+file containing patterns of file names to exclude from git-add, similar to
+$GIT_DIR/info/exclude.  Patterns in the exclude file are used in addition to
+those in info/exclude.  See <a href='/docs/gitignore'>gitignore[5]</a>.</p>
+</div></div>
+  
+</div>
+<div class="sect1">
+  <h2 id="_examples">EXAMPLES</h2>
+  
+    <div class="sectionbody"><div class="ulist">
+<ul>
+<li>
+<p>Adds content from all <code>*.txt</code> files under <code>Documentation</code> directory
+and its subdirectories:</p>
+<div class="listingblock">
+<div class="content">
+<pre>$ git add Documentation/\*.txt</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Note that the asterisk <code>*</code> is quoted from the shell in this
+example; this lets the command include the files from
+subdirectories of <code>Documentation/</code> directory.</p>
+</div>
+</li>
+<li>
+<p>Considers adding content from all git-*.sh scripts:</p>
+<div class="listingblock">
+<div class="content">
+<pre>$ git add git-*.sh</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Because this example lets the shell expand the asterisk (i.e. you are
+listing the files explicitly), it does not consider
+<code>subdir/git-foo.sh</code>.</p>
+</div>
+</li>
+</ul>
+</div></div>
+  
+</div>
+<div class="sect1">
+  <h2 id="_interactive_mode">Interactive mode</h2>
+  
+    <div class="sectionbody"><div class="paragraph">
+<p>When the command enters the interactive mode, it shows the
+output of the <em>status</em> subcommand, and then goes into its
+interactive command loop.</p>
+</div>
+<div class="paragraph">
+<p>The command loop shows the list of subcommands available, and
+gives a prompt "What now&gt; ".  In general, when the prompt ends
+with a single <em>&gt;</em>, you can pick only one of the choices given
+and type return, like this:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>    *** Commands ***
+      1: status       2: update       3: revert       4: add untracked
+      5: patch        6: diff         7: quit         8: help
+    What now&gt; 1</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>You also could say <code>s</code> or <code>sta</code> or <code>status</code> above as long as the
+choice is unique.</p>
+</div>
+<div class="paragraph">
+<p>The main command loop has 6 subcommands (plus help and quit).</p>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">status</dt>
+<dd>
+<p>This shows the change between HEAD and index (i.e. what will be
+committed if you say <code>git commit</code>), and between index and
+working tree files (i.e. what you could stage further before
+<code>git commit</code> using <code>git add</code>) for each path.  A sample output
+looks like this:</p>
+<div class="listingblock">
+<div class="content">
+<pre>              staged     unstaged path
+     1:       binary      nothing foo.png
+     2:     +403/-35        +1/-1 git-add--interactive.perl</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>It shows that foo.png has differences from HEAD (but that is
+binary so line count cannot be shown) and there is no
+difference between indexed copy and the working tree
+version (if the working tree version were also different,
+<em>binary</em> would have been shown in place of <em>nothing</em>).  The
+other file, git-add{litdd}interactive.perl, has 403 lines added
+and 35 lines deleted if you commit what is in the index, but
+working tree file has further modifications (one addition and
+one deletion).</p>
+</div>
+</dd>
+<dt class="hdlist1">update</dt>
+<dd>
+<p>This shows the status information and issues an "Update&gt;&gt;"
+prompt.  When the prompt ends with double <em>&gt;&gt;</em>, you can
+make more than one selection, concatenated with whitespace or
+comma.  Also you can say ranges.  E.g. "2-5 7,9" to choose
+2,3,4,5,7,9 from the list.  If the second number in a range is
+omitted, all remaining patches are taken.  E.g. "7-" to choose
+7,8,9 from the list.  You can say <em>*</em> to choose everything.</p>
+<div class="paragraph">
+<p>What you chose are then highlighted with <em>*</em>,
+like this:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>           staged     unstaged path
+  1:       binary      nothing foo.png
+* 2:     +403/-35        +1/-1 git-add--interactive.perl</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>To remove selection, prefix the input with <code>-</code>
+like this:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>Update&gt;&gt; -2</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>After making the selection, answer with an empty line to stage the
+contents of working tree files for selected paths in the index.</p>
+</div>
+</dd>
+<dt class="hdlist1">revert</dt>
+<dd>
+<p>This has a very similar UI to <em>update</em>, and the staged
+information for selected paths are reverted to that of the
+HEAD version.  Reverting new paths makes them untracked.</p>
+</dd>
+<dt class="hdlist1">add untracked</dt>
+<dd>
+<p>This has a very similar UI to <em>update</em> and
+<em>revert</em>, and lets you add untracked paths to the index.</p>
+</dd>
+<dt class="hdlist1">patch</dt>
+<dd>
+<p>This lets you choose one path out of a <em>status</em> like selection.
+After choosing the path, it presents the diff between the index
+and the working tree file and asks you if you want to stage
+the change of each hunk.  You can select one of the following
+options and type return:</p>
+<div class="literalblock">
+<div class="content">
+<pre>y - stage this hunk
+n - do not stage this hunk
+q - quit; do not stage this hunk or any of the remaining ones
+a - stage this hunk and all later hunks in the file
+d - do not stage this hunk or any of the later hunks in the file
+g - select a hunk to go to
+/ - search for a hunk matching the given regex
+j - leave this hunk undecided, see next undecided hunk
+J - leave this hunk undecided, see next hunk
+k - leave this hunk undecided, see previous undecided hunk
+K - leave this hunk undecided, see previous hunk
+s - split the current hunk into smaller hunks
+e - manually edit the current hunk
+? - print help</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>After deciding the fate for all hunks, if there is any hunk
+that was chosen, the index is updated with the selected hunks.</p>
+</div>
+<div class="paragraph">
+<p>You can omit having to type return here, by setting the configuration
+variable <code>interactive.singleKey</code> to <code>true</code>.</p>
+</div>
+</dd>
+<dt class="hdlist1">diff</dt>
+<dd>
+<p>This lets you review what will be committed (i.e. between
+HEAD and index).</p>
+</dd>
+</dl>
+</div></div>
+  
+</div>
+<div class="sect1">
+  <h2 id="_editing_patches">EDITING PATCHES</h2>
+  
+    <div class="sectionbody"><div class="paragraph">
+<p>Invoking <code>git add -e</code> or selecting <code>e</code> from the interactive hunk
+selector will open a patch in your editor; after the editor exits, the
+result is applied to the index. You are free to make arbitrary changes
+to the patch, but note that some changes may have confusing results, or
+even result in a patch that cannot be applied.  If you want to abort the
+operation entirely (i.e., stage nothing new in the index), simply delete
+all lines of the patch. The list below describes some common things you
+may see in a patch, and which editing operations make sense on them.</p>
+</div>
+<div class="openblock">
+<div class="content">
+<div class="dlist">
+<dl>
+<dt class="hdlist1">added content</dt>
+<dd>
+<p>Added content is represented by lines beginning with "&#43;". You can
+prevent staging any addition lines by deleting them.</p>
+</dd>
+<dt class="hdlist1">removed content</dt>
+<dd>
+<p>Removed content is represented by lines beginning with "-". You can
+prevent staging their removal by converting the "-" to a " " (space).</p>
+</dd>
+<dt class="hdlist1">modified content</dt>
+<dd>
+<p>Modified content is represented by "-" lines (removing the old content)
+followed by "&#43;" lines (adding the replacement content). You can
+prevent staging the modification by converting "-" lines to " ", and
+removing "&#43;" lines. Beware that modifying only half of the pair is
+likely to introduce confusing changes to the index.</p>
+</dd>
+</dl>
+</div>
+</div>
+</div>
+<div class="paragraph">
+<p>There are also more complex operations that can be performed. But beware
+that because the patch is applied only to the index and not the working
+tree, the working tree will appear to "undo" the change in the index.
+For example, introducing a new line into the index that is in neither
+the HEAD nor the working tree will stage the new line for commit, but
+the line will appear to be reverted in the working tree.</p>
+</div>
+<div class="paragraph">
+<p>Avoid using these constructs, or do so with extreme caution.</p>
+</div>
+<div class="openblock">
+<div class="content">
+<div class="dlist">
+<dl>
+<dt class="hdlist1">removing untouched content</dt>
+<dd>
+<p>Content which does not differ between the index and working tree may be
+shown on context lines, beginning with a " " (space).  You can stage
+context lines for removal by converting the space to a "-". The
+resulting working tree file will appear to re-add the content.</p>
+</dd>
+<dt class="hdlist1">modifying existing content</dt>
+<dd>
+<p>One can also modify context lines by staging them for removal (by
+converting " " to "-") and adding a "&#43;" line with the new content.
+Similarly, one can modify "&#43;" lines for existing additions or
+modifications. In all cases, the new modification will appear reverted
+in the working tree.</p>
+</dd>
+<dt class="hdlist1">new content</dt>
+<dd>
+<p>You may also add new content that does not exist in the patch; simply
+add new lines, each starting with "&#43;". The addition will appear
+reverted in the working tree.</p>
+</dd>
+</dl>
+</div>
+</div>
+</div>
+<div class="paragraph">
+<p>There are also several operations which should be avoided entirely, as
+they will make the patch impossible to apply:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>adding context (" ") or removal ("-") lines</p>
+</li>
+<li>
+<p>deleting context or removal lines</p>
+</li>
+<li>
+<p>modifying the contents of context or removal lines</p>
+</li>
+</ul>
+</div></div>
+  
+</div>
+<div class="sect1">
+  <h2 id="_see_also">SEE ALSO</h2>
+  
+    <div class="sectionbody"><div class="paragraph">
+<p><a href='/docs/git-status'>git-status[1]</a>
+<a href='/docs/git-rm'>git-rm[1]</a>
+<a href='/docs/git-reset'>git-reset[1]</a>
+<a href='/docs/git-mv'>git-mv[1]</a>
+<a href='/docs/git-commit'>git-commit[1]</a>
+<a href='/docs/git-update-index'>git-update-index[1]</a></p>
+</div></div>
+  
+</div>
+<div class="sect1">
+  <h2 id="_git">GIT</h2>
+  
+    <div class="sectionbody"><div class="paragraph">
+<p>Part of the <a href='/docs/git'>git[1]</a> suite</p>
+</div></div>
+  
+</div>
+  </div>
+
+        </div>
+      </div>
+      <footer>
+  <div class="site-source">
+    This <a href="https://github.com/git/git-scm.com/blob/master/README.md#license">open sourced</a> site is <a href="https://github.com/git/git-scm.com">hosted on GitHub.</a><br>
+    Patches, suggestions and comments are welcome.
+  </div>
+  <div class="sfc-member">
+    Git is a member of <a href="/sfc">Software Freedom Conservancy</a>
+  </div>
+</footer>
+
+<script src="/assets/jquery-1.7.1.min-a84298c61954a30358ea529a68eb9f3e.js"></script>
+<script src="/assets/jquery-ui-1.8.18.custom.min-e3014e94d77dc8a27dbf8197fd9712b1.js"></script>
+<script src="/assets/jquery.defaultvalue-80325ab9d935a35ff66f8f83e50c7fc3.js"></script>
+<script src="/assets/session.min-a819047f60ae62bf710093cb55348c13.js"></script>
+<script src="/assets/site-3c292fabb3b9e614821a7f22cafdd144.js"></script>
+
+    </div>
+
+</body>
+</html>
+½£94B€      V­ïV­ï<ãÙ       !:https://git-scm.com/docs/git-add necko:classified 1 security-info FnhllAKWRHGAlo+ESXykKAAAAAAAAAAAwAAAAAAAAEaphjojH6pBabDSgSnsfLHeAAQAAgAAAAAAAAAAAAAAAAAAAAAB4vFIJp5wRkeyPxAQ9RJGKPqbqVvKO0mKuIl8ec8o/uhmCjImkVxP+7sgiYWmMt8F+O2DZM7ZTG6GukivU8OT5gAAAAAAAASyMIIErjCCA5agAwIBAgIDA+ZLMA0GCSqGSIb3DQEBCwUAMEcxCzAJBgNVBAYTAlVTMRYwFAYDVQQKEw1HZW9UcnVzdCBJbmMuMSAwHgYDVQQDExdSYXBpZFNTTCBTSEEyNTYgQ0EgLSBHMzAeFw0xNTA0MjIwMDQ5MDdaFw0xNjA0MjQxNjE4MjhaMIGTMRMwEQYDVQQLEwpHVDI1MDUzMzI2MTEwLwYDVQQLEyhTZWUgd3d3LnJhcGlkc3NsLmNvbS9yZXNvdXJjZXMvY3BzIChjKTE1MS8wLQYDVQQLEyZEb21haW4gQ29udHJvbCBWYWxpZGF0ZWQgLSBSYXBpZFNTTChSKTEYMBYGA1UEAxMPd3d3LmdpdC1zY20uY29tMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA1Pe9wD4g6zbC1O98RpQaZQxVB1+8Re+w5zbROYniY/sRNM9IWzLQOiaoJSRgGS6IVP1VfatA+LaB08waUXqqlOEBXy2XMbX9X5jH+NNLWrWy9X6W0niHhPXwq7uDNX/J3YH+MnJoJdV5ymQ8PuzOjXaU//biXV0AQDTFV2iG02NRBG+x5bc+Sgv2khuVuFFZGlimpOK2Fql506BSOrsPChCRTehNDJn4dp5AmKrN7EMgIK2i5mK25DVykUAtlRQJoo3v7ueye35neMMsmDQpFxL5NlJG/Ct8TdeKSFoCFTgXRqXZmsB+PiBUTomAV7IJHO5b38Jn/mbC1n0P5rrr7wIDAQABo4IBVDCCAVAwHwYDVR0jBBgwFoAUw5zz/NNGCDS7zkZ/oHxb8+IIy1kwVwYIKwYBBQUHAQEESzBJMB8GCCsGAQUFBzABhhNodHRwOi8vZ3Yuc3ltY2QuY29tMCYGCCsGAQUFBzAChhpodHRwOi8vZ3Yuc3ltY2IuY29tL2d2LmNydDAOBgNVHQ8BAf8EBAMCBaAwHQYDVR0lBBYwFAYIKwYBBQUHAwEGCCsGAQUFBwMCMCcGA1UdEQQgMB6CD3d3dy5naXQtc2NtLmNvbYILZ2l0LXNjbS5jb20wKwYDVR0fBCQwIjAgoB6gHIYaaHR0cDovL2d2LnN5bWNiLmNvbS9ndi5jcmwwDAYDVR0TAQH/BAIwADBBBgNVHSAEOjA4MDYGBmeBDAECATAsMCoGCCsGAQUFBwIBFh5odHRwczovL3d3dy5yYXBpZHNzbC5jb20vbGVnYWwwDQYJKoZIhvcNAQELBQADggEBAAiqM57f+91bMCyECc8/CeDzU8anHkkr54NHN7mPER3UOcUCSkVoDm99z6LFqmjR2O4gvYBKjHbrXLxJdRRtnizVoPcRaptrZXaMloiqfnkP+cEVFtWiXPGVhklBlD/Ohl5D9N1cMfvm+NrP1xsTqK3LplobypbJ4KUcFKs7Tv548H/8H2o/dutNODtreB7ZNvHi428cg4Q+cU7Whpci/OpbN+fkF1VGErlLmzIrjoJRy16QotCxxRFlHykbb5Gzaq0kGM6U9SkqY7BOvT+NjWrTgJZLutpLHtIMDX3wk7ghP5pRSdFHgGj0Ao7Itg1F8mf6fe6NqPTDM5TsAkQdGiXALwADAAAAAAEBAAA= request-method GET response-head HTTP/1.1 200 OK
+Server: Cowboy
+Date: Sun, 31 Jan 2016 11:25:01 GMT
+Status: 200 OK
+X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 1; mode=block
+x-content-type-options: nosniff
+Content-Type: text/html; charset=utf-8
+Content-Length: 39331
+Etag: W/"fbac48272c2a7025593ebb5c6703a380"
+Cache-Control: max-age=0, private, must-revalidate
+X-Request-Id: 7f1ac119-0f29-4f1e-a1d7-fea8b6260711
+X-Runtime: 0.186662
+Via: 1.1 vegur
+ charset UTF-8 uncompressed-len 0 predictor::resource-count 22 predictor::https://git-scm.com/assets/git-scm-706d78913a27f9708554e141cf34aa5f.css 1,1,1454239500,0 predictor::https://git-scm.com/assets/modernizr-468530f6d2e42076c8b246a9ad3d1367.js 1,1,1454239500,0 predictor::https://git-scm.com/assets/modernizr-tests-e07ad0fc2200f36dc0e46cb7a62d7d1b.js 1,1,1454239500,0 predictor::https://use.typekit.com/jsq2fql.js 1,1,1454239500,0 predictor::https://git-scm.com/images/logo@2x.png 1,1,1454239500,0 predictor::https://git-scm.com/images/icons/grey-dot.png 1,1,1454239500,0 predictor::https://git-scm.com/images/icons/green-dot.png 1,1,1454239500,0 predictor::https://git-scm.com/images/icons/red-dot.png 1,1,1454239500,0 predictor::https://git-scm.com/assets/jquery-1.7.1.min-a84298c61954a30358ea529a68eb9f3e.js 1,1,1454239500,0 predictor::https://git-scm.com/assets/jquery-ui-1.8.18.custom.min-e3014e94d77dc8a27dbf8197fd9712b1.js 1,1,1454239500,0 predictor::https://git-scm.com/assets/jquery.defaultvalue-80325ab9d935a35ff66f8f83e50c7fc3.js 1,1,1454239500,0 predictor::https://git-scm.com/assets/session.min-a819047f60ae62bf710093cb55348c13.js 1,1,1454239500,0 predictor::https://git-scm.com/assets/site-3c292fabb3b9e614821a7f22cafdd144.js 1,1,1454239500,0 predictor::https://git-scm.com/images/bg/body.jpg 1,1,1454239500,0 predictor::https://git-scm.com/images/icons/search.png 1,1,1454239500,0 predictor::https://git-scm.com/images/icons/code.png 1,1,1454239500,0 predictor::https://p.typekit.net/p.gif?s=1&k=jsq2fql&ht=tk&h=git-scm.com&f=6862.2001&a=520144&_=1454239502315 1,1,1454239500,0 predictor::https://www.google.com/jsapi?callback=gloader_ready 1,1,1454239500,0 predictor::https://secure.gaug.es/track.js 1,1,1454239500,0 predictor::https://secure.gaug.es/track.gif?h[site_id]=4f919d1df5a1f504b3000026&h[resource]=https%3A%2F%2Fgit-scm.com%2Fdocs%2Fgit-add&h[referrer]=https%3A%2F%2Fwww.google.co.uk&h[title]=Git%20-%20git-add%20Documentation&h[user_agent]=Mozilla%2F5.0%20(X11%3B%20Linux%20x86_64%3B%20rv%3A44.0)%20Gecko%2F20100101%20Firefox%2F44.0&h[unique]=0&h[unique_hour]=1&h[unique_day]=0&h[unique_month]=0&h[unique_year]=0&h[screenx]=1920&h[browserx]=1916&h[browsery]=970&timestamp=1454239502970 1,1,1454239500,0 predictor::https://js-agent.newrelic.com/nr-852.min.js 1,1,1454239500,0 predictor::https://bam.nr-data.net/1/20c4a8c482?a=454369&v=852.a36f0fd&to=dl5cQkcLXF9XRBoBW1YeX1db&qt=4&ap=186&be=735&fe=1394&dc=865&f=%5B%5D&perf=%7B%22timing%22:%7B%22of%22:1454239500958,%22n%22:0,%22dl%22:707,%22di%22:1593,%22ds%22:1600,%22de%22:1608,%22dc%22:2128,%22l%22:2128,%22le%22:2129,%22f%22:2,%22dn%22:2,%22dne%22:29,%22c%22:29,%22ce%22:29,%22rq%22:298,%22rp%22:343,%22rpe%22:828%7D,%22navigation%22:%7B%7D%7D&jsonp=NREUM.setToken 1,1,1454239500,0   ™£

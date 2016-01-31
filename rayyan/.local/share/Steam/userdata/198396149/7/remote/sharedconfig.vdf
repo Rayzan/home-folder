@@ -1,0 +1,85 @@
+"UserRoamingConfigStore"
+{
+	"Software"
+	{
+		"Valve"
+		{
+			"Steam"
+			{
+				"DesktopShortcutCheck"		"1"
+				"StartMenuShortcutCheck"		"1"
+				"apps"
+				{
+					"440"
+					{
+						"cloudenabled"		"0"
+					}
+					"72850"
+					{
+						"cloudenabled"		"1"
+					}
+					"115320"
+					{
+						"cloudenabled"		"1"
+					}
+					"105600"
+					{
+						"cloudenabled"		"1"
+					}
+					"205100"
+					{
+						"cloudenabled"		"1"
+					}
+					"8870"
+					{
+						"cloudenabled"		"1"
+					}
+					"239160"
+					{
+						"cloudenabled"		"1"
+					}
+					"620"
+					{
+						"cloudenabled"		"1"
+					}
+				}
+				"SteamDefaultDialog"		"#app_games"
+				"SSAVersion"		"2"
+			}
+		}
+	}
+	"Web"
+	{
+		"WebFav0_URL"		"https://www.google.com/"
+		"WebFav0_Name"		"Google"
+		"WebFav1_URL"		"http://www.youtube.com/"
+		"WebFav1_Name"		"YouTube"
+		"WebFav2_URL"		"http://www.twitter.com/"
+		"WebFav2_Name"		"Twitter"
+		"WebFav3_URL"		"http://www.facebook.com/"
+		"WebFav3_Name"		"Facebook"
+		"WebFav4_URL"		"http://www.reddit.com/"
+		"WebFav4_Name"		"Reddit"
+		"WebRecent0_URL"		"http://steamcommunity.com/id/pounded/stats/appid/45760/achievements"
+		"WebRecent0_Name"		"Steam Community :: Ultra Street Fighter IV :: Poundednote"
+		"WebFrequent0_URL"		"https://www.youtube.com/"
+		"WebFrequent0_Name"		"YouTube"
+		"WebFrequent0_Access"		"1"
+		"WebRecent1_URL"		"https://www.google.co.uk/?gfe_rd=cr&ei=hEcmVZjYKqjo7AbZyoCQCg"
+		"WebRecent1_Name"		"Google"
+		"WebFrequent1_URL"		"https://www.google.co.uk/?gfe_rd=cr&ei=hEcmVZjYKqjo7AbZyoCQCg"
+		"WebFrequent1_Name"		"Google"
+		"WebFrequent1_Access"		"1"
+		"WebRecent2_URL"		"https://www.youtube.com/"
+		"WebRecent2_Name"		"YouTube"
+		"WebFrequent2_URL"		"http://steamcommunity.com/id/pounded/stats/appid/45760/achievements"
+		"WebFrequent2_Name"		"Steam Community :: Ultra Street Fighter IV :: Poundednote"
+		"WebFrequent2_Access"		"1"
+		"WebRecent3_URL"		"http://steamcommunity.com/id/pounded/commentnotifications/"
+		"WebRecent3_Name"		"Steam Community :: Comment Notifications :: Poundednote"
+		"WebFrequent3_URL"		"http://steamcommunity.com/id/pounded/commentnotifications/"
+		"WebFrequent3_Name"		"Steam Community :: Comment Notifications :: Poundednote"
+		"WebFrequent3_Access"		"1"
+	}
+	"TradeInfoHint"		"1"
+}

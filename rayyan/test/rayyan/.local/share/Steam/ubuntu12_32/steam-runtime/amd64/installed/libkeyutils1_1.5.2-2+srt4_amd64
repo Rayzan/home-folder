@@ -1,0 +1,11 @@
+drwxr-xr-x root/root         0 2014-07-01 12:21 ./
+drwxr-xr-x root/root         0 2014-07-01 12:21 ./usr/
+drwxr-xr-x root/root         0 2014-07-01 12:21 ./usr/share/
+drwxr-xr-x root/root         0 2014-07-01 12:21 ./usr/share/doc/
+drwxr-xr-x root/root         0 2014-07-01 12:21 ./usr/share/doc/libkeyutils1/
+-rw-r--r-- root/root      1985 2011-08-22 02:51 ./usr/share/doc/libkeyutils1/copyright
+-rw-r--r-- root/root      2065 2014-07-01 12:21 ./usr/share/doc/libkeyutils1/changelog.Debian.amd64.gz
+drwxr-xr-x root/root         0 2014-07-01 12:21 ./lib/
+drwxr-xr-x root/root         0 2014-07-01 12:21 ./lib/x86_64-linux-gnu/
+-rw-r--r-- root/root     14392 2014-07-01 12:21 ./lib/x86_64-linux-gnu/libkeyutils.so.1.4
+lrwxrwxrwx root/root         0 2014-07-01 12:21 ./lib/x86_64-linux-gnu/libkeyutils.so.1 -> libkeyutils.so.1.4

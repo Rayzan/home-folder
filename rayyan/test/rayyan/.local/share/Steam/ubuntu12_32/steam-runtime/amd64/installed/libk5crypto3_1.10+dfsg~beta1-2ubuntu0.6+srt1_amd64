@@ -1,0 +1,12 @@
+drwxr-xr-x root/root         0 2015-02-23 09:43 ./
+drwxr-xr-x root/root         0 2015-02-23 09:43 ./usr/
+drwxr-xr-x root/root         0 2015-02-23 09:43 ./usr/lib/
+drwxr-xr-x root/root         0 2015-02-23 09:43 ./usr/lib/x86_64-linux-gnu/
+-rw-r--r-- root/root    158168 2015-02-23 09:43 ./usr/lib/x86_64-linux-gnu/libk5crypto.so.3.1
+drwxr-xr-x root/root         0 2015-02-23 09:43 ./usr/share/
+drwxr-xr-x root/root         0 2015-02-23 09:43 ./usr/share/doc/
+drwxr-xr-x root/root         0 2015-02-23 09:43 ./usr/share/doc/libk5crypto3/
+-rw-r--r-- root/root      1200 2012-07-18 14:02 ./usr/share/doc/libk5crypto3/NEWS.Debian.gz
+-rw-r--r-- root/root     17869 2012-07-18 14:02 ./usr/share/doc/libk5crypto3/copyright
+-rw-r--r-- root/root     26659 2015-02-23 09:42 ./usr/share/doc/libk5crypto3/changelog.Debian.amd64.gz
+lrwxrwxrwx root/root         0 2015-02-23 09:43 ./usr/lib/x86_64-linux-gnu/libk5crypto.so.3 -> libk5crypto.so.3.1

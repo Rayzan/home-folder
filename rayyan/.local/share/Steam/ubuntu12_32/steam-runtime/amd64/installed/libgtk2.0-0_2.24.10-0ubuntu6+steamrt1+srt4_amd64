@@ -1,0 +1,39 @@
+drwxr-xr-x root/root         0 2014-07-01 12:54 ./
+drwxr-xr-x root/root         0 2014-07-01 12:54 ./usr/
+drwxr-xr-x root/root         0 2014-07-01 12:53 ./usr/lib/
+drwxr-xr-x root/root         0 2014-07-01 12:54 ./usr/lib/x86_64-linux-gnu/
+-rw-r--r-- root/root   4428192 2014-07-01 12:54 ./usr/lib/x86_64-linux-gnu/libgtk-x11-2.0.so.0.2400.10
+-rw-r--r-- root/root    728304 2014-07-01 12:54 ./usr/lib/x86_64-linux-gnu/libgdk-x11-2.0.so.0.2400.10
+drwxr-xr-x root/root         0 2014-07-01 12:54 ./usr/lib/x86_64-linux-gnu/libgtk2.0-0/
+-rwxr-xr-x root/root     10504 2014-07-01 12:54 ./usr/lib/x86_64-linux-gnu/libgtk2.0-0/gtk-query-immodules-2.0
+-rwxr-xr-x root/root     27784 2014-07-01 12:54 ./usr/lib/x86_64-linux-gnu/libgtk2.0-0/gtk-update-icon-cache
+drwxr-xr-x root/root         0 2014-07-01 12:53 ./usr/lib/x86_64-linux-gnu/gtk-2.0/
+drwxr-xr-x root/root         0 2014-07-01 12:53 ./usr/lib/x86_64-linux-gnu/gtk-2.0/2.10.0/
+drwxr-xr-x root/root         0 2014-07-01 12:54 ./usr/lib/x86_64-linux-gnu/gtk-2.0/2.10.0/immodules/
+-rw-r--r-- root/root     19472 2014-07-01 12:54 ./usr/lib/x86_64-linux-gnu/gtk-2.0/2.10.0/immodules/im-ti-er.so
+-rw-r--r-- root/root      8224 2014-07-01 12:54 ./usr/lib/x86_64-linux-gnu/gtk-2.0/2.10.0/immodules/im-inuktitut.so
+-rw-r--r-- root/root      6904 2014-07-01 12:54 ./usr/lib/x86_64-linux-gnu/gtk-2.0/2.10.0/immodules/im-ipa.so
+-rw-r--r-- root/root      6256 2014-07-01 12:54 ./usr/lib/x86_64-linux-gnu/gtk-2.0/2.10.0/immodules/im-cedilla.so
+-rw-r--r-- root/root     14408 2014-07-01 12:54 ./usr/lib/x86_64-linux-gnu/gtk-2.0/2.10.0/immodules/im-thai.so
+-rw-r--r-- root/root     31512 2014-07-01 12:54 ./usr/lib/x86_64-linux-gnu/gtk-2.0/2.10.0/immodules/im-xim.so
+-rw-r--r-- root/root     14560 2014-07-01 12:54 ./usr/lib/x86_64-linux-gnu/gtk-2.0/2.10.0/immodules/im-multipress.so
+-rw-r--r-- root/root      7800 2014-07-01 12:54 ./usr/lib/x86_64-linux-gnu/gtk-2.0/2.10.0/immodules/im-cyrillic-translit.so
+-rw-r--r-- root/root     19488 2014-07-01 12:54 ./usr/lib/x86_64-linux-gnu/gtk-2.0/2.10.0/immodules/im-am-et.so
+-rw-r--r-- root/root      8120 2014-07-01 12:54 ./usr/lib/x86_64-linux-gnu/gtk-2.0/2.10.0/immodules/im-viqr.so
+-rw-r--r-- root/root     19472 2014-07-01 12:54 ./usr/lib/x86_64-linux-gnu/gtk-2.0/2.10.0/immodules/im-ti-et.so
+drwxr-xr-x root/root         0 2014-07-01 12:54 ./usr/lib/x86_64-linux-gnu/gtk-2.0/2.10.0/printbackends/
+-rw-r--r-- root/root     90840 2014-07-01 12:54 ./usr/lib/x86_64-linux-gnu/gtk-2.0/2.10.0/printbackends/libprintbackend-cups.so
+-rw-r--r-- root/root     14640 2014-07-01 12:54 ./usr/lib/x86_64-linux-gnu/gtk-2.0/2.10.0/printbackends/libprintbackend-lpr.so
+-rw-r--r-- root/root     14680 2014-07-01 12:54 ./usr/lib/x86_64-linux-gnu/gtk-2.0/2.10.0/printbackends/libprintbackend-test.so
+-rw-r--r-- root/root     18992 2014-07-01 12:54 ./usr/lib/x86_64-linux-gnu/gtk-2.0/2.10.0/printbackends/libprintbackend-file.so
+drwxr-xr-x root/root         0 2014-07-01 12:54 ./usr/share/
+drwxr-xr-x root/root         0 2014-07-01 12:54 ./usr/share/doc/
+drwxr-xr-x root/root         0 2014-07-01 12:54 ./usr/share/doc/libgtk2.0-0/
+-rw-r--r-- root/root    140418 2014-07-01 12:21 ./usr/share/doc/libgtk2.0-0/changelog.Debian.amd64
+-rw-r--r-- root/root    429579 2012-02-06 08:26 ./usr/share/doc/libgtk2.0-0/changelog.gz
+-rw-r--r-- root/root     12310 2012-03-26 04:26 ./usr/share/doc/libgtk2.0-0/copyright
+-rw-r--r-- root/root      2019 2012-03-26 04:26 ./usr/share/doc/libgtk2.0-0/README.Debian
+lrwxrwxrwx root/root         0 2014-07-01 12:54 ./usr/lib/x86_64-linux-gnu/libgtk-x11-2.0.so.0 -> libgtk-x11-2.0.so.0.2400.10
+lrwxrwxrwx root/root         0 2014-07-01 12:54 ./usr/lib/x86_64-linux-gnu/libgdk-x11-2.0.so.0 -> libgdk-x11-2.0.so.0.2400.10
+lrwxrwxrwx root/root         0 2014-07-01 12:54 ./usr/share/doc/libgtk2.0-0/NEWS.gz -> ../libgtk2.0-common/NEWS.gz
+lrwxrwxrwx root/root         0 2014-07-01 12:54 ./usr/share/doc/libgtk2.0-0/README.gz -> ../libgtk2.0-common/README.gz

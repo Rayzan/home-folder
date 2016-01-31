@@ -1,0 +1,131 @@
+
+@define touchkeyclickedactivetime: 0.13;
+
+@define touchmenufadeinouttime: 0.1s;
+
+#TouchMenu
+{
+
+	width: 390px;
+	height: 430px;
+	background-color: #222222bb;
+	border-radius: 10px;
+	//border-bottom-left-radius: 195px;
+	//border-bottom-right-radius: 195px;
+	
+	opacity: 0.0;
+	
+	transition-property: opacity;
+	transition-duration: touchmenufadeinouttime;
+	transition-timing-function: bigpicture-ease-in-out;
+}
+
+#TouchMenuHoverKeyDescription
+{
+	margin-top: 5px;
+	horizontal-align: center;
+
+	color: tclegendlabel;
+	font-size: 38px;
+	font-family: platformfont;
+}
+
+#TouchMenuPad
+{
+	margin-top: 60px;
+	horizontal-align: center;
+
+	width: 350px;
+	height: 350px;
+	
+	background-color: #202020ff;
+	
+	border-radius: 8px;
+}
+
+.TouchKeyDisabled
+{
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	width: 75px;
+	height: 75px;
+    background-color:  #40404090;
+    border-radius: 8px;
+    border: 3px solid #202020ff;
+}
+
+.TouchKey
+{
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	width: 75px;
+	height: 75px;
+	background-color: #404040ff;
+    border-radius: 8px;
+    border: 3px solid #202020ff;
+}
+
+.TouchKey Label
+{
+	margin-top: 5px;
+	horizontal-align: center;
+    vertical-align: center;
+	color: tclegendlabel;
+	font-size: 32px;
+	font-family: platformfont;
+}
+
+#TouchLabel.SmallLabel
+{
+	margin-top: 8px;
+	margin-left: 8px;
+	horizontal-align: left;
+    vertical-align: top;
+	color: tclegendlabel;
+	font-size: 16px;
+	font-family: platformfont;
+}
+
+#TouchMenuIcon
+{
+	horizontal-align: center;
+    vertical-align: center;
+}
+
+.TouchKeyHover
+{
+	background-color: daisy_petal_selection_color;
+    border-radius: 6px; 
+    border: 4px solid #ffffff88;
+}
+
+.TouchKeyClicked
+{
+    border: 8px solid #eeeeeeaa;
+}
+
+.TouchKeyClicked #TouchLabel
+{
+	font-size: 28px;
+}
+
+.TouchKeyClicked #TouchLabel.SmallLabel
+{
+	font-size: 14px;
+}
+
+#Pointer
+{
+	visibility: collapse;
+	vertical-align: center;
+	horizontal-align: center;
+}
+
+.ShowPanoramaPointers #Pointer.TouchMenuPadActive
+{
+	visibility: visible;
+}

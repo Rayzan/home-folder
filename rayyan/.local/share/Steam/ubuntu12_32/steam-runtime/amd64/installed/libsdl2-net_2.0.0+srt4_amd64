@@ -1,0 +1,12 @@
+drwxr-xr-x root/root         0 2014-07-01 12:36 ./
+drwxr-xr-x root/root         0 2014-07-01 12:36 ./usr/
+drwxr-xr-x root/root         0 2014-07-01 12:36 ./usr/lib/
+drwxr-xr-x root/root         0 2014-07-01 12:36 ./usr/lib/x86_64-linux-gnu/
+-rw-r--r-- root/root     18576 2014-07-01 12:36 ./usr/lib/x86_64-linux-gnu/libSDL2_net-2.0.so.0.0.0
+drwxr-xr-x root/root         0 2014-07-01 12:36 ./usr/share/
+drwxr-xr-x root/root         0 2014-07-01 12:36 ./usr/share/doc/
+drwxr-xr-x root/root         0 2014-07-01 12:36 ./usr/share/doc/libsdl2-net/
+-rw-r--r-- root/root       979 2013-08-12 10:46 ./usr/share/doc/libsdl2-net/README.txt
+-rw-r--r-- root/root      1812 2013-08-12 10:46 ./usr/share/doc/libsdl2-net/copyright
+-rw-r--r-- root/root      3065 2014-07-01 12:36 ./usr/share/doc/libsdl2-net/changelog.amd64.gz
+lrwxrwxrwx root/root         0 2014-07-01 12:36 ./usr/lib/x86_64-linux-gnu/libSDL2_net-2.0.so.0 -> libSDL2_net-2.0.so.0.0.0

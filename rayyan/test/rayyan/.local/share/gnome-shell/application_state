@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<application-state>
+  <context id="">
+    <application id="gnome-control-center.desktop" open-window-count="1" score="1" last-seen="1454211286"/>
+    <application id="org.gnome.FileRoller.desktop" open-window-count="0" score="0" last-seen="1454215332"/>
+    <application id="firefox.desktop" open-window-count="1" score="281" last-seen="1454215506"/>
+    <application id="gnome-chess.desktop" open-window-count="1" score="29" last-seen="1454210018"/>
+    <application id="org.gnome.Nautilus.desktop" open-window-count="1" score="0" last-seen="1454209614"/>
+    <application id="gnome-tweak-tool.desktop" open-window-count="1" score="15" last-seen="1454211258"/>
+    <application id="gnome-keyboard-panel.desktop" open-window-count="0" score="0" last-seen="0"/>
+    <application id="gnome-terminal.desktop" open-window-count="1" score="452" last-seen="1454215520"/>
+    <application id="gnome-shell-extension-prefs.desktop" open-window-count="1" score="7" last-seen="1454211980"/>
+    <application id="gvim.desktop" open-window-count="0" score="5" last-seen="1454210561"/>
+  </context>
+</application-state>

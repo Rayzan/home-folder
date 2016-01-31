@@ -1,0 +1,11 @@
+drwxr-xr-x root/root         0 2014-07-01 12:19 ./
+drwxr-xr-x root/root         0 2014-07-01 12:19 ./usr/
+drwxr-xr-x root/root         0 2014-07-01 12:19 ./usr/lib/
+drwxr-xr-x root/root         0 2014-07-01 12:19 ./usr/lib/x86_64-linux-gnu/
+-rw-r--r-- root/root     10272 2014-07-01 12:19 ./usr/lib/x86_64-linux-gnu/libxcb-xevie.so.0.0.0
+drwxr-xr-x root/root         0 2014-07-01 12:19 ./usr/share/
+drwxr-xr-x root/root         0 2014-07-01 12:19 ./usr/share/doc/
+drwxr-xr-x root/root         0 2014-07-01 12:19 ./usr/share/doc/libxcb-xevie0/
+-rw-r--r-- root/root      1780 2014-07-01 12:19 ./usr/share/doc/libxcb-xevie0/copyright
+-rw-r--r-- root/root      6041 2014-07-01 12:17 ./usr/share/doc/libxcb-xevie0/changelog.Debian.amd64.gz
+lrwxrwxrwx root/root         0 2014-07-01 12:19 ./usr/lib/x86_64-linux-gnu/libxcb-xevie.so.0 -> libxcb-xevie.so.0.0.0

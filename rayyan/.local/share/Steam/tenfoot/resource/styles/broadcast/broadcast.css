@@ -1,0 +1,193 @@
+/* Styles for broadcast view panel */
+
+BroadcastViewer
+{
+	width: 1920px;
+	height: 1080px;
+	z-index: 1000;
+	background-color: black;
+	background-size: 100% 100%;
+	background-image: url( "file://{images}/mainmenu_bg_2.png" );
+	
+	transform: translate3d( 0px, 1000px, 0px );
+	opacity: 0.0;
+	desaturation: 1.0;
+	
+	transition-property: transform, opacity, desaturation;
+	transition-duration: 0.3s;
+	transition-delay: 0s;
+	transition-timing-function: bigpicture-ease-in-out;
+}
+
+BroadcastViewer.Fullscreen
+{
+	transform: translate3d( 0px, 0px, 0px );
+	opacity: 1.0;
+	desaturation: 0.0;
+}
+
+#WebContent
+{
+	width: 100%;
+	height: 100%;
+}
+
+#LoadStatus
+{
+	color: white;
+	font-size: 28px;
+}
+
+BroadcastViewer #LoadStatus,
+BroadcastViewer .WebLoadThrobber
+{
+	align: center center;
+	visibility: collapse;
+}
+
+BroadcastViewer.Loading
+{
+	background-image: url( "file://{images}/profile/activity_bg_wash.png" );
+}
+
+BroadcastViewer.Loading .WebLoadThrobber
+{
+	visibility: visible;
+}
+
+BroadcastViewer.LoadingError #LoadStatus
+{
+	visibility: visible;
+}
+
+BroadcastViewer.LoadingError .WebLoadThrobber
+{
+	visibility: collapse;
+}
+
+
+////////////////////////////////////////////////
+// Chat Panels
+////////////////////////////////////////////////
+#ChatPanel
+{
+	flow-children: down;
+}
+
+#ChatContent
+{
+	flow-children: down;
+	width: 100%;
+	height: fill-parent-flow( 1.0 );
+	overflow: squish scroll;
+
+	background-color: #1a578040;
+	padding: 4px;
+}
+
+#ChatContent Label
+{
+	color: white;
+	font-size: 22px;
+	font-weight: medium;
+	padding-bottom: 3px;
+	width: 100%;
+	white-space: normal;
+	padding-left: 8px;
+}
+
+#ChatContent .ChatNotification
+{
+	color: #ffffff60;
+}
+
+#ChatContent Label .ingame
+{
+	color: friendsingame_darkbg;
+}
+
+#ChatContent Label .notingame
+{
+	color: friendsonline_darkbg;
+}
+
+#ChatContent Label.Broadcaster
+{
+	background-image: url('file://{images}/broadcast/live_chat.png' );
+	background-repeat: no-repeat;
+	background-position: left 9px;
+}
+
+#TextEntryLine
+{
+	height: 106px;
+	width: 100%;
+	flow-children: right;
+
+	font-size: 22px;
+	font-weight: normal;
+	text-overflow: clip;
+
+	margin-top: 4px;
+}
+
+#ChatEntry
+{
+	width: fill-parent-flow(1.0);
+	height: 100%;
+
+	opacity: 0.85;
+
+	border-width: 5px;
+	border-color: friendstab;
+	border-style: solid;
+	border-radius: 0px;
+
+	color: friendsitemmainlistbkgnd_from;
+	background-color: friendschatinputbkgnd_text;
+}
+
+#ChatEntry:focus
+{
+	color: applabelselectedsolid;
+	background-color: friendsitemmainlistbkgnd;
+}
+
+#ChatEntry:hover
+{
+	opacity: 1.0;
+}
+
+#ChatSubmit
+{
+	vertical-align: center;
+	horizontal-align: right;
+	min-width: 106px;
+	height: 106px;
+	font-weight: light;
+	font-size: 24px;
+	color: tclegendlabel;
+	white-space: nowrap;
+	padding: 8px;
+	margin-left: 8px;
+
+	border-radius: 0px;
+
+	background-color: friendstab;
+}
+
+#ChatSubmit:hover,
+#ChatSubmit:focus
+{
+	background-color: friendstabcurrentselection;
+}
+
+#ChatSubmit:disabled
+{
+	background-color: friendschatinputbkgnd;
+}
+
+#ChatSubmit Label
+{
+	align: center center;
+}

@@ -1,0 +1,38 @@
+
+
+[2016-01-31 05:13:26] Log session started
+[2016-01-31 05:13:26] [0,0] SetSteamID( [U:1:0] )
+[2016-01-31 05:14:14] [0,0] ResetVoiceRecording() (was recording: 0) (last get voice time: 48 seconds ago)
+[2016-01-31 05:14:14] [0,0] Log session ended
+
+
+[2016-01-31 05:14:23] Log session started
+[2016-01-31 05:14:23] [0,0] SetSteamID( [U:1:0] )
+[2016-01-31 05:14:26] [0,0] LogOff()
+[2016-01-31 05:14:34] [0,0] SetSteamID( [U:1:0] )
+[2016-01-31 05:14:34] [0,0] SetSteamID( [U:1:0] )
+[2016-01-31 05:14:34] CCMInterface::YieldingConnect -- no CMs cached locally, calling ISteamDirectory/GetCMList web api. . .
+[2016-01-31 05:14:35] CCMInterface::YieldingConnect -- got 100 CMs from ISteamDirectory/GetCMList.
+[2016-01-31 05:14:35] [1,4] Connect() starting connection (eNetQOSLevelHigh, 162.254.196.40:27018, UDP)
+[2016-01-31 05:14:36] [1,4] ConnectionCompleted() (162.254.196.40:27018, UDP)
+[2016-01-31 05:14:37] [1,4] RecvMsgClientLogOnResponse() : [U:1:198396149] 'Account Logon Denied'
+[2016-01-31 05:14:37] [1,4] AsyncDisconnect()
+[2016-01-31 05:14:37] [0,0] ConnectionDisconnected('Disconnected By Remote Host') : 'Account Logon Denied' (162.254.196.40:27018, UDP)
+[2016-01-31 05:14:37] [0,0] ConnectionDisconnected() not auto reconnecting due to eResultLogonSession specifies no reconnect
+[2016-01-31 05:15:02] [0,0] SetSteamID( [U:1:0] )
+[2016-01-31 05:15:02] [1,8] Connect() starting connection (eNetQOSLevelHigh, 162.254.196.40:27018, UDP)
+[2016-01-31 05:15:03] [1,8] ConnectionCompleted() (162.254.196.42:27021, UDP)
+[2016-01-31 05:15:03] [1,8] RecvMsgClientLogOnResponse() : [U:1:198396149] 'OK'
+
+
+[2016-01-31 05:16:19] Log session started
+[2016-01-31 05:16:19] [0,0] SetSteamID( [U:1:0] )
+[2016-01-31 05:16:19] [0,0] SetSteamID( [U:1:198396149] )
+[2016-01-31 05:16:20] [0,0] SetSteamID( [U:1:198396149] )
+[2016-01-31 05:16:20] [1,2] Connect() starting connection (eNetQOSLevelHigh, 162.254.196.43:27020, UDP)
+[2016-01-31 05:16:20] [1,2] ConnectionCompleted() (162.254.196.42:27021, UDP)
+[2016-01-31 05:16:21] [1,2] RecvMsgClientLogOnResponse() : [U:1:198396149] 'OK'
+[2016-01-31 05:37:46] [3,2] LogOff()
+[2016-01-31 05:37:46] [2,2] AsyncDisconnect()
+[2016-01-31 05:37:46] [2,2] ResetVoiceRecording() (was recording: 0) (last get voice time: 1287 seconds ago)
+[2016-01-31 05:37:46] [2,2] Log session ended

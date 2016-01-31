@@ -1,0 +1,11 @@
+drwxr-xr-x root/root         0 2014-07-01 12:12 ./
+drwxr-xr-x root/root         0 2014-07-01 12:12 ./usr/
+drwxr-xr-x root/root         0 2014-07-01 12:12 ./usr/lib/
+drwxr-xr-x root/root         0 2014-07-01 12:12 ./usr/lib/i386-linux-gnu/
+-rw-r--r-- root/root     54644 2014-07-01 12:12 ./usr/lib/i386-linux-gnu/libxcb-randr.so.0.1.0
+drwxr-xr-x root/root         0 2014-07-01 12:12 ./usr/share/
+drwxr-xr-x root/root         0 2014-07-01 12:12 ./usr/share/doc/
+drwxr-xr-x root/root         0 2014-07-01 12:12 ./usr/share/doc/libxcb-randr0/
+-rw-r--r-- root/root      1780 2014-07-01 12:12 ./usr/share/doc/libxcb-randr0/copyright
+-rw-r--r-- root/root      6034 2014-07-01 12:11 ./usr/share/doc/libxcb-randr0/changelog.Debian.i386.gz
+lrwxrwxrwx root/root         0 2014-07-01 12:12 ./usr/lib/i386-linux-gnu/libxcb-randr.so.0 -> libxcb-randr.so.0.1.0

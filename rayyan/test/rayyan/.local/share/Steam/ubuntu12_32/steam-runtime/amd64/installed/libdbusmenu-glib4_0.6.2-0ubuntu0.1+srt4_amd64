@@ -1,0 +1,14 @@
+drwxr-xr-x root/root         0 2014-07-01 12:28 ./
+drwxr-xr-x root/root         0 2014-07-01 12:28 ./usr/
+drwxr-xr-x root/root         0 2014-07-01 12:28 ./usr/lib/
+drwxr-xr-x root/root         0 2014-07-01 12:29 ./usr/lib/x86_64-linux-gnu/
+-rw-r--r-- root/root    109952 2014-07-01 12:29 ./usr/lib/x86_64-linux-gnu/libdbusmenu-glib.so.4.0.13
+drwxr-xr-x root/root         0 2014-07-01 12:28 ./usr/share/
+drwxr-xr-x root/root         0 2014-07-01 12:28 ./usr/share/doc/
+drwxr-xr-x root/root         0 2014-07-01 12:29 ./usr/share/doc/libdbusmenu-glib4/
+-rw-r--r-- root/root       181 2012-06-07 08:45 ./usr/share/doc/libdbusmenu-glib4/README
+-rw-r--r-- root/root     48231 2012-06-13 12:16 ./usr/share/doc/libdbusmenu-glib4/changelog.gz
+-rw-r--r-- root/root      1503 2014-07-01 12:27 ./usr/share/doc/libdbusmenu-glib4/copyright
+-rw-r--r-- root/root       498 2012-06-13 12:16 ./usr/share/doc/libdbusmenu-glib4/AUTHORS
+-rw-r--r-- root/root     12447 2014-07-01 12:27 ./usr/share/doc/libdbusmenu-glib4/changelog.Debian.amd64.gz
+lrwxrwxrwx root/root         0 2014-07-01 12:28 ./usr/lib/x86_64-linux-gnu/libdbusmenu-glib.so.4 -> libdbusmenu-glib.so.4.0.13

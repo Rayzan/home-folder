@@ -1,0 +1,1663 @@
+
+/* styles for the store page */
+
+// in seconds
+@define genre_screenshot_switch_delay: 2.5;
+@define category_screenshot_switch_delay: 2.5;
+@define FeaturedCategoryFocusHeight: 215px;
+@define FeaturedCategoryScale: 0.813793;
+@define FeaturedCapsuleTextHeight: 32px;
+@define FeaturedCapsuleTextPadding: 20px;
+
+@define shortduration: 0.25s;
+@define shortmedduration: 0.3s;
+@define mediumduration: 0.4s;
+@define longduration: 1.7s;
+
+//
+// Loading related
+//
+
+#LoadingFrontPageError
+{
+	max-width: 1300px;
+	align: center top;
+	margin-top: 490px;
+	width: 100%;
+	text-align: center;
+	font-size: 32px;
+	color: detailsdatalabel;
+
+	opacity: 0.0;
+
+	transition-property: opacity;
+	transition-duration: 0.4s;
+	transition-delay: 0.4s;
+	transition-timing-function: linear;
+}
+
+.FrontPageError:descendantfocus #LoadingFrontPageError
+{
+	opacity: 1.0;
+	transition-duration: 0.2s;
+	transition-delay: 0.0s;
+}
+
+@keyframes 'throbber-appear-delay'
+{
+	from
+	{
+		opacity: 0.0;
+	}
+
+	50%
+	{
+		opacity: 0.0;
+	}
+
+	to
+	{
+		opacity: 1.0;
+	}
+}
+
+.Throbber
+{
+	horizontal-align: center;
+	margin-top: 350px;
+	opacity: 0.0;
+}
+
+.Loading .Throbber,
+.FrontPageLoading:descendantfocus .Throbber
+{
+	opacity: 1.0;
+
+	animation-name: throbber-appear-delay;
+	animation-duration: 1.0s;
+	animation-timing-function: bigpicture-ease-in-out;
+}
+
+//
+// Store Panel
+//
+StorePanel
+{
+	width: 100%;
+	height: 100%;
+	vertical-align: bottom;
+	opacity: 0.0;
+
+	transition-property: opacity;
+	transition-duration: 0.4s;
+	transition-delay: 0.0s;
+	transition-timing-function: linear;
+}
+
+StorePanel.StoreVisible
+{
+	opacity: 1.0;
+}
+
+
+StorePanel:descendantfocus
+{
+
+}
+
+#Contents
+{
+	width: 100%;
+	height: 100%;
+}
+
+StorePanel Carousel
+{
+	width: 100%;
+	horizontal-align: center;
+
+	// set height so panels flowed below do not move when image sizes transition
+	height: 580px;
+}
+
+.LeftMouseScrollRegion, .RightMouseScrollRegion
+{
+	opacity: 0.0;
+	width: 80px;
+	height: 100%;
+	z-index: 200;
+	transition-property: background-color, opacity;
+	transition-duration: 0.3s;
+	transition-delay: 0.3s;
+	transition-timing-function: bigpicture-ease-in-out;
+	
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: 80px 80px;
+}
+
+.LeftMouseScrollRegion 
+{
+	background-color: mouse_off_bg_left;
+}
+
+.RightMouseScrollRegion 
+{
+	background-color: mouse_off_bg_right;
+}
+
+Carousel:descendantfocus .LeftMouseScrollRegion
+{
+
+	background-image: url( "file://{images}/mouse/arrowLdefault.tga" );
+
+	background-color: mouse_off_bg_left;
+	opacity: 0.0;
+}
+
+Carousel:descendantfocus .RightMouseScrollRegion
+{
+
+	align: right center;
+	
+	background-image: url( "file://{images}/mouse/arrowRdefault.tga" );
+
+	background-color: mouse_off_bg_right;
+	opacity: 0.0;
+}
+
+#FrontPage:descendantfocus #FeaturedCapsules:hover .ActualStoreImage
+{
+	opacity-mask: url( "file://{images}/store/store_browse_bg.png" ) 0.6;
+}
+
+#FrontPage:descendantfocus #FeaturedCapsules:descendantfocus:hover .RightMouseScrollRegion
+{
+	position: -440px 0px 0px;
+	background-color: mouse_hover_bg_right;
+	opacity: 1.0;	
+}
+
+#FrontPage:descendantfocus #FeaturedCapsules:descendantfocus:hover .RightMouseScrollRegion:hover
+{
+	background-color: mouse_active_bg_right;
+	opacity: 1.0;
+}
+
+#FrontPage:descendantfocus #FeaturedCapsules:descendantfocus:hover .LeftMouseScrollRegion
+{
+	position: 440px 0px 0px;
+	background-color: mouse_hover_bg_left;
+	opacity: 1.0;
+}
+
+#FrontPage:descendantfocus #FeaturedCapsules:descendantfocus:hover .LeftMouseScrollRegion:hover
+{
+	background-color: mouse_active_bg_left;
+	opacity: 1.0;
+}
+
+#FrontPage:descendantfocus #Categories:descendantfocus:hover .RightMouseScrollRegion
+{
+	position: 0px 0px 0px;
+	background-color: mouse_hover_bg_right;
+	opacity: 1.0;	
+}
+
+#FrontPage:descendantfocus #Categories:descendantfocus:hover .RightMouseScrollRegion:hover
+{
+	background-color: mouse_active_bg_right;
+	opacity: 1.0;
+}
+
+#FrontPage:descendantfocus #Categories:descendantfocus:hover .LeftMouseScrollRegion
+{
+	position: 0px 0px 0px;
+	background-color: mouse_hover_bg_left;
+	opacity: 1.0;
+}
+
+#FrontPage:descendantfocus #Categories:descendantfocus:hover .LeftMouseScrollRegion:hover
+{
+	background-color: mouse_active_bg_left;
+	opacity: 1.0;
+}
+
+#FrontPage
+{
+	width: 100%;
+	height: 100%;
+}
+
+
+.LeftMouseScrollRegion, .RightMouseScrollRegion
+{
+	opacity: 0.0;
+	transition-property: opacity, background-color;
+	transition-duration: mediumduration;
+	transition-delay: 0.2s;
+	transition-timing-function: bigpicture-ease-in-out;
+}
+
+Grid.CursorVisible:descendantfocus:hover .LeftMouseScrollRegion
+
+{
+	width: 80px;
+	height: 100%;
+	background-image: url( "file://{images}/mouse/arrowLdefault.tga" );
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: 80px 80px;
+	z-index: 200;
+	opacity: 1.0;
+	transition-delay: 0.2s;
+	background-color: mouse_hover_bg_left;
+}
+
+Grid.CursorVisible:descendantfocus:hover .RightMouseScrollRegion,
+#GenreGrid.CursorVisible:descendantfocus:hover  .RightMouseScrollRegion,
+{
+	width: 80px;
+	height: 100%;
+	align: right center;
+	background-image: url( "file://{images}/mouse/arrowRdefault.tga" );
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 80px 80px;
+	z-index: 200;
+	opacity: 1.0;
+	transition-delay: 0.2s;
+	transition-duration: 0.2s;
+	background-color: mouse_hover_bg_right;
+}
+
+#GenreGrid.CursorVisible:descendantfocus:hover  .RightMouseScrollRegion:hover,
+{
+		background-color: mouse_active_bg_right;
+}
+
+Grid.CursorVisible:descendantfocus:hover  .LeftMouseScrollRegion:hover, Grid.CursorVisible:descendantfocus:hover  .LeftMouseScrollRegion:active
+{
+	background-color: mouse_active_bg_left;
+}
+
+Grid.CursorVisible:descendantfocus:hover .RightMouseScrollRegion:hover, Grid.CursorVisible:descendantfocus:hover .RightMouseScrollRegion:active
+{
+	background-color: mouse_active_bg_right;
+}
+
+#FeaturedCapsules
+{
+	width: 2800px;
+	height: 100%;
+	pre-transform-scale2d: 1.0;
+
+	// make sure this is rendered after FeaturedPlatform
+	z-index: 1;
+
+	transition-property: position, transform, opacity, opacity-mask, pre-transform-scale2d, blur, wash-color, desaturation;
+	transition-duration: 0.3s;
+	transition-timing-function: bigpicture-ease-in-out;
+	overflow: noclip noclip;
+
+	animation-name: store-perspective;
+	animation-duration: 20s;
+	animation-timing-function: bigpicture-ease-in-out;
+	animation-iteration-count: infinite;
+	animation-direction: normal;
+}
+
+
+StorePanel:descendantfocus #FeaturedCapsules,
+.WebBrowserActive #FeaturedCapsules
+{
+	perspective-origin: 50% 50%;
+	padding-bottom: 0px;
+	animation-name: none;
+	transform: translate3d(-340px, -435px, -450px);
+	flow-children: right;
+	blur: gaussian (2.0);
+
+	desaturation: 1.0;
+	wash-color: bgcolorwash;
+	opacity: 0.5;
+}
+
+#FrontPage:descendantfocus #FeaturedCapsules
+{
+	transform: translate3d(-340px, -190px, -440px);
+	desaturation: 0.5;
+	wash-color: bgcolorwashlight;
+	opacity: 0.9;
+	blur: gaussian (1.0);
+	pre-transform-scale2d: 1.0;
+}
+
+#FrontPage:descendantfocus #FeaturedCapsules:hover
+{
+	pre-transform-scale2d: 1.02;
+}
+
+#StoreFilter
+{
+	visibility: collapse;
+}
+
+.FilterVisible #FilteredStoreWrapper:descendantfocus #StoreFilter
+{
+	vertical-align: top;
+	horizontal-align: center;
+	margin-top: 170px;
+	visibility: visible;
+}
+
+.FrontPageLoading #StoreFilter
+{
+	visibility: collapse;
+}
+
+#FilteredStoreWrapper:descendantfocus #FeaturedCapsules
+{
+	animation-name: none;
+	transform: translate3d(-440px, 60px, 0px);
+	desaturation: 0;
+	wash-color: #61e2ff00;
+	opacity: 1.0;
+	blur: none;
+}
+
+.FilterVisible #FilteredStoreWrapper:descendantfocus #FeaturedCapsules
+{
+	transform: translate3d(-440px, 100px, -50px);
+}
+
+.FilterVisible #FrontPage:descendantfocus #FilteredStoreWrapper:descendantfocus #FeaturedCapsules:descendantfocus
+{
+	transform: translate3d(-440px, 90px, 0px);
+}
+
+#FrontPage:descendantfocus #FeaturedCapsules:descendantfocus:hover
+{
+	pre-transform-scale2d: 1.00;
+
+}
+
+#FeaturedCapsules:descendantfocus .StoreImage
+{
+	pre-transform-scale2d: 1.0;
+}
+
+#FeaturedCapsules:descendantfocus .StoreImage:hover
+{
+	pre-transform-scale2d: 1.03;
+	transition-delay: 0.0s;
+	transition-duration: 0.4s;
+}
+
+#FeaturedCapsules:descendantfocus .StoreImage:descendantfocus:hover
+{
+	pre-transform-scale2d: 1.03;
+	transition-delay: 0.0s;
+	transition-duration: 0.4s;
+}
+
+.ActualStoreImage
+{
+	width: 616px;
+	margin: 15px;
+	height: 353px;
+	border-color: transparent;
+	box-shadow: fill #00000033 -3px -3px 6px 6px;
+	wash-color: store_dark_wash;
+
+	transition-property: wash-color, opacity-mask, box-shadow;
+	transition-delay: 0.0s;
+	transition-duration: 0.2s;
+
+}
+
+#FeaturedCapsules:descendantfocus .ActualStoreImage
+{
+	border-color: #fdfefe00;
+	desaturation: 0.2;
+	transition-property: box-shadow, desaturation, wash-color;
+	transition-duration: 0.2s;
+
+	animation-duration: 1.7s;
+	animation-delay: 0.2s;
+	animation-timing-function: bigpicture-ease-in-out;
+	animation-iteration-count: infinite;
+	animation-direction: normal;
+	wash-color: #00000039;
+	box-shadow: fill #00000044 -3px -3px 6px 6px;
+}
+
+#FeaturedCapsules:descendantfocus .ActualStoreImage:hover
+{
+	
+	wash-color: #00000000;
+}
+
+
+#FeaturedCapsules:descendantfocus .ActualStoreImage:focus
+{
+
+	desaturation: 0.0;
+
+	animation-name: main-button-glow-movement;
+	animation-duration: 1.7s;
+	animation-delay: 0.2s;
+	animation-timing-function: bigpicture-ease-in-out;
+	animation-iteration-count: infinite;
+	animation-direction: normal;
+	wash-color: #00000000;
+
+	background-image: url( "file://{images}/store/shadow.png" );
+	background-size: 400px 125px;
+	background-repeat: no-repeat;
+}
+
+#PlatformSupport
+{
+	margin: 15px;
+	padding-left: 30px;
+	padding-right: 5px;
+	padding-top: 30px;
+	width: fit-children;
+	height: 80px;
+
+	flow-children: right;
+	vertical-align: bottom;
+	horizontal-align: right;
+	opacity: 0.0;
+
+	transition-property: opacity;
+	transition-duration: 0.3s;
+	transition-timing-function: bigpicture-ease-in-out;
+	transition-delay: 0s;
+
+	background-image: url( "file://{images}/store/shadow.png" );
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+
+#FeaturedCapsules:descendantfocus .StoreImage.Focused #PlatformSupport
+{
+	opacity: 1.0;
+}
+
+#FeaturedCapsules .StoreImage.Focused #PlatformSupport
+{
+	opacity: 0.0;
+}
+
+
+#ImageAndIcons
+{
+	opacity: 1.0;
+}
+
+
+.CapsuleControllerSupport, .MacSupport, .WindowsSupport, .SteamOSSupport, .StreamingVideoSupport
+{
+	width: 50px;
+	height: 50px;
+	horizontal-align: left;
+	vertical-align: center;
+
+	visibility: collapse;
+
+	transition-property: opacity;
+	transition-duration: 0.4s;
+	transition-timing-function: bigpicture-ease-in-out;
+}
+
+StorePackageAppOverview.Focused:descendantfocus .CapsuleControllerSupport
+{
+	visibility: visible;
+}
+
+//.CapsuleControllerSupportContainer:descendantfocus .CapsuleControllerSupport .MacSupport .WindowsSupport .SteamOSSupport
+//{
+//	visibility: visible;
+//}
+
+
+.CapsuleControllerSupportContainer.MacAvailable .MacSupport
+{
+	visibility: visible;
+	background-image: url( "file://{images}/store/icon_mac_storefront.png" );
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+StoreBrowseByCategoryItem.CapsuleControllerSupportContainer.MacAvailable .MacSupport
+{
+	margin: 0px;
+}
+
+.CapsuleControllerSupportContainer.SteamOSAvailable .SteamOSSupport
+{
+	visibility: visible;
+	background-image: url( "file://{images}/store/icon_steamos_storefront.png" );
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+StoreBrowseByCategoryItem.CapsuleControllerSupportContainer.SteamOSAvailable .SteamOSSupport
+{
+	margin: 0px;
+}
+
+.CapsuleControllerSupportContainer.WindowsAvailable .WindowsSupport
+{
+	visibility: visible;
+	background-image: url( "file://{images}/store/icon_windows_storefront.png" );
+	background-size: contain;
+	background-repeat: no-repeat;
+	horizontal-align: right;
+	vertical-align: center;
+}
+
+StoreBrowseByCategoryItem.CapsuleControllerSupportContainer.WindowsAvailable .WindowsSupport
+{
+	margin: 0px;
+}
+
+
+.CapsuleControllerSupportContainer.StreamingVideoAvailable .StreamingVideoSupport
+{
+	visibility: visible;
+	background-image: url( "file://{images}/store/icon_streamingvideo_storefront.png" );
+	background-size: contain;
+	background-repeat: no-repeat;
+	horizontal-align: right;
+	vertical-align: center;
+}
+
+StoreBrowseByCategoryItem.CapsuleControllerSupportContainer.StreamingVideoAvailable .StreamingVideoSupport
+{
+	margin: 0px;
+}
+
+.CapsuleControllerSupportContainer .CapsuleControllerSupport
+{
+	width: 50px;
+	height: 50px;
+	margin-left: 8px;
+	margin-right: 4px;
+	
+	vertical-align: center;
+	visibility: visible;
+	background-image: url( "file://{images}/store/icon_keyboard_storefront.png" );
+	//background-size: 50px 50px;
+	background-repeat: no-repeat;
+}
+
+.DetailsIconRow .CapsuleControllerSupport
+{
+	margin-top: -3px;
+}
+
+.CapsuleControllerSupportContainer.FullController .CapsuleControllerSupport
+{
+	width: 45px;
+	height: 45px;
+
+
+	vertical-align: center;
+	visibility: visible;
+	background-image: url( "file://{images}/store/icon_fullcontroller_storefront.png" );
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+.SteamPad .CapsuleControllerSupportContainer.FullController .CapsuleControllerSupport
+{
+	width: 45px;
+	height: 45px;
+
+	margin-left: 3px;
+	margin-top: 2px;
+	vertical-align: center;
+	visibility: visible;
+	background-image: url( "file://{images}/store/icon_steamcontroller_storefront.png" );
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+StoreBrowseByCategoryItem.CapsuleControllerSupportContainer.FullController .CapsuleControllerSupport,
+.SteamPad StoreBrowseByCategoryItem.CapsuleControllerSupportContainer.FullController .CapsuleControllerSupport,
+{
+	margin: 0px;
+	width: 45px;
+	height: 45px;
+	margin-top: -2px;
+	margin-left: 4px;
+}
+
+
+
+//.CapsuleControllerSupportContainer.PartialController .CapsuleControllerSupport
+//{
+//	width: 50px;
+//	height: 50px;
+
+//	visibility: collapse;
+
+//	background-image: url( "file://{images}/store/icon_partialcontroller_storefront.png" );
+//	background-size: contain;
+//	background-repeat: no-repeat;
+//}
+
+.SteamPad .CapsuleControllerSupportContainer.PartialController .CapsuleControllerSupport
+{
+	width: 45px;
+	height: 45px;
+
+	visibility: visible;
+
+	background-image: url( "file://{images}/store/icon_legacycontroller_storefront.png" );
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+//StoreBrowseByCategoryItem.CapsuleControllerSupportContainer.PartialController .CapsuleControllerSupport
+//{
+//	visibility: collapse;
+//}
+
+.SteamPad StoreBrowseByCategoryItem.CapsuleControllerSupportContainer.PartialController .CapsuleControllerSupport
+{
+	visibility: visible;
+	margin: 0px;
+	width: 45px;
+	margin-top: -2px;
+	margin-left: 2px;
+	height: 45px;
+}
+
+
+.SteamPad .CapsuleControllerSupportContainer.PartialController:descendantfocus .CapsuleControllerSupport, 
+.SteamPad .CapsuleControllerSupportContainer.FullController:descendantfocus .CapsuleControllerSupport,
+{
+	visibility: visible;
+}
+
+.SteamPad .CapsuleControllerSupportContainer .CapsuleControllerSupport
+{
+	width: 45px;
+	height: 45px;
+	visibility: visible;
+	margin-left: 2px;
+	margin-top: -2px;
+
+	background-image: url( "file://{images}/store/icon_legacycontroller_storefront.png" );
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+#FeaturedCapsules #StoreImageDiscount
+{
+	visibility: collapse;
+	background-color: gradient( linear, 0% 0%, 0% 100%, from( #88c03d ), to( #4d6e23 ) );
+	color: white;
+	box-shadow: #00000099 -3px -3px 6px 6px;
+
+	padding: 4px 0px 4px 0px;
+	width: 318px;
+	font-family: platformfont;
+	font-size: 30px;
+	font-weight: light;
+	text-align: center;
+
+	transform-origin: 0% 0% parent-relative;
+	transform: rotatez( -45deg ) translatex( -75px ) translatey( 145px );
+
+	opacity: 0.0;
+
+	transition-property: opacity;
+	transition-duration: 0.4s;
+	transition-timing-function: bigpicture-ease-in-out;
+}
+
+#FeaturedCapsules .StoreImage:descendantfocus #StoreImageDiscount
+{
+	opacity: 1.0;
+}
+
+#FrontPage:descendantfocus #FeaturedCapsules .ActualStoreImage
+{
+	opacity-mask: url( "file://{images}/store/store_browse_bg.png" ) 1.0;
+	blur: none;
+	desaturation: 0.0;
+}
+
+#FrontPage:descendantfocus #FeaturedCapsules:descendantfocus .ActualStoreImage
+{
+	opacity-mask: url( "file://{images}/store/store_browse_bg.png" ) 0.0;
+	blur: none;
+	desaturation: 0.0;
+}
+
+
+.FilterVisible #FilteredStoreWrapper:descendantfocus #FeaturedCapsules .ActualStoreImage
+{
+	opacity-mask: url( "file://{images}/store/store_browse_bg.png" ) 0.0;
+	blur: gaussian (0.7);
+	desaturation: 0.5;
+}
+
+
+.FilterVisible #FilteredStoreWrapper:descendantfocus #FeaturedCapsules:descendantfocus .ActualStoreImage
+{
+	opacity-mask: url( "file://{images}/store/store_browse_bg.png" ) 0.0;
+	blur: none;
+	desaturation: 0.0;
+}
+
+StorePanel:descendantfocus .StoreImage,
+.WebBrowserActive .StoreImage,
+{
+	pre-transform-scale2d: 1.0;
+	margin: -4px -8px;
+	padding: 4px 8px;	
+	transform: translateY( 0px );
+
+	box-shadow: fill box_shadow_off_color 20px 20px 40px -44px;
+	desaturation: 0.0;
+	transform: none;
+	opacity: 1.0;
+	wash-color: transparent;
+
+	border-width: 5px;
+	border-style: solid;
+	border-color: transparent;
+	blur: none;
+}
+
+
+#FeaturedPlatform
+{
+	width: 100%;
+	height: 100%;
+
+	// should be behind FeaturedCapsules
+	z-index: 0;
+
+	transition-property: opacity;
+	transition-duration: 0.4s;
+	transition-timing-function: bigpicture-ease-in-out;
+
+	animation-name: store-perspective;
+	animation-duration: 20s;
+	animation-timing-function: bigpicture-ease-in-out;
+	animation-iteration-count: infinite;
+	animation-direction: normal;
+}
+
+StorePanel:descendantfocus #FeaturedPlatform
+{
+	opacity: 0.0;
+}
+
+
+.FrontPageFeaturedApp
+{
+	width: 382px;
+	height: 219px;
+	margin: 8px;
+	vertical-align: center;
+
+	border-width: 5px;
+	border-style: solid;
+	border-color: transparent;
+
+	transition-property: width, height, position, transform !immediate;
+	transition-duration: 0.5s, 0.5s, 0.5s;
+}
+
+#Featured:descendantfocus .FrontPageFeaturedApp
+{
+	width: 492px; 
+	height: 282px;
+}
+
+#Featured:descendantfocus .FrontPageFeaturedApp:focus
+{
+	border-color: #ff0000ff;
+}
+
+// Price related
+.FeaturedImageInfo
+{
+	opacity: 0.0;
+	flow-children: right;
+	width: 621px;
+	height: 68px;
+	margin: 0px 10px;
+	margin-right: 0px;
+
+	transition-property: opacity, transform;
+	transition-duration: 0.4s;
+	transition-timing-function: bigpicture-ease-in-out;
+	transition-delay: 0s;
+}
+
+.FeaturedImageInfo #FeaturedPrice
+{
+	padding-top: 3px;
+}
+
+.StoreImage:descendantfocus .FeaturedImageInfo
+{
+	opacity: 1.0;
+}
+
+#FeaturedImageHeadline
+{
+	font-size: 28px;
+	color: applabel;
+	font-weight: bold;
+	width: fill-parent-flow( 1.0 );
+	white-space: nowrap;
+	margin-right: 8px;
+	text-overflow: clip;
+}
+
+#StorePriceArea
+{
+	flow-children: right;
+	horizontal-align: right;
+}
+
+
+//
+// Front page categories
+//
+#Categories
+{
+	margin-top: 0px;
+	flow-children: right;
+	position: 0px 500px 0px;
+	pre-transform-scale2d: 1.0;
+	background-image: url( "file://{images}/carousel_bg.png");
+	background-size: 1920px 400px;
+	background-repeat: no-repeat;
+	background-position: center;
+
+	opacity: 1.0;
+
+	transition-property: transform, pre-transform-scale2d, opacity;
+	transition-duration: 0.3s;
+	transition-timing-function: bigpicture-ease-in-out;
+	transform: translateY( 50% ) translateZ( -100px );
+}
+
+.FrontPageLoaded #Categories
+{
+	opacity: 0.0;
+}
+
+#FrontPage:descendantfocus #Categories
+{
+	transform: translateY( 0px );
+	opacity: 1.0;
+}
+
+#FrontPage:descendantfocus #Categories StoreFeaturedCategory
+{
+	transition-duration: 0.3s;
+	transition-timing-function: ease-out;
+	transition-property: transform, opacity-mask, box-shadow, position, pre-transform-scale2d;
+}
+
+#FrontPage:descendantfocus #Categories 
+{
+	transition-duration: 0.3s;
+	transition-timing-function: ease-out;
+	transition-property: transform, opacity-mask, box-shadow, position, pre-transform-scale2d;
+
+	opacity-mask: url( "file://{images}/lower_row_mask.tga" ) 0.65;
+}
+
+#FrontPage:descendantfocus #Categories:hover 
+{
+	opacity-mask: url( "file://{images}/lower_row_mask.tga" ) 0.3;	
+}
+
+#FrontPage:descendantfocus  #Categories:descendantfocus 
+{
+	opacity: 1.0;
+	opacity-mask: url( "file://{images}/lower_row_mask.tga" ) 0.0;
+}
+
+#FrontPage:descendantfocus  #Categories:descendantfocus StoreFeaturedCategory.PreviouslyRight
+{
+	opacity-mask: url( "file://{images}/focus_shadow_right2.png" ) 0.0;
+}
+
+#FrontPage:descendantfocus  #Categories:descendantfocus StoreFeaturedCategory.PreviouslyLeft
+{
+	opacity-mask: url( "file://{images}/focus_shadow_left2.png" ) 0.0;
+}
+
+#FrontPage:descendantfocus  #Categories:descendantfocus StoreFeaturedCategory.RightOfFocus1
+{
+	opacity-mask: url( "file://{images}/focus_shadow_right2.png" ) 1.0;
+	transition-property: transform, box-shadow, position, pre-transform-scale2d;
+}
+
+#FrontPage:descendantfocus  #Categories:descendantfocus StoreFeaturedCategory.LeftOfFocus1
+{
+	opacity-mask: url( "file://{images}/focus_shadow_left2.png" ) 1.0;
+}
+
+#FrontPage #Categories:descendantfocus 
+{
+		pre-transform-scale2d: 1.0;
+}
+
+#FrontPage:descendantfocus #Categories:descendantfocus
+{
+	transform: translatey(-140px);
+	opacity-mask: url( "file://{images}/lower_row_mask.tga" ) 0.0;
+}
+
+#FrontPage:descendantfocus #Categories:hover
+{
+		pre-transform-scale2d: 1.02;
+		transform: translatey(0px);
+}
+
+#FrontPage:descendantfocus #Categories:descendantfocus:hover
+{
+	pre-transform-scale2d: 1.00;
+	transform: translatey(-140px);
+}
+
+StoreFeaturedCategory
+{
+	width: 460px;
+	height: FeaturedCategoryFocusHeight;
+
+	vertical-align: center;
+	transform: translatez(-100px);
+	pre-transform-scale2d: FeaturedCategoryScale, FeaturedCategoryScale;
+
+	transition-property: position, box-shadow, transform, pre-transform-scale2d;
+	transition-duration: 0.3s;
+}
+
+#Categories:descendantfocus StoreFeaturedCategory
+{
+	pre-transform-scale2d: 1.0, 1.0;
+}
+
+StoreFeaturedCategory:focus
+{
+	transform: translatez(0px);
+	box-shadow: box_shadow_on_color -4.5px -4.5px 18px 9px;
+
+	animation-name: main-button-glow-movement-no-fill;
+	animation-duration: 1.7s;
+	animation-delay: 0.5s;
+	animation-timing-function: bigpicture-ease-in-out;
+	animation-iteration-count: infinite;
+	animation-direction: normal;
+}
+
+#Categories:descendantfocus StoreFeaturedCategory:hover
+{
+	transform: translatez(-90px);
+	box-shadow: box_shadow_off_color -4.5px -4.5px 18px 9px;
+}
+
+#Categories:descendantfocus StoreFeaturedCategory:hover Image
+{
+
+	desaturation: 0.2;
+	wash-color: none;
+	}
+
+StoreFeaturedCategory:descendantfocus:hover
+{
+	border-color: #fdfefef0;
+	transform: translatez(25px);
+	box-shadow: box_shadow_on_color -4.5px -4.5px 18px 9px;
+}
+
+#Categories:descendantfocus StoreFeaturedCategory:focus:hover
+{
+	border-color: #fdfefef0;
+	transform: translatez(25px);
+	box-shadow: box_shadow_on_color -4.5px -4.5px 18px 9px;
+}
+
+
+StoreFeaturedCategory #Images
+{
+	width: 100%;
+	height: 100%;
+}
+
+StoreFeaturedCategory Label
+{
+	color: applabel;
+
+	width: 100%;
+	font-size: FeaturedCapsuleTextHeight;
+	text-transform: uppercase;
+	font-weight: bold;
+	padding-bottom: FeaturedCapsuleTextPadding;
+
+	horizontal-align: center;
+	vertical-align: bottom;
+	text-align: center;
+
+	transition-property: transform, box-shadow, pre-transform-scale2d;
+	transition-duration: 0.3s;
+}
+
+StoreFeaturedCategory:descendantfocus Label
+{
+	color: white;
+}
+
+StoreFeaturedCategory #Gradient
+{
+	width: 100%;
+	vertical-align: bottom;
+	height: 170px;
+	background-color: gradient( linear, 0% 0%, 0% 100%, from( #00000000 ), color-stop(0.70, #00000099 ), to( #000000dd  ) );
+
+}
+
+StoreFeaturedCategory:descendantfocus #Gradient
+{
+
+}
+
+StoreFeaturedCategory Image
+{
+	width: 100%;
+	height: 100%;
+	desaturation: 0.3;
+	opacity: 0.65;
+	wash-color: store_dark_wash;
+
+	transition-property: wash-color, box-shadow, position, desaturation, pre-transform-scale2d;
+	transition-duration: 0.3s;
+}
+
+#Categories:descendantfocus StoreFeaturedCategory Image
+ {
+	opacity: 1.0;
+	wash-color: store_genre_wash;
+ }
+
+#Categories:descendantfocus StoreFeaturedCategory:descendantfocus Image
+{
+	desaturation: 0.0;
+	opacity: 1.0;
+	wash-color: #00000000;
+}
+
+
+//
+// Stack styles
+//
+.Stackable
+{
+	width: 100%;
+	height: 948px;
+	vertical-align: bottom;
+
+	// transitions
+	transform: translate3d( 0px, 1280px, 1000px );
+	opacity: 0.0;
+	desaturation: 1.0;
+
+	transition-property: transform, opacity, desaturation;
+	transition-duration: 0.3s;
+	transition-timing-function: bigpicture-ease-in-out;
+	transition-delay: 0s;
+}
+
+.Stackable.InStoreStack
+{
+	transform: translate3d( 0px, -60px, 0px );
+	opacity: 1.0;
+	desaturation: 0.0;
+}
+
+.Stackable:descendantfocus,
+.WebBrowserActive .Stackable
+{
+	transform: translate3d( 0px, 0px, 0px );
+	opacity: 1.0;
+	desaturation: 0.0;
+	box-shadow: #000000aa -2px -2px 4px 4px;
+}
+
+StoreStackable
+{
+	background-color: black;
+}
+
+StoreStackable #Background
+{
+	width: 100%;
+	height: 100%;
+	color: none;
+	background-image: url( "file://{images}/store/store_app_bg.png" );
+	opacity-mask: url( "file://{images}/bg_gradient_mask.tga" ) 1.0;
+	opacity: 1.0;
+}
+
+StoreStackable #Loading
+{
+	flow-children: down;
+}
+
+StoreStackable #Loading #LoadingStatus
+{
+	margin-top: 6px;
+	color: applabel;
+}
+
+StoreStackable.Error #Loading #LoadingStatus
+{
+	margin-top: 0px;
+}
+
+StoreStackable.Loaded #Loaded
+{
+	opacity: 1.0;
+}
+
+
+//
+// StorePrice styles
+//
+StorePrice
+{
+	flow-children: right;
+	horizontal-align: left;
+	font-size: 24px;
+	padding-bottom: 2px;
+	padding-left: 2px;
+	margin-bottom: 2px;
+	height: 32px;
+}
+
+#PurchaseBtn StorePrice,
+#PurchaseOptionsBtn StorePrice
+{
+	horizontal-align: right;
+	padding-top: 2px;
+	padding-bottom: 0px;
+}
+
+#PurchaseOptionsBtn StorePrice
+{
+	padding-bottom: 0px;
+	padding-top: 2px;
+}
+
+Button:focus StorePrice
+{
+		transform: translateX(0px);
+}
+
+StorePrice #DiscountPercent
+{
+	background-color: gradient( linear, 0% 0%, 0% 100%, from( #537e3c ), to( #689b46 ) );
+	color: white;
+	padding: 1px 6px;
+	margin-right: 4px;
+}
+
+StorePrice #BasePrice
+{
+	color: #52636dFF;
+	text-decoration: line-through;
+	width: 0px;
+	margin-right: 4px;
+	margin-top: 7px;
+	font-size: 24px;
+	visibility: collapse;
+}
+
+#PurchaseBtn StorePrice #BasePrice,
+#PurchaseOptionsBtn StorePrice #BasePrice,
+#PackagePrice #BasePrice
+{
+	visibility: collapse;
+	width: 0px;
+
+}
+
+CartLineItem #BasePrice,
+{
+	margin-top: 0px;
+	width: fit-children;
+}
+
+StoreBrowseByCategoryItem StorePrice #BasePrice,
+StoreAppPurchaseSection StorePrice #BasePrice,
+StorePackage StorePrice #BasePrice
+{
+	margin-top: 4px;
+	font-size: 21px;
+	width: fit-children;
+}
+
+CartLineItem:descendantfocus #FinalPrice
+{
+	color: applabelselectedsolid;
+}
+
+StorePrice #FinalPrice
+{
+	color: #c6c6c6ff;
+}
+
+Button:focus StorePrice #FinalPrice
+{
+	color: applabelselectedsolid;
+}
+
+
+//
+// Countdown Timer
+//
+CountdownTimer
+{
+	background-color: #117c9f;
+	color: #a3b8c9;
+	font-size: 24px;
+	width: 120px;
+	padding-left: 8px;
+}
+
+CountdownTimer.ExtendedHours
+{
+	width: 136px;
+}
+
+#FeaturedCapsules CountdownTimer
+{
+	margin-left: 6px;
+	margin-top: 3px;
+}
+
+
+//
+// Slideshow
+//
+StoreSlideshow
+{
+	width: 1920px;
+	height: 1080px;
+}
+
+StoreSlideshow #Contents
+{
+	width: 100%;
+	height: 100%;
+}
+
+.SlideshowPanel
+{
+	width: 100%;
+	height: 100%;
+	transform: translatex( 0px );
+
+	transition-property: transform;
+	transition-duration: 0.4s;
+	transition-timing-function: bigpicture-ease-in-out;
+}
+
+.SlideshowPanel.SlideShowLeftOfFocus
+{
+	transform: translatex( -1920px );
+}
+
+.SlideshowPanel.SlideShowRightOfFocus
+{
+	transform: translatex( 1920px );
+}
+
+StoreSlideshowImage Image
+{
+	width: 100%;
+	height: 100%;
+}
+
+StoreSlideshowImage #PlaybackTitleAndControls
+{
+	z-index: 1000;
+}
+
+StoreSlideshow:hover .RightMouseScrollRegion
+{
+	position: 0px 0px 0px;
+	align: right center;
+	background-image: url( "file://{images}/mouse/arrowRdefault.tga" );
+	opacity: 1.0;
+}
+
+StoreSlideshow:hover .RightMouseScrollRegion:hover
+{
+	background-color: mouse_active_bg_right;
+	opacity: 1.0;
+}
+
+StoreSlideshow:hover .LeftMouseScrollRegion
+{
+	position: 0px 0px 0px;
+	align: left center;
+	background-image: url( "file://{images}/mouse/arrowLdefault.tga" );
+	opacity: 1.0;
+}
+
+StoreSlideshow:hover .LeftMouseScrollRegion:hover
+{
+	background-color: mouse_active_bg_left;
+	opacity: 1.0;
+}
+
+StoreSlideshow:hover .LeftMouseScrollRegion.Disabled
+{
+	opacity: 0.0;
+}
+
+StoreSlideshow:hover .RightMouseScrollRegion.Disabled
+{
+	opacity: 0.0;
+}
+
+
+
+//
+// Genres
+//
+#BGOverlay
+{
+	width: 100%;
+	height: 100%;
+	color: none;
+	background-image: url( "file://{images}/store/store_app_bg.png" );
+	opacity-mask: url( "file://{images}/bg_gradient_mask.tga" ) 1.0;
+	opacity: 1.0;
+
+}
+
+.TitleRow
+{
+	padding: 10px 104px;
+	padding-top: 56px;
+	width: 100%;
+	flow-children: right;
+}
+
+#GenreTitle
+{
+	font-size: 56px;
+	line-height: 70px;
+	margin-top: -32px;
+	white-space: nowrap;
+	color: carousel_title;
+	text-transform: uppercase;
+	font-weight: light;
+}
+
+#GenreGrid
+{
+	width: 100%;
+	height: 700px;
+	margin-top: 115px;
+	padding: 10px 225px 10px 105px;
+}
+
+
+//
+// StoreGenrePreview
+//
+StoreGenrePreview
+{
+	width: 450px;
+	height: 251px;
+	margin: 10px;
+	box-shadow: fill #00000066 0px 0px 4px 0px;
+	pre-transform-scale2d: 0.90;
+
+	transition-property: pre-transform-scale2d, box-shadow, desaturation, position, background-color, wash-color;
+	transition-duration: 0.4s;
+	transition-timing-function: bigpicture-ease-in-out;
+}
+
+StoreGenrePreview:hover
+{
+	pre-transform-scale2d: 0.93;
+	z-index: 1;
+	box-shadow: fill box_shadow_on_color -4.5px -4.5px 6px 9px;
+}
+
+
+StoreGenrePreview:focus
+{
+	pre-transform-scale2d: 1.1;
+	z-index: 100;
+
+	animation-name: main-button-glow-movement;
+	animation-duration: 1.7s;
+	animation-delay: 0.2s;
+	animation-timing-function: bigpicture-ease-in-out;
+	animation-iteration-count: infinite;
+	animation-direction: normal;
+}
+
+StoreGenrePreview:focus:hover
+{
+	pre-transform-scale2d: 1.13;
+	z-index: 100;
+
+	animation-name: main-button-glow-movement;
+	animation-duration: 1.7s;
+	animation-delay: 0.2s;
+	animation-timing-function: bigpicture-ease-in-out;
+	animation-iteration-count: infinite;
+	animation-direction: normal;
+}
+
+StoreGenrePreview #Screenshots
+{
+	width: 100%;
+	height: 100%;
+}
+
+StoreGenrePreview #Gradient
+{
+	width: 100%;
+	height: 100%;
+	background-color: gradient( linear, 0% 0%, 0% 100%, from( #00000000 ), color-stop(0.70, #00000044 ), to( #00000099  ) );
+}
+
+StoreGenrePreview:focus #Gradient
+{
+	width: 100%;
+	height: 100%;
+	background-color: store_colorful_focus;
+}
+
+StoreGenrePreview #GenreName
+{
+	width: 100%;
+	height: 100%;
+	vertical-align: center;
+	padding-top: 85px;
+	padding-bottom: 10px;
+
+	color: applabelsolid;
+	font-size: 36px;
+	line-height: 50px;
+	font-family: platformfont;
+	font-weight: normal;
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-family: platformfont;
+
+	pre-transform-scale2d: 0.9;
+	transform: translatey( 0px );
+
+	transition-property: color, pre-transform-scale2d, transform;
+	transition-duration: 0.4s;
+	transition-timing-function: bigpicture-ease-in-out;
+}
+
+StoreGenrePreview:focus #GenreName
+{
+
+	pre-transform-scale2d: 1.0;
+	transform: translatey( 0px );
+}
+
+StoreGenrePreview:hover #GenreName
+{
+	transform: translatey( 0px );
+	pre-transform-scale2d: 0.83;
+
+}
+
+StoreGenrePreview:focus:hover #GenreName
+{
+	transform: translatey( 0px );
+	pre-transform-scale2d: 1.0;
+	pre-transform-scale2d: 1.0;
+}
+
+StoreGenrePreview Image
+{
+	desaturation: 0.3;
+	wash-color: store_genre_wash;
+	padding: 1px;
+	opacity: 0.85;
+
+	transition-property: desaturation, opacity, position;
+	transition-duration: 0.3s;
+	transition-timing-function: bigpicture-ease-in-out;
+}
+
+StoreGenrePreview:focus Image
+{
+	desaturation: 0.0;
+	wash-color: store_genre_wash_focus;
+	opacity: 1.0;
+}
+
+StoreGenrePreview:hover Image
+{
+	desaturation: 0.8;
+	wash-color: #0e6a8f55;
+	opacity: 1.0;
+}
+
+StoreGenrePreview:focus:hover Image
+{
+	desaturation: 0.0;
+	wash-color: #429aae44;
+	opacity: 1.0;
+}
+
+StoreGenrePreview Image.Focused
+{
+	position: 0px 0px 0px;
+	opacity: 1.0;
+}
+
+
+//
+// StoreTrailerSlideshow
+//
+StoreTrailerSlideshow.Stackable
+{
+	width: 100%;
+	height: 100%;
+}
+
+#Loading
+{
+	width: 100%;
+	height: 100%;
+	background-image: url( "file://{images}/store/store_app_bg.png" );
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+
+	opacity: 1.0;
+
+	transition-property: opacity;
+	transition-duration: 0.4s;
+	transition-timing-function: linear;
+}
+
+#Loading #LoadingStatus
+{
+	align: center top;
+	margin-top: 300px;
+	width: 100%;
+	text-align: center;
+
+	font-size: 32px;
+}
+
+#Loaded
+{
+	width: 100%;
+	height: 100%;
+
+	opacity: 0.0;
+
+	transition-property: opacity;
+	transition-duration: 0.4s;
+	transition-timing-function: linear;
+}
+
+StoreTrailerSlideshow.Loaded #Loaded
+{
+	opacity: 1.0;
+	transition-duration: 0.0s;
+}
+
+StoreTrailerSlideshow.Loaded #Loading
+{
+	opacity: 0.0;
+	transition-duration: 0.0s;
+}
+
+.DiscountPanel
+{
+	transform: translateX( 15px ) translateY( 15px );
+	height: 145px;
+	width: 305px;
+}
+
+#FrontPage:descendantfocus #FeaturedCapsules:descendantfocus .StoreImage.PreviouslyRight
+{
+	opacity-mask: url( "file://{images}/focus_shadow_right2.png" ) 0.0;
+}
+
+#FrontPage:descendantfocus #FeaturedCapsules:descendantfocus .StoreImage.PreviouslyLeft
+{
+	opacity-mask: url( "file://{images}/focus_shadow_left2.png" ) 0.0;
+}
+
+#FrontPage:descendantfocus #FeaturedCapsules:descendantfocus .StoreImage.RightOfFocus1
+{
+	opacity-mask: url( "file://{images}/focus_shadow_right2.png" ) 1.0;
+}
+
+#FrontPage:descendantfocus #FeaturedCapsules:descendantfocus .StoreImage.LeftOfFocus1
+{
+	opacity-mask: url( "file://{images}/focus_shadow_left2.png" ) 1.0;
+}

@@ -1,0 +1,11 @@
+drwxr-xr-x root/root         0 2014-07-01 12:26 ./
+drwxr-xr-x root/root         0 2014-07-01 12:26 ./usr/
+drwxr-xr-x root/root         0 2014-07-01 12:26 ./usr/lib/
+drwxr-xr-x root/root         0 2014-07-01 12:26 ./usr/lib/i386-linux-gnu/
+-rw-r--r-- root/root     71220 2014-07-01 12:26 ./usr/lib/i386-linux-gnu/libtdb.so.1.2.9
+drwxr-xr-x root/root         0 2014-07-01 12:26 ./usr/share/
+drwxr-xr-x root/root         0 2014-07-01 12:26 ./usr/share/doc/
+drwxr-xr-x root/root         0 2014-07-01 12:26 ./usr/share/doc/libtdb1/
+-rw-r--r-- root/root      4848 2011-09-27 07:51 ./usr/share/doc/libtdb1/copyright
+-rw-r--r-- root/root      3585 2014-07-01 12:25 ./usr/share/doc/libtdb1/changelog.Debian.i386.gz
+lrwxrwxrwx root/root         0 2014-07-01 12:26 ./usr/lib/i386-linux-gnu/libtdb.so.1 -> libtdb.so.1.2.9

@@ -1,0 +1,15 @@
+drwxr-xr-x root/root         0 2014-07-01 12:27 ./
+drwxr-xr-x root/root         0 2014-07-01 12:27 ./usr/
+drwxr-xr-x root/root         0 2014-07-01 12:27 ./usr/lib/
+drwxr-xr-x root/root         0 2014-07-01 12:27 ./usr/lib/i386-linux-gnu/
+-rw-r--r-- root/root   1074836 2014-07-01 12:27 ./usr/lib/i386-linux-gnu/libSDL2-2.0.so.0.2.1
+drwxr-xr-x root/root         0 2014-07-01 12:27 ./usr/share/
+drwxr-xr-x root/root         0 2014-07-01 12:27 ./usr/share/doc/
+drwxr-xr-x root/root         0 2014-07-01 12:27 ./usr/share/doc/libsdl2/
+-rw-r--r-- root/root      1920 2014-03-15 19:32 ./usr/share/doc/libsdl2/CREDITS.txt
+-rw-r--r-- root/root       432 2014-03-15 19:32 ./usr/share/doc/libsdl2/README-SDL.txt
+-rw-r--r-- root/root       503 2014-03-15 19:32 ./usr/share/doc/libsdl2/BUGS.txt
+-rw-r--r-- root/root      1521 2014-03-15 19:32 ./usr/share/doc/libsdl2/README.txt
+-rw-r--r-- root/root     17287 2014-03-15 19:32 ./usr/share/doc/libsdl2/copyright
+-rw-r--r-- root/root      1492 2014-07-01 12:25 ./usr/share/doc/libsdl2/changelog.i386.gz
+lrwxrwxrwx root/root         0 2014-07-01 12:27 ./usr/lib/i386-linux-gnu/libSDL2-2.0.so.0 -> libSDL2-2.0.so.0.2.1

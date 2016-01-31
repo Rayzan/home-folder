@@ -1,0 +1,12 @@
+drwxr-xr-x root/root         0 2014-07-01 12:21 ./
+drwxr-xr-x root/root         0 2014-07-01 12:21 ./usr/
+drwxr-xr-x root/root         0 2014-07-01 12:21 ./usr/lib/
+drwxr-xr-x root/root         0 2014-07-01 12:21 ./usr/lib/i386-linux-gnu/
+-rw-r--r-- root/root     26008 2014-07-01 12:21 ./usr/lib/i386-linux-gnu/libogg.so.0.7.1
+drwxr-xr-x root/root         0 2014-07-01 12:21 ./usr/share/
+drwxr-xr-x root/root         0 2014-07-01 12:21 ./usr/share/doc/
+drwxr-xr-x root/root         0 2014-07-01 12:21 ./usr/share/doc/libogg0/
+-rw-r--r-- root/root      1115 2011-05-07 11:30 ./usr/share/doc/libogg0/changelog.gz
+-rw-r--r-- root/root      1681 2014-07-01 12:21 ./usr/share/doc/libogg0/copyright
+-rw-r--r-- root/root      2605 2014-07-01 12:21 ./usr/share/doc/libogg0/changelog.Debian.i386.gz
+lrwxrwxrwx root/root         0 2014-07-01 12:21 ./usr/lib/i386-linux-gnu/libogg.so.0 -> libogg.so.0.7.1

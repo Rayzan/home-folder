@@ -1,0 +1,15 @@
+drwxr-xr-x root/root         0 2014-10-16 09:20 ./
+drwxr-xr-x root/root         0 2014-10-16 09:20 ./usr/
+drwxr-xr-x root/root         0 2014-10-16 09:20 ./usr/lib/
+drwxr-xr-x root/root         0 2014-10-16 09:20 ./usr/lib/x86_64-linux-gnu/
+-rw-r--r-- root/root     18664 2014-10-16 09:20 ./usr/lib/x86_64-linux-gnu/libplc4.so
+-rw-r--r-- root/root    248880 2014-10-16 09:20 ./usr/lib/x86_64-linux-gnu/libnspr4.so
+-rw-r--r-- root/root     14504 2014-10-16 09:20 ./usr/lib/x86_64-linux-gnu/libplds4.so
+drwxr-xr-x root/root         0 2014-10-16 09:20 ./usr/share/
+drwxr-xr-x root/root         0 2014-10-16 09:20 ./usr/share/lintian/
+drwxr-xr-x root/root         0 2014-10-16 09:20 ./usr/share/lintian/overrides/
+-rw-r--r-- root/root       213 2014-10-16 09:19 ./usr/share/lintian/overrides/libnspr4
+drwxr-xr-x root/root         0 2014-10-16 09:20 ./usr/share/doc/
+drwxr-xr-x root/root         0 2014-10-16 09:20 ./usr/share/doc/libnspr4/
+-rw-r--r-- root/root     31746 2012-08-15 13:38 ./usr/share/doc/libnspr4/copyright
+-rw-r--r-- root/root      7163 2014-10-16 09:19 ./usr/share/doc/libnspr4/changelog.Debian.amd64.gz

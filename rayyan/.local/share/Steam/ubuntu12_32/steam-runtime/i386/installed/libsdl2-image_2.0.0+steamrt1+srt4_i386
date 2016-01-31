@@ -1,0 +1,15 @@
+drwxr-xr-x root/root         0 2014-07-01 12:37 ./
+drwxr-xr-x root/root         0 2014-07-01 12:37 ./usr/
+drwxr-xr-x root/root         0 2014-07-01 12:37 ./usr/lib/
+drwxr-xr-x root/root         0 2014-07-01 12:37 ./usr/lib/i386-linux-gnu/
+-rw-r--r-- root/root     87552 2014-07-01 12:37 ./usr/lib/i386-linux-gnu/libSDL2_image-2.0.so.0.0.0
+drwxr-xr-x root/root         0 2014-07-01 12:37 ./usr/share/
+drwxr-xr-x root/root         0 2014-07-01 12:37 ./usr/share/lintian/
+drwxr-xr-x root/root         0 2014-07-01 12:37 ./usr/share/lintian/overrides/
+-rw-r--r-- root/root        63 2013-08-12 10:44 ./usr/share/lintian/overrides/libsdl2-image
+drwxr-xr-x root/root         0 2014-07-01 12:37 ./usr/share/doc/
+drwxr-xr-x root/root         0 2014-07-01 12:37 ./usr/share/doc/libsdl2-image/
+-rw-r--r-- root/root      1500 2013-08-12 10:44 ./usr/share/doc/libsdl2-image/README.txt
+-rw-r--r-- root/root      1972 2013-08-12 10:44 ./usr/share/doc/libsdl2-image/copyright
+-rw-r--r-- root/root      3821 2014-07-01 12:36 ./usr/share/doc/libsdl2-image/changelog.i386.gz
+lrwxrwxrwx root/root         0 2014-07-01 12:37 ./usr/lib/i386-linux-gnu/libSDL2_image-2.0.so.0 -> libSDL2_image-2.0.so.0.0.0

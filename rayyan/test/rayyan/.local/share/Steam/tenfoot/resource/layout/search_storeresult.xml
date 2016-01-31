@@ -1,0 +1,22 @@
+<root>
+	<styles>
+		<include src="file://{resources}/styles/steamstyles.css" />
+		<include src="file://{resources}/styles/msgbox.css" />
+		<include src="file://{resources}/styles/search.css" />
+	</styles>
+	
+	<SearchStoreResult>
+		<Image id="StoreHeader" />
+		<Panel class="StoreRightColumn">
+			<Label id="StoreResultName" />
+			<Label id="StoreResultPrice" />
+		</Panel>
+		<Panel class="DetailsIconRow">
+			<Image id="PlatformWindows" src="file://{images}/store/icon_platform_win.png" />
+			<Image id="PlatformMac" src="file://{images}/store/icon_platform_mac.png" />
+			<Image id="PlatformLinux" src="file://{images}/store/icon_platform_linux.png" />
+			<Image id="PlatformStreamingVideo" src="file://{images}/store/icon_platform_streamingvideo.png" />
+			<Panel id="IconController" />
+		</Panel>
+	</SearchStoreResult>
+</root>

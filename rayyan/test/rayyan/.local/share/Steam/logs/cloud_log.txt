@@ -1,0 +1,51 @@
+
+
+[2016-01-31 05:15:03] [AppID 7] Init cache request complete
+[2016-01-31 05:15:03] Starting sync job
+[2016-01-31 05:15:03] [AppID 7] Starting sync (init)
+[2016-01-31 05:15:15] Starting sync job
+[2016-01-31 05:15:15] [AppID 7] Starting sync (download)
+[2016-01-31 05:15:16] [AppID 7] Need to download file serverbrowser_hist.vdf
+[2016-01-31 05:15:16] [AppID 7] Need to download file sharedconfig.vdf
+[2016-01-31 05:15:16] [AppID 7] HTTP download for file 'serverbrowser_hist.vdf' from host 'steamcloudams.blob.core.windows.net' beginning. . .
+[2016-01-31 05:15:17] [AppID 7] HTTP download for file 'serverbrowser_hist.vdf' from host 'steamcloudams.blob.core.windows.net' - Success.
+[2016-01-31 05:15:17] [AppID 7] Download OK for file serverbrowser_hist.vdf
+[2016-01-31 05:15:17] [AppID 7] HTTP download for file 'sharedconfig.vdf' from host 'steamcloudams.blob.core.windows.net' beginning. . .
+[2016-01-31 05:15:18] [AppID 7] HTTP download for file 'sharedconfig.vdf' from host 'steamcloudams.blob.core.windows.net' - Success.
+[2016-01-31 05:15:18] [AppID 7] Download OK for file sharedconfig.vdf
+[2016-01-31 05:15:18] [AppID 7] Download complete, result OK
+
+
+[2016-01-31 05:16:19] [AppID 7] Init cache request complete
+[2016-01-31 05:16:19] Starting sync job
+[2016-01-31 05:16:19] [AppID 7] Starting sync (init)
+[2016-01-31 05:16:20] [AppID 7] Init cache request complete
+[2016-01-31 05:16:20] Starting sync job
+[2016-01-31 05:16:20] [AppID 7] Starting sync (init)
+[2016-01-31 05:16:21] [AppID 760] Init cache request complete
+[2016-01-31 05:16:21] Starting sync job
+[2016-01-31 05:16:21] [AppID 760] Starting sync (eval)
+[2016-01-31 05:16:21] [AppID 7] Starting sync (download)
+[2016-01-31 05:16:21] [AppID 760] Eval complete
+[2016-01-31 05:16:21] [AppID 7] File is in sync serverbrowser_hist.vdf
+[2016-01-31 05:16:21] [AppID 7] File is in sync sharedconfig.vdf
+[2016-01-31 05:16:21] [AppID 7] Download complete in build list
+[2016-01-31 05:16:21] Starting sync job
+[2016-01-31 05:16:21] [AppID 7] Starting sync (eval)
+[2016-01-31 05:16:21] [AppID 7] File is in sync serverbrowser_hist.vdf
+[2016-01-31 05:16:21] [AppID 7] File is in sync sharedconfig.vdf
+[2016-01-31 05:16:21] [AppID 7] Eval complete
+[2016-01-31 05:18:21] [UGC][353898185986596586] Downloading UGC
+[2016-01-31 05:18:35] [UGC][353898185986596586] Download completed
+[2016-01-31 05:34:18] [AppID 730] Init cache request complete
+[2016-01-31 05:34:18] Starting sync job
+[2016-01-31 05:34:18] [AppID 730] Starting sync (eval)
+[2016-01-31 05:34:19] [AppID 730] Need to download file cfg/config.cfg
+[2016-01-31 05:34:19] [AppID 730] Eval complete
+[2016-01-31 05:34:19] Starting sync job
+[2016-01-31 05:34:19] [AppID 730] Starting sync (download)
+[2016-01-31 05:34:19] [AppID 730] Need to download file cfg/config.cfg
+[2016-01-31 05:34:19] [AppID 730] HTTP download for file 'cfg/config.cfg' from host 'steamcloudams.blob.core.windows.net' beginning. . .
+[2016-01-31 05:34:19] [AppID 730] HTTP download for file 'cfg/config.cfg' from host 'steamcloudams.blob.core.windows.net' - Success.
+[2016-01-31 05:34:19] [AppID 730] Download OK for file cfg/config.cfg
+[2016-01-31 05:34:19] [AppID 730] Download complete, result OK

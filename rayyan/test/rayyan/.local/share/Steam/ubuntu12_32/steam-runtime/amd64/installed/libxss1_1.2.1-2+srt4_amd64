@@ -1,0 +1,12 @@
+drwxr-xr-x root/root         0 2014-07-01 12:32 ./
+drwxr-xr-x root/root         0 2014-07-01 12:32 ./usr/
+drwxr-xr-x root/root         0 2014-07-01 12:32 ./usr/lib/
+drwxr-xr-x root/root         0 2014-07-01 12:32 ./usr/lib/x86_64-linux-gnu/
+-rw-r--r-- root/root     10384 2014-07-01 12:32 ./usr/lib/x86_64-linux-gnu/libXss.so.1.0.0
+drwxr-xr-x root/root         0 2014-07-01 12:32 ./usr/share/
+drwxr-xr-x root/root         0 2014-07-01 12:32 ./usr/share/doc/
+drwxr-xr-x root/root         0 2014-07-01 12:32 ./usr/share/doc/libxss1/
+-rw-r--r-- root/root      7646 2010-10-29 22:21 ./usr/share/doc/libxss1/changelog.gz
+-rw-r--r-- root/root      2678 2014-07-01 12:32 ./usr/share/doc/libxss1/copyright
+-rw-r--r-- root/root      1798 2014-07-01 12:32 ./usr/share/doc/libxss1/changelog.Debian.amd64.gz
+lrwxrwxrwx root/root         0 2014-07-01 12:32 ./usr/lib/x86_64-linux-gnu/libXss.so.1 -> libXss.so.1.0.0

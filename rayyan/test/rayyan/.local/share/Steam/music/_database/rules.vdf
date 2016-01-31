@@ -1,0 +1,48 @@
+""
+{
+	"userfile"		"user_rules.vdf"
+	"albumprefix"
+	{
+		"0"
+		{
+			"value"		"The "
+		}
+		"1"
+		{
+			"value"		"A "
+		}
+		"2"
+		{
+			"value"		"An "
+		}
+	}
+	"albumprefixexception"
+	{
+		"0"
+		{
+			"value"		"The The"
+		}
+	}
+	"artistprefix"
+	{
+		"0"
+		{
+			"value"		"The "
+		}
+		"1"
+		{
+			"value"		"A "
+		}
+		"2"
+		{
+			"value"		"An "
+		}
+	}
+	"artistprefixexception"
+	{
+		"0"
+		{
+			"value"		"The Artist Formerly Known As Prince"
+		}
+	}
+}

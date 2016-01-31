@@ -1,0 +1,13 @@
+drwxr-xr-x root/root         0 2014-07-01 12:12 ./
+drwxr-xr-x root/root         0 2014-07-01 12:12 ./usr/
+drwxr-xr-x root/root         0 2014-07-01 12:12 ./usr/lib/
+drwxr-xr-x root/root         0 2014-07-01 12:13 ./usr/lib/x86_64-linux-gnu/
+-rw-r--r-- root/root     68432 2014-07-01 12:13 ./usr/lib/x86_64-linux-gnu/libavahi-client.so.3.2.9
+drwxr-xr-x root/root         0 2014-07-01 12:12 ./usr/share/
+drwxr-xr-x root/root         0 2014-07-01 12:12 ./usr/share/doc/
+drwxr-xr-x root/root         0 2014-07-01 12:13 ./usr/share/doc/libavahi-client3/
+-rw-r--r-- root/root      1518 2009-04-13 19:27 ./usr/share/doc/libavahi-client3/README
+-rw-r--r-- root/root     10650 2011-04-03 15:09 ./usr/share/doc/libavahi-client3/NEWS.gz
+-rw-r--r-- root/root      5440 2011-10-17 20:54 ./usr/share/doc/libavahi-client3/copyright
+-rw-r--r-- root/root     16544 2014-07-01 12:11 ./usr/share/doc/libavahi-client3/changelog.Debian.amd64.gz
+lrwxrwxrwx root/root         0 2014-07-01 12:13 ./usr/lib/x86_64-linux-gnu/libavahi-client.so.3 -> libavahi-client.so.3.2.9

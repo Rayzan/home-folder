@@ -1,0 +1,14 @@
+drwxr-xr-x root/root         0 2014-07-01 12:18 ./
+drwxr-xr-x root/root         0 2014-07-01 12:18 ./usr/
+drwxr-xr-x root/root         0 2014-07-01 12:18 ./usr/lib/
+drwxr-xr-x root/root         0 2014-07-01 12:18 ./usr/lib/x86_64-linux-gnu/
+-rw-r--r-- root/root    664504 2014-07-01 12:18 ./usr/lib/x86_64-linux-gnu/libsqlite3.so.0.8.6
+drwxr-xr-x root/root         0 2014-07-01 12:18 ./usr/share/
+drwxr-xr-x root/root         0 2014-07-01 12:18 ./usr/share/doc/
+drwxr-xr-x root/root         0 2014-07-01 12:18 ./usr/share/doc/libsqlite3-0/
+-rw-r--r-- root/root     40843 2011-11-01 06:23 ./usr/share/doc/libsqlite3-0/changelog.html.gz
+-rw-r--r-- root/root     34884 2014-07-01 12:18 ./usr/share/doc/libsqlite3-0/changelog.gz
+-rw-r--r-- root/root       381 2010-03-13 08:47 ./usr/share/doc/libsqlite3-0/copyright
+-rw-r--r-- root/root       721 2010-03-13 08:47 ./usr/share/doc/libsqlite3-0/README.Debian
+-rw-r--r-- root/root      6731 2014-07-01 12:17 ./usr/share/doc/libsqlite3-0/changelog.Debian.amd64.gz
+lrwxrwxrwx root/root         0 2014-07-01 12:18 ./usr/lib/x86_64-linux-gnu/libsqlite3.so.0 -> libsqlite3.so.0.8.6

@@ -1,0 +1,12 @@
+drwxr-xr-x root/root         0 2014-07-01 12:25 ./
+drwxr-xr-x root/root         0 2014-07-01 12:25 ./usr/
+drwxr-xr-x root/root         0 2014-07-01 12:25 ./usr/lib/
+drwxr-xr-x root/root         0 2014-07-01 12:25 ./usr/lib/x86_64-linux-gnu/
+-rw-r--r-- root/root     22896 2014-07-01 12:25 ./usr/lib/x86_64-linux-gnu/libXtst.so.6.1.0
+drwxr-xr-x root/root         0 2014-07-01 12:25 ./usr/share/
+drwxr-xr-x root/root         0 2014-07-01 12:25 ./usr/share/doc/
+drwxr-xr-x root/root         0 2014-07-01 12:25 ./usr/share/doc/libxtst6/
+-rw-r--r-- root/root      8615 2010-10-29 17:44 ./usr/share/doc/libxtst6/changelog.gz
+-rw-r--r-- root/root      3494 2014-07-01 12:25 ./usr/share/doc/libxtst6/copyright
+-rw-r--r-- root/root      2742 2014-07-01 12:25 ./usr/share/doc/libxtst6/changelog.Debian.amd64.gz
+lrwxrwxrwx root/root         0 2014-07-01 12:25 ./usr/lib/x86_64-linux-gnu/libXtst.so.6 -> libXtst.so.6.1.0

@@ -1,0 +1,18 @@
+drwxr-xr-x root/root         0 2014-07-01 12:34 ./
+drwxr-xr-x root/root         0 2014-07-01 12:34 ./usr/
+drwxr-xr-x root/root         0 2014-07-01 12:34 ./usr/lib/
+drwxr-xr-x root/root         0 2014-07-01 12:34 ./usr/lib/x86_64-linux-gnu/
+-rw-r--r-- root/root     64288 2014-07-01 12:34 ./usr/lib/x86_64-linux-gnu/libcanberra.so.0.2.5
+drwxr-xr-x root/root         0 2014-07-01 12:34 ./usr/lib/x86_64-linux-gnu/libcanberra-0.28/
+-rw-r--r-- root/root     18720 2014-07-01 12:34 ./usr/lib/x86_64-linux-gnu/libcanberra-0.28/libcanberra-alsa.so
+drwxr-xr-x root/root         0 2014-07-01 12:34 ./usr/share/
+drwxr-xr-x root/root         0 2014-07-01 12:34 ./usr/share/lintian/
+drwxr-xr-x root/root         0 2014-07-01 12:34 ./usr/share/lintian/overrides/
+-rw-r--r-- root/root        54 2012-02-01 18:15 ./usr/share/lintian/overrides/libcanberra0
+drwxr-xr-x root/root         0 2014-07-01 12:34 ./usr/share/doc/
+drwxr-xr-x root/root         0 2014-07-01 12:34 ./usr/share/doc/libcanberra0/
+-rw-r--r-- root/root      3613 2011-02-24 14:07 ./usr/share/doc/libcanberra0/README.gz
+-rw-r--r-- root/root       921 2011-10-03 11:08 ./usr/share/doc/libcanberra0/copyright
+-rw-r--r-- root/root       993 2011-10-03 11:08 ./usr/share/doc/libcanberra0/README.Debian
+-rw-r--r-- root/root      3526 2014-07-01 12:33 ./usr/share/doc/libcanberra0/changelog.Debian.amd64.gz
+lrwxrwxrwx root/root         0 2014-07-01 12:34 ./usr/lib/x86_64-linux-gnu/libcanberra.so.0 -> libcanberra.so.0.2.5

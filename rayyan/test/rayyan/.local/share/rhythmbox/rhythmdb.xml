@@ -1,0 +1,156 @@
+<?xml version="1.0" standalone="yes"?>
+<rhythmdb version="2.0">
+  <entry type="song">
+    <title>Spag Heddy - Gimme A Break</title>
+    <genre>Unknown</genre>
+    <artist>Unknown</artist>
+    <album>Unknown</album>
+    <duration>227</duration>
+    <file-size>3640875</file-size>
+    <location>file:///home/rayyan/Music/Spag%20Heddy%20-%20Gimme%20A%20Break</location>
+    <mtime>1454202860</mtime>
+    <first-seen>1454202863</first-seen>
+    <last-seen>1454239233</last-seen>
+    <play-count>6</play-count>
+    <last-played>1454239519</last-played>
+    <bitrate>127</bitrate>
+    <date>0</date>
+    <media-type>audio/mpeg</media-type>
+    <composer>Unknown</composer>
+  </entry>
+  <entry type="song">
+    <title>Spag Heddy - It's Me</title>
+    <genre>Unknown</genre>
+    <artist>Unknown</artist>
+    <album>Unknown</album>
+    <duration>191</duration>
+    <file-size>3061166</file-size>
+    <location>file:///home/rayyan/Music/Spag%20Heddy%20-%20It's%20Me</location>
+    <mtime>1454202782</mtime>
+    <first-seen>1454202863</first-seen>
+    <last-seen>1454239233</last-seen>
+    <play-count>3</play-count>
+    <last-played>1454217710</last-played>
+    <bitrate>127</bitrate>
+    <date>0</date>
+    <media-type>audio/mpeg</media-type>
+    <composer>Unknown</composer>
+  </entry>
+  <entry type="song">
+    <title>Spag Heddy - Never Givin Up</title>
+    <genre>Unknown</genre>
+    <artist>Unknown</artist>
+    <album>Unknown</album>
+    <duration>251</duration>
+    <file-size>4019128</file-size>
+    <location>file:///home/rayyan/Music/Spag%20Heddy%20-%20Never%20Givin%20Up</location>
+    <mtime>1454203172</mtime>
+    <first-seen>1454203287</first-seen>
+    <last-seen>1454239233</last-seen>
+    <play-count>5</play-count>
+    <last-played>1454217288</last-played>
+    <bitrate>127</bitrate>
+    <date>0</date>
+    <media-type>audio/mpeg</media-type>
+    <composer>Unknown</composer>
+  </entry>
+  <entry type="iradio">
+    <title>WKNC 88.1 FM (NC State) (High Quality)</title>
+    <genre>Music</genre>
+    <artist></artist>
+    <album></album>
+    <location>http://wknc.sma.ncsu.edu:8000/wknchq.ogg.m3u</location>
+    <date>0</date>
+    <media-type>application/octet-stream</media-type>
+  </entry>
+  <entry type="iradio">
+    <title>WKNC 88.1 FM (NC State) (Low Quality)</title>
+    <genre>Music</genre>
+    <artist></artist>
+    <album></album>
+    <location>http://wknc.sma.ncsu.edu:8000/wkncmq.ogg.m3u</location>
+    <date>0</date>
+    <media-type>application/octet-stream</media-type>
+  </entry>
+  <entry type="iradio">
+    <title>HBR1.com - Dream Factory</title>
+    <genre>Ambient</genre>
+    <artist></artist>
+    <album></album>
+    <location>http://ubuntu.hbr1.com:19800/ambient.ogg</location>
+    <date>0</date>
+    <media-type>application/octet-stream</media-type>
+  </entry>
+  <entry type="iradio">
+    <title>StartFM - 94.2MHz, Vilnius University, Lithuania</title>
+    <genre>Underground</genre>
+    <artist></artist>
+    <album></album>
+    <location>http://eteris.startfm.lt/startfm.ogg</location>
+    <date>0</date>
+    <media-type>application/octet-stream</media-type>
+  </entry>
+  <entry type="iradio">
+    <title>WSUM 91.7 FM (University of Wisconsin)</title>
+    <genre>College Radio</genre>
+    <artist></artist>
+    <album></album>
+    <location>http://vu.wsum.wisc.edu/wsumlive.m3u</location>
+    <date>0</date>
+    <media-type>application/octet-stream</media-type>
+  </entry>
+  <entry type="iradio">
+    <title>Radio Paradise (High Quality)</title>
+    <genre>Eclectic</genre>
+    <artist></artist>
+    <album></album>
+    <location>http://stream-dc1.radioparadise.com/rp_192m.ogg</location>
+    <date>0</date>
+    <media-type>application/octet-stream</media-type>
+  </entry>
+  <entry type="iradio">
+    <title>Radio Paradise (Low Quality)</title>
+    <genre>Eclectic</genre>
+    <artist></artist>
+    <album></album>
+    <location>http://stream-dc1.radioparadise.com/rp_96m.ogg</location>
+    <date>0</date>
+    <media-type>application/octet-stream</media-type>
+  </entry>
+  <entry type="iradio">
+    <title>KWUR 90.3 FM St. Louis Underground Radio</title>
+    <genre>Unknown</genre>
+    <artist></artist>
+    <album></album>
+    <location>http://www.kwur.com/icecast/kwurogg.m3u</location>
+    <date>0</date>
+    <media-type>application/octet-stream</media-type>
+  </entry>
+  <entry type="iradio">
+    <title>wbur.org - Boston's NPR news source</title>
+    <genre>News</genre>
+    <artist></artist>
+    <album></album>
+    <location>http://audio.wbur.org/stream/live_ogg.m3u</location>
+    <date>0</date>
+    <media-type>application/octet-stream</media-type>
+  </entry>
+  <entry type="iradio">
+    <title>HBR1.com - I.D.M. Tranceponder</title>
+    <genre>Trance</genre>
+    <artist></artist>
+    <album></album>
+    <location>http://ubuntu.hbr1.com:19800/trance.ogg</location>
+    <date>0</date>
+    <media-type>application/octet-stream</media-type>
+  </entry>
+  <entry type="iradio">
+    <title>HBR1.com - Tronic Lounge</title>
+    <genre>House</genre>
+    <artist></artist>
+    <album></album>
+    <location>http://ubuntu.hbr1.com:19800/tronic.ogg</location>
+    <date>0</date>
+    <media-type>application/octet-stream</media-type>
+  </entry>
+</rhythmdb>

@@ -1,0 +1,297 @@
+/**
+ * @constructor
+ */
+var FileUploadDialog = function () {
+    ModalDialog.call(this);
+    this._className = 'file-upload-dialog';
+    this._post_upload_handler = undefined;
+    this._fileType = 'image';
+    this._headerEnabled = false;
+};
+inherits(FileUploadDialog, ModalDialog);
+
+/**
+ * allowed values: 'image', 'attachment'
+ */
+FileUploadDialog.prototype.setFileType = function (fileType) {
+    this._fileType = fileType;
+};
+
+FileUploadDialog.prototype.getFileType = function () {
+    return this._fileType;
+};
+
+FileUploadDialog.prototype.setButtonText = function (text) {
+    this._fakeInput.val(text);
+};
+
+FileUploadDialog.prototype.setPostUploadHandler = function (handler) {
+    this._post_upload_handler = handler;
+};
+
+FileUploadDialog.prototype.runPostUploadHandler = function (url, descr) {
+    this._post_upload_handler(url, descr);
+};
+
+FileUploadDialog.prototype.setInputId = function (id) {
+    this._input_id = id;
+};
+
+FileUploadDialog.prototype.getInputId = function () {
+    return this._input_id;
+};
+
+FileUploadDialog.prototype.setErrorText = function (text) {
+    this.setLabelText(text);
+    this._label.addClass('error');
+};
+
+FileUploadDialog.prototype.setLabelText = function (text) {
+    this._label.html(text);
+    this._label.removeClass('error');
+};
+
+FileUploadDialog.prototype.setUrlInputTooltip = function (text) {
+    this._url_input_tooltip = text;
+};
+
+FileUploadDialog.prototype.getUrl = function () {
+    var url_input = this._url_input;
+    if (url_input.isBlank() === false) {
+        return url_input.getVal();
+    }
+    return '';
+};
+
+//disable description for now
+//FileUploadDialog.prototype.getDescription = function () {
+//    return this._description_input.getVal();
+//};
+
+FileUploadDialog.prototype.resetInputs = function () {
+    this._url_input.reset();
+    //this._description_input.reset();
+    this._upload_input.val('');
+};
+
+FileUploadDialog.prototype.getInputElement = function () {
+    return $('#' + this.getInputId());
+};
+
+FileUploadDialog.prototype.installFileUploadHandler = function (handler) {
+    var upload_input = this.getInputElement();
+    upload_input.unbind('change');
+    //todo: fix this - make event handler reinstall work
+    upload_input.change(handler);
+};
+
+FileUploadDialog.prototype.show = function () {
+    //hack around the ajaxFileUpload plugin
+    FileUploadDialog.superClass_.show.call(this);
+    var handler = this.getStartUploadHandler();
+    this.installFileUploadHandler(handler);
+};
+
+FileUploadDialog.prototype.getUrlInputElement = function () {
+    return this._url_input.getElement();
+};
+
+/*
+ * argument startUploadHandler is very special it must
+ * be a function calling this one!!! Todo: see if there
+ * is a more civilized way to do this.
+ */
+FileUploadDialog.prototype.startFileUpload = function (startUploadHandler) {
+
+    var spinner = this._spinner;
+    var label = this._label;
+
+    spinner.ajaxStart(function () {
+        spinner.show();
+        label.hide();
+    });
+    spinner.ajaxComplete(function () {
+        spinner.hide();
+        label.show();
+    });
+
+    /* important!!! upload input must be loaded by id
+     * because ajaxFileUpload monkey-patches the upload form */
+    var uploadInput = this.getInputElement();
+    uploadInput.ajaxStart(function () { uploadInput.hide(); });
+    uploadInput.ajaxComplete(function () { uploadInput.show(); });
+
+    //var localFilePath = upload_input.val();
+
+    var me = this;
+
+    $.ajaxFileUpload({
+        url: askbot.urls.upload,
+        secureuri: false,//todo: check on https
+        fileElementId: this.getInputId(),
+        dataType: 'xml',
+        success: function (data, status) {
+
+            var fileURL = $(data).find('file_url').text();
+            var origFileName = $(data).find('orig_file_name').text();
+            var newStatus = interpolate(
+                                gettext('Uploaded file: %s'),
+                                [origFileName]
+                            );
+            /*
+            * hopefully a fix for the "fakepath" issue
+            * https://www.mediawiki.org/wiki/Special:Code/MediaWiki/83225
+            */
+            fileURL = fileURL.replace(/\w:.*\\(.*)$/, '$1');
+            var error = $(data).find('error').text();
+            if (error !== '') {
+                me.setErrorText(error);
+            } else {
+                me.getUrlInputElement().attr('value', fileURL);
+                me.setLabelText(newStatus);
+                var buttonText = gettext('Choose a different file');
+                if (me.getFileType() === 'image') {
+                    buttonText = gettext('Choose a different image');
+                }
+                me.setButtonText(buttonText);
+            }
+
+            /* re-install this as the upload extension
+             * will remove the handler to prevent double uploading
+             * this hack is a manipulation around the
+             * ajaxFileUpload jQuery plugin. */
+            me.installFileUploadHandler(startUploadHandler);
+        },
+        error: function (data, status, e) {
+            /* re-install this as the upload extension
+            * will remove the handler to prevent double uploading */
+            me.setErrorText(gettext('Oops, looks like we had an error. Sorry.'));
+            me.installFileUploadHandler(startUploadHandler);
+        }
+    });
+    return false;
+};
+
+FileUploadDialog.prototype.getStartUploadHandler = function () {
+    var me = this;
+    var handler = function () {
+        /* the trick is that we need inside the function call
+         * to have a reference to itself
+         * in order to reinstall the handler later
+         * because ajaxFileUpload jquery extension might be destroying it */
+        return me.startFileUpload(handler);
+    };
+    return handler;
+};
+
+FileUploadDialog.prototype.createDom = function () {
+
+    var superClass = FileUploadDialog.superClass_;
+
+    var me = this;
+    superClass.setAcceptHandler.call(this, function () {
+        var url = $.trim(me.getUrl());
+        //var description = me.getDescription();
+        //@todo: have url cleaning code here
+        if (url.length > 0) {
+            me.runPostUploadHandler(url);//, description);
+            me.resetInputs();
+        }
+        me.hide();
+    });
+    superClass.setRejectHandler.call(this, function () {
+        me.resetInputs();
+        me.hide();
+    });
+    superClass.createDom.call(this);
+
+    var form = this.makeElement('form');
+    form.addClass('ajax-file-upload');
+    form.css('margin-bottom', 0);
+    this.prependContent(form);
+
+    // Browser native file upload field
+    var upload_input = this.makeElement('input');
+    upload_input.attr({
+        id: this._input_id,
+        type: 'file',
+        name: 'file-upload'
+        //size: 26???
+    });
+    form.append(upload_input);
+    this._upload_input = upload_input;
+
+    var fakeInput = this.makeElement('input');
+    fakeInput.attr('type', 'button');
+    fakeInput.addClass('submit');
+    fakeInput.addClass('fake-file-input');
+    var buttonText = gettext('Choose a file to insert');
+    if (this._fileType === 'image') {
+        buttonText = gettext('Choose an image to insert');
+    }
+    fakeInput.val(buttonText);
+    this._fakeInput = fakeInput;
+    form.append(fakeInput);
+
+    setupButtonEventHandlers(fakeInput, function () { upload_input.click(); });
+
+    // Label which will also serve as status display
+    var label = this.makeElement('label');
+    label.attr('for', this._input_id);
+    var types = askbot.settings.allowedUploadFileTypes;
+    types = types.join(', ');
+    label.html(gettext('Allowed file types are:') + ' ' + types + '.');
+    form.append(label);
+    this._label = label;
+
+    // The url input text box, probably unused in fact
+    var url_input = new TippedInput();
+    url_input.setInstruction(this._url_input_tooltip || gettext('Or paste file url here'));
+    var url_input_element = url_input.getElement();
+    url_input_element.css({
+        'width': '200px',
+        'display': 'none'
+    });
+    form.append(url_input_element);
+    //form.append($('<br/>'));
+    this._url_input = url_input;
+
+    /* //Description input box
+    var descr_input = new TippedInput();
+    descr_input.setInstruction(gettext('Describe the image here'));
+    this.makeElement('input');
+    form.append(descr_input.getElement());
+    form.append($('<br/>'));
+    this._description_input = descr_input;
+    */
+    var spinner = this.makeElement('img');
+    spinner.attr('src', mediaUrl('media/images/ajax-loader.gif'));
+    spinner.css('display', 'none');
+    spinner.addClass('spinner');
+    form.append(spinner);
+    this._spinner = spinner;
+
+    upload_input.change(this.getStartUploadHandler());
+};
+ÆèÑâ—Ç      V≠õﬂV≠õﬂ<≠,V≠ùÕ   J:https://faq.i3wm.org/m/default/media/js/utils/file_upload_dialog.js%3Fv=2 necko:classified 1 security-info FnhllAKWRHGAlo+ESXykKAAAAAAAAAAAwAAAAAAAAEaphjojH6pBabDSgSnsfLHeAAQAAgAAAAAAAAAAAAAAAAAAAAAB4vFIJp5wRkeyPxAQ9RJGKPqbqVvKO0mKuIl8ec8o/uhmCjImkVxP+7sgiYWmMt8F+O2DZM7ZTG6GukivU8OT5gAAAAAAAAY/MIIGOzCCBeCgAwIBAgIQXdtVRIdcS3ua3nxYTEx58zAKBggqhkjOPQQDAjCBkjELMAkGA1UEBhMCR0IxGzAZBgNVBAgTEkdyZWF0ZXIgTWFuY2hlc3RlcjEQMA4GA1UEBxMHU2FsZm9yZDEaMBgGA1UEChMRQ09NT0RPIENBIExpbWl0ZWQxODA2BgNVBAMTL0NPTU9ETyBFQ0MgRG9tYWluIFZhbGlkYXRpb24gU2VjdXJlIFNlcnZlciBDQSAyMB4XDTE2MDExOTAwMDAwMFoXDTE2MDcyNDIzNTk1OVowazEhMB8GA1UECxMYRG9tYWluIENvbnRyb2wgVmFsaWRhdGVkMSEwHwYDVQQLExhQb3NpdGl2ZVNTTCBNdWx0aS1Eb21haW4xIzAhBgNVBAMTGnNuaTM3NTM5LmNsb3VkZmxhcmVzc2wuY29tMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAE85/PEWijoj1UwV8dc2plaLU2Q94jh5XJyL7n86thOXVHJrf6I7Lin0f1gxqfxQTXlvIQ8UjAyx8CTcAC4LC3RqOCBDwwggQ4MB8GA1UdIwQYMBaAFEAJYWfwvINxT94SCCxv1NQrdj2WMB0GA1UdDgQWBBQMSCk8MNsWyag4Jn6C3/a29fX7/TAOBgNVHQ8BAf8EBAMCB4AwDAYDVR0TAQH/BAIwADAdBgNVHSUEFjAUBggrBgEFBQcDAQYIKwYBBQUHAwIwTwYDVR0gBEgwRjA6BgsrBgEEAbIxAQICBzArMCkGCCsGAQUFBwIBFh1odHRwczovL3NlY3VyZS5jb21vZG8uY29tL0NQUzAIBgZngQwBAgEwVgYDVR0fBE8wTTBLoEmgR4ZFaHR0cDovL2NybC5jb21vZG9jYTQuY29tL0NPTU9ET0VDQ0RvbWFpblZhbGlkYXRpb25TZWN1cmVTZXJ2ZXJDQTIuY3JsMIGIBggrBgEFBQcBAQR8MHowUQYIKwYBBQUHMAKGRWh0dHA6Ly9jcnQuY29tb2RvY2E0LmNvbS9DT01PRE9FQ0NEb21haW5WYWxpZGF0aW9uU2VjdXJlU2VydmVyQ0EyLmNydDAlBggrBgEFBQcwAYYZaHR0cDovL29jc3AuY29tb2RvY2E0LmNvbTCCAoMGA1UdEQSCAnowggJ2ghpzbmkzNzUzOS5jbG91ZGZsYXJlc3NsLmNvbYIdKi5hd2FsbGJ1aWxkaW5nc2VydmljZXMuY28udWuCDSouYm9ib2x0cy5jb22CFyouYm95YXJvdi1zY3VscHR1cmUuY29tghQqLmVyaWstam9oYW5zc29uLmNvbYIVKi5naWxkYS1yaWJlaXJvLmNvLnVrggoqLmkzd20ub3JnghAqLmlsb3ZldmF1bHQuY29tghkqLmxpbW91c2luZS1tYXVyaXRpdXMuY29tgg8qLm15d290bW9kcy5jb22CDyoucm9idXN0aXJjLm5ldIIWKi5zYWZldHljb21wb3NpdGVzLmNvbYINKi5zdXRhemUyNC5za4IQKi50b21ib2JvbHRzLmNvbYIXKi50cmFja215cHJvZ3Jlc3MuY28udWuCDCoueDExdmlzLm9yZ4IMKi56ZWtqdXIubmV0ghthd2FsbGJ1aWxkaW5nc2VydmljZXMuY28udWuCC2JvYm9sdHMuY29tghVib3lhcm92LXNjdWxwdHVyZS5jb22CEmVyaWstam9oYW5zc29uLmNvbYITZ2lsZGEtcmliZWlyby5jby51a4IIaTN3bS5vcmeCDmlsb3ZldmF1bHQuY29tghdsaW1vdXNpbmUtbWF1cml0aXVzLmNvbYINbXl3b3Rtb2RzLmNvbYINcm9idXN0aXJjLm5ldIIUc2FmZXR5Y29tcG9zaXRlcy5jb22CC3N1dGF6ZTI0LnNrgg50b21ib2JvbHRzLmNvbYIVdHJhY2tteXByb2dyZXNzLmNvLnVrggp4MTF2aXMub3Jnggp6ZWtqdXIubmV0MAoGCCqGSM49BAMCA0kAMEYCIQDTVUSoh3YQmvxiuCqp7NTnNxy44cTVfd2tginFsfglhwIhANIlxcEwZh19KUZhrG8gVRxLRHdizQxXOgG+6EAqrjYkwCsAAwAAAAABAQAA request-method GET request-Accept-Encoding gzip, deflate, br response-head HTTP/2.0 200 OK
+Server: cloudflare-nginx
+Date: Sun, 31 Jan 2016 05:29:59 GMT
+Content-Type: application/octet-stream
+Content-Length: 8667
+Last-Modified: Mon, 21 Dec 2015 08:00:44 GMT
+Access-Control-Allow-Origin: *
+Expires: Sat, 30 Jan 2016 06:24:39 GMT
+Cache-Control: max-age=600
+X-GitHub-Request-Id: B91F1218:1BA3:5026FAC:56AC54CF
+Accept-Ranges: bytes
+Via: 1.1 varnish
+Age: 98
+X-Served-By: cache-lcy1131-LCY
+X-Cache: HIT
+X-Cache-Hits: 1
+X-Timer: S1454218199.386830,VS0,VE0
+Vary: Accept-Encoding
+X-Fastly-Request-ID: 241cad4ec16032a0a580ff6deac3b94f0a589f70
+cf-ray: 26d305a22bfa35b4-LHR
+X-Firefox-Spdy: h2
+   !€

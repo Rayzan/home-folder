@@ -1,0 +1,9 @@
+drwxr-xr-x root/root         0 2014-07-18 14:58 ./
+drwxr-xr-x root/root         0 2014-07-18 14:58 ./usr/
+drwxr-xr-x root/root         0 2014-07-18 14:58 ./usr/lib/
+drwxr-xr-x root/root         0 2014-07-18 14:58 ./usr/lib/x86_64-linux-gnu/
+-rw-r--r-- root/root    979024 2014-07-18 14:58 ./usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.18
+drwxr-xr-x root/root         0 2014-07-18 14:58 ./usr/share/
+drwxr-xr-x root/root         0 2014-07-18 14:58 ./usr/share/doc/
+lrwxrwxrwx root/root         0 2014-07-18 14:45 ./usr/lib/x86_64-linux-gnu/libstdc++.so.6 -> libstdc++.so.6.0.18
+lrwxrwxrwx root/root         0 2014-07-18 14:58 ./usr/share/doc/libstdc++6 -> gcc-4.8-base

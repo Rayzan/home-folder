@@ -1,0 +1,19 @@
+<map id="G" name="G">
+<area shape="rect" id="node2" href="$struct__xcb__out.html" title="_xcb_out" alt="" coords="1013,143,1091,172"/>
+<area shape="rect" id="node4" href="$structxcb__big__requests__enable__cookie__t.html" title="xcb_big_requests_enable_cookie_t" alt="" coords="584,5,827,35"/>
+<area shape="rect" id="node6" href="$struct__xcb__in.html" title="_xcb_in" alt="" coords="1017,325,1087,355"/>
+<area shape="rect" id="node8" href="$structreply__list.html" title="reply_list" alt="" coords="667,100,744,129"/>
+<area shape="rect" id="node11" href="$structpending__reply.html" title="pending_reply" alt="" coords="651,195,760,224"/>
+<area shape="rect" id="node14" href="$structreader__list.html" title="reader_list" alt="" coords="661,289,749,319"/>
+<area shape="rect" id="node17" href="$structevent__list.html" title="event_list" alt="" coords="317,415,400,444"/>
+<area shape="rect" id="node22" href="$structxcb__special__event.html" title="xcb_special_event" alt="" coords="636,467,775,496"/>
+<area shape="rect" id="node19" href="$structxcb__generic__event__t.html" title="Generic event." alt="" coords="7,415,159,444"/>
+<area shape="rect" id="node26" href="$struct__xcb__map.html" title="_xcb_map" alt="" coords="663,520,748,549"/>
+<area shape="rect" id="node28" href="$structnode.html" title="node" alt="" coords="332,520,385,549"/>
+<area shape="rect" id="node31" href="$struct__xcb__xid.html" title="_xcb_xid" alt="" coords="1015,379,1089,408"/>
+<area shape="rect" id="node33" href="$struct__xcb__ext.html" title="_xcb_ext" alt="" coords="1013,432,1091,461"/>
+<area shape="rect" id="node35" href="$structlazyreply.html" title="lazyreply" alt="" coords="667,573,744,603"/>
+<area shape="rect" id="node37" href="$structxcb__query__extension__reply__t.html" title="xcb_query_extension_reply_t" alt="" coords="256,573,461,603"/>
+<area shape="rect" id="node39" href="$structxcb__query__extension__cookie__t.html" title="xcb_query_extension_cookie_t" alt="" coords="251,627,467,656"/>
+<area shape="rect" id="node41" href="$structxcb__setup__t.html" title="xcb_setup_t" alt="" coords="1003,485,1101,515"/>
+</map>

@@ -1,0 +1,12 @@
+drwxr-xr-x root/root         0 2015-02-23 09:43 ./
+drwxr-xr-x root/root         0 2015-02-23 09:43 ./usr/
+drwxr-xr-x root/root         0 2015-02-23 09:43 ./usr/lib/
+drwxr-xr-x root/root         0 2015-02-23 09:43 ./usr/lib/i386-linux-gnu/
+-rw-r--r-- root/root     30320 2015-02-23 09:43 ./usr/lib/i386-linux-gnu/libkrb5support.so.0.1
+drwxr-xr-x root/root         0 2015-02-23 09:43 ./usr/share/
+drwxr-xr-x root/root         0 2015-02-23 09:43 ./usr/share/doc/
+drwxr-xr-x root/root         0 2015-02-23 09:43 ./usr/share/doc/libkrb5support0/
+-rw-r--r-- root/root      1200 2012-07-18 14:02 ./usr/share/doc/libkrb5support0/NEWS.Debian.gz
+-rw-r--r-- root/root     17869 2012-07-18 14:02 ./usr/share/doc/libkrb5support0/copyright
+-rw-r--r-- root/root     26656 2015-02-23 09:42 ./usr/share/doc/libkrb5support0/changelog.Debian.i386.gz
+lrwxrwxrwx root/root         0 2015-02-23 09:43 ./usr/lib/i386-linux-gnu/libkrb5support.so.0 -> libkrb5support.so.0.1

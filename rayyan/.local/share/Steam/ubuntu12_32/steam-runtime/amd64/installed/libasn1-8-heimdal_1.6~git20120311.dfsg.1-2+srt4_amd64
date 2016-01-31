@@ -1,0 +1,14 @@
+drwxr-xr-x root/root         0 2014-07-01 12:20 ./
+drwxr-xr-x root/root         0 2014-07-01 12:20 ./usr/
+drwxr-xr-x root/root         0 2014-07-01 12:20 ./usr/lib/
+drwxr-xr-x root/root         0 2014-07-01 12:21 ./usr/lib/x86_64-linux-gnu/
+-rw-r--r-- root/root    655152 2014-07-01 12:21 ./usr/lib/x86_64-linux-gnu/libasn1.so.8.0.0
+drwxr-xr-x root/root         0 2014-07-01 12:20 ./usr/share/
+drwxr-xr-x root/root         0 2014-07-01 12:20 ./usr/share/lintian/
+drwxr-xr-x root/root         0 2014-07-01 12:20 ./usr/share/lintian/overrides/
+-rw-r--r-- root/root        34 2012-03-28 07:53 ./usr/share/lintian/overrides/libasn1-8-heimdal
+drwxr-xr-x root/root         0 2014-07-01 12:20 ./usr/share/doc/
+drwxr-xr-x root/root         0 2014-07-01 12:21 ./usr/share/doc/libasn1-8-heimdal/
+-rw-r--r-- root/root      8191 2012-03-28 16:51 ./usr/share/doc/libasn1-8-heimdal/copyright
+-rw-r--r-- root/root     16841 2014-07-01 12:11 ./usr/share/doc/libasn1-8-heimdal/changelog.Debian.amd64.gz
+lrwxrwxrwx root/root         0 2014-07-01 12:20 ./usr/lib/x86_64-linux-gnu/libasn1.so.8 -> libasn1.so.8.0.0

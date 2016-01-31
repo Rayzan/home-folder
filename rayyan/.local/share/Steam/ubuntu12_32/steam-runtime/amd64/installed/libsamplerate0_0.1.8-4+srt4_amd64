@@ -1,0 +1,12 @@
+drwxr-xr-x root/root         0 2014-07-01 12:26 ./
+drwxr-xr-x root/root         0 2014-07-01 12:26 ./usr/
+drwxr-xr-x root/root         0 2014-07-01 12:26 ./usr/lib/
+drwxr-xr-x root/root         0 2014-07-01 12:26 ./usr/lib/x86_64-linux-gnu/
+-rw-r--r-- root/root   1488904 2014-07-01 12:26 ./usr/lib/x86_64-linux-gnu/libsamplerate.so.0.1.8
+drwxr-xr-x root/root         0 2014-07-01 12:26 ./usr/share/
+drwxr-xr-x root/root         0 2014-07-01 12:26 ./usr/share/doc/
+drwxr-xr-x root/root         0 2014-07-01 12:26 ./usr/share/doc/libsamplerate0/
+-rw-r--r-- root/root      8969 2011-08-15 05:11 ./usr/share/doc/libsamplerate0/changelog.gz
+-rw-r--r-- root/root      1139 2012-03-10 21:48 ./usr/share/doc/libsamplerate0/copyright
+-rw-r--r-- root/root      1882 2014-07-01 12:25 ./usr/share/doc/libsamplerate0/changelog.Debian.amd64.gz
+lrwxrwxrwx root/root         0 2014-07-01 12:26 ./usr/lib/x86_64-linux-gnu/libsamplerate.so.0 -> libsamplerate.so.0.1.8
